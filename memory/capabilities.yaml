@@ -1,0 +1,10 @@
+schema: engram.capabilities/v1
+scope: submodule
+note: every deferred capability starts at the default posture
+capabilities:
+  orthogonality:
+    state: default
+  contamination:
+    state: default
+  witness_network:
+    state: default
