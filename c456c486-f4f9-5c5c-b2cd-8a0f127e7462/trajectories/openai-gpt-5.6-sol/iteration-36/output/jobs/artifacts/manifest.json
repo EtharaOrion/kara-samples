@@ -1,0 +1,20 @@
+[
+  {
+    "source": "/logs/artifacts",
+    "destination": "artifacts",
+    "type": "directory",
+    "status": "empty"
+  },
+  {
+    "source": "/workspace/submission.py",
+    "destination": "artifacts/submission.py",
+    "type": "file",
+    "status": "failed"
+  },
+  {
+    "source": "/workspace",
+    "destination": "artifacts/workspace",
+    "type": "directory",
+    "status": "ok"
+  }
+]

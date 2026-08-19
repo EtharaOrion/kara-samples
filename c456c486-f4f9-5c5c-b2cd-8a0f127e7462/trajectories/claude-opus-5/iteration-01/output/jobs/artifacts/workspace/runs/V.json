@@ -1,0 +1,22 @@
+{
+  "cfg": {
+    "d": 4,
+    "dh": 1,
+    "ff": 16,
+    "steps": 40000,
+    "bs": 2048,
+    "lr": 0.003,
+    "seed": 0,
+    "eval_n": 200000,
+    "tag": "V",
+    "sym": false,
+    "qkb": true,
+    "addemb": true,
+    "h0": 6,
+    "slope0": 2.0,
+    "emit": false
+  },
+  "acc_uniform": 0.947475,
+  "acc_stress": 0.903705,
+  "n_params": 319
+}

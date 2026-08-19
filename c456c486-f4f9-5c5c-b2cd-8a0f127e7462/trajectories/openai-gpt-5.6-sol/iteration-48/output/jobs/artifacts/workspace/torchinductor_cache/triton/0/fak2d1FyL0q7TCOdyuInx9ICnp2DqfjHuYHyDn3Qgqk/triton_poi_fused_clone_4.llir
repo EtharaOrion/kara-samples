@@ -1,0 +1,103 @@
+; ModuleID = 'LLVMDialectModule'
+source_filename = "LLVMDialectModule"
+target datalayout = "e-i64:64-i128:128-v16:16-v32:32-n16:32:64"
+
+define void @triton_poi_fused_clone_4(ptr addrspace(1) %0, ptr addrspace(1) %1, ptr addrspace(1) %2, i32 %3) local_unnamed_addr !dbg !7 {
+  %5 = tail call i32 asm "mov.u32 $0, %ctaid.x;", "=r"() #1, !dbg !10
+  %.fr = freeze i32 %5, !dbg !11
+  %6 = shl i32 %.fr, 9, !dbg !11
+  %7 = tail call i32 @llvm.nvvm.read.ptx.sreg.tid.x(), !dbg !12
+  %8 = shl i32 %7, 1, !dbg !12
+  %9 = and i32 %8, 510, !dbg !12
+  %10 = or disjoint i32 %6, %9, !dbg !13
+  %11 = or disjoint i32 %10, 1, !dbg !13
+  %12 = srem i32 %10, 5, !dbg !14
+  %13 = sdiv i32 %11, 5, !dbg !15
+  %14 = srem i32 %13, 14, !dbg !16
+  %15 = mul nsw i32 %14, 10, !dbg !17
+  %16 = insertelement <2 x i32> poison, i32 %10, i64 0, !dbg !18
+  %17 = insertelement <2 x i32> %16, i32 %11, i64 1, !dbg !18
+  %18 = srem <2 x i32> %17, <i32 140, i32 5>, !dbg !18
+  %19 = shufflevector <2 x i32> %16, <2 x i32> poison, <2 x i32> zeroinitializer, !dbg !15
+  %20 = sdiv <2 x i32> %19, <i32 5, i32 70>, !dbg !15
+  %21 = srem <2 x i32> %20, <i32 14, i32 2>, !dbg !16
+  %22 = mul nsw <2 x i32> %21, <i32 10, i32 5>, !dbg !17
+  %23 = insertelement <2 x i32> %22, i32 %10, i64 0, !dbg !18
+  %24 = sub nsw <2 x i32> %23, %18, !dbg !18
+  %25 = insertelement <2 x i32> %24, i32 %12, i64 1, !dbg !19
+  %26 = add <2 x i32> %22, %25, !dbg !19
+  %27 = extractelement <2 x i32> %26, i64 0, !dbg !20
+  %28 = extractelement <2 x i32> %26, i64 1, !dbg !20
+  %29 = add i32 %27, %28, !dbg !20
+  %30 = extractelement <2 x i32> %24, i64 0, !dbg !19
+  %31 = add i32 %30, %15, !dbg !19
+  %32 = extractelement <2 x i32> %22, i64 1, !dbg !20
+  %33 = extractelement <2 x i32> %18, i64 1, !dbg !20
+  %34 = add nsw i32 %32, %33, !dbg !20
+  %35 = add i32 %31, %34, !dbg !20
+  %36 = sext i32 %29 to i64, !dbg !21
+  %37 = getelementptr float, ptr addrspace(1) %0, i64 %36, !dbg !21
+  %38 = sext i32 %35 to i64, !dbg !21
+  %39 = getelementptr float, ptr addrspace(1) %0, i64 %38, !dbg !21
+  %40 = tail call i32 asm sideeffect "mov.u32 $0, 0x0;\0A\09@$2 ld.global.b32 { $0 }, [ $1 + 0 ];", "=r,l,b"(ptr addrspace(1) %37, i1 true) #1, !dbg !22
+  %41 = bitcast i32 %40 to float, !dbg !22
+  %42 = tail call i32 asm sideeffect "mov.u32 $0, 0x0;\0A\09@$2 ld.global.b32 { $0 }, [ $1 + 0 ];", "=r,l,b"(ptr addrspace(1) %39, i1 true) #1, !dbg !22
+  %43 = bitcast i32 %42 to float, !dbg !22
+  %44 = sext i32 %28 to i64, !dbg !23
+  %45 = getelementptr float, ptr addrspace(1) %1, i64 %44, !dbg !23
+  %46 = sext i32 %34 to i64, !dbg !23
+  %47 = getelementptr float, ptr addrspace(1) %1, i64 %46, !dbg !23
+  %48 = tail call i32 asm sideeffect "mov.u32 $0, 0x0;\0A\09@$2 ld.global.L1::evict_last.b32 { $0 }, [ $1 + 0 ];", "=r,l,b"(ptr addrspace(1) %45, i1 true) #1, !dbg !24
+  %49 = bitcast i32 %48 to float, !dbg !24
+  %50 = tail call i32 asm sideeffect "mov.u32 $0, 0x0;\0A\09@$2 ld.global.L1::evict_last.b32 { $0 }, [ $1 + 0 ];", "=r,l,b"(ptr addrspace(1) %47, i1 true) #1, !dbg !24
+  %51 = bitcast i32 %50 to float, !dbg !24
+  %52 = fadd float %41, %49, !dbg !25
+  %53 = fadd float %43, %51, !dbg !25
+  %54 = sext i32 %10 to i64, !dbg !26
+  %55 = getelementptr float, ptr addrspace(1) %2, i64 %54, !dbg !26
+  %56 = bitcast float %52 to i32, !dbg !27
+  %57 = bitcast float %53 to i32, !dbg !27
+  tail call void asm sideeffect "@$3 st.global.v2.b32 [ $2 + 0 ], { $0, $1 };", "r,r,l,b"(i32 %56, i32 %57, ptr addrspace(1) %55, i1 true) #1, !dbg !27
+  ret void, !dbg !28
+}
+
+; Function Attrs: mustprogress nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare noundef i32 @llvm.nvvm.read.ptx.sreg.tid.x() #0
+
+attributes #0 = { mustprogress nocallback nofree nosync nounwind speculatable willreturn memory(none) }
+attributes #1 = { nounwind }
+
+!llvm.module.flags = !{!0, !1}
+!llvm.dbg.cu = !{!2}
+!nvvm.annotations = !{!4, !5}
+!llvm.ident = !{!6}
+
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+!1 = !{i32 4, !"nvvm-reflect-ftz", i32 1}
+!2 = distinct !DICompileUnit(language: DW_LANG_C, file: !3, producer: "triton", isOptimized: true, runtimeVersion: 0, emissionKind: LineTablesOnly)
+!3 = !DIFile(filename: "cty2gp4bvymqqfzjhvgisauwbwg4bj6y3gyw4owcd43m7i7x2wq5.py", directory: "/workspace/torchinductor_cache/ty")
+!4 = !{ptr @triton_poi_fused_clone_4, !"kernel", i32 1}
+!5 = !{ptr @triton_poi_fused_clone_4, !"reqntidx", i32 256}
+!6 = !{!"clang version 3.8.0 (tags/RELEASE_380/final)"}
+!7 = distinct !DISubprogram(name: "triton_poi_fused_clone_4", linkageName: "triton_poi_fused_clone_4", scope: !3, file: !3, line: 19, type: !8, scopeLine: 19, spFlags: DISPFlagDefinition | DISPFlagOptimized, unit: !2)
+!8 = !DISubroutineType(cc: DW_CC_normal, types: !9)
+!9 = !{}
+!10 = !DILocation(line: 21, column: 28, scope: !7)
+!11 = !DILocation(line: 21, column: 33, scope: !7)
+!12 = !DILocation(line: 22, column: 36, scope: !7)
+!13 = !DILocation(line: 22, column: 23, scope: !7)
+!14 = !DILocation(line: 24, column: 19, scope: !7)
+!15 = !DILocation(line: 25, column: 21, scope: !7)
+!16 = !DILocation(line: 25, column: 26, scope: !7)
+!17 = !DILocation(line: 29, column: 45, scope: !7)
+!18 = !DILocation(line: 29, column: 54, scope: !7)
+!19 = !DILocation(line: 29, column: 42, scope: !7)
+!20 = !DILocation(line: 29, column: 50, scope: !7)
+!21 = !DILocation(line: 29, column: 30, scope: !7)
+!22 = !DILocation(line: 29, column: 59, scope: !7)
+!23 = !DILocation(line: 30, column: 30, scope: !7)
+!24 = !DILocation(line: 30, column: 42, scope: !7)
+!25 = !DILocation(line: 31, column: 18, scope: !7)
+!26 = !DILocation(line: 32, column: 25, scope: !7)
+!27 = !DILocation(line: 32, column: 36, scope: !7)
+!28 = !DILocation(line: 32, column: 4, scope: !7)

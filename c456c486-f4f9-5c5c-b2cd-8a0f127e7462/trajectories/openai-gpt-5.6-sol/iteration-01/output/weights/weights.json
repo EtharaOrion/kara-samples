@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "architecture": "recurrent one-head digit transformer",
+    "parameters": "17",
+    "training_states": "200"
+  },
+  "modules": [
+    "Embedding",
+    "Linear",
+    "TinyAdder"
+  ],
+  "parameter_elements": 17,
+  "state_dict_elements": 17,
+  "tensors": {
+    "carry_role": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -0.35722485184669495
+      ]
+    },
+    "cls": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -0.072577565908432
+      ]
+    },
+    "digit.weight": {
+      "dtype": "torch.float32",
+      "numel": 10,
+      "shape": [
+        10,
+        1
+      ],
+      "values": [
+        -0.2731322646141052,
+        0.3886472284793854,
+        1.0130418539047241,
+        1.6391336917877197,
+        2.256282091140747,
+        2.864173412322998,
+        3.4637081623077393,
+        4.054599285125732,
+        4.636523723602295,
+        5.208891868591309
+      ]
+    },
+    "out.bias": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        1.827791690826416
+      ]
+    },
+    "out.weight": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1,
+        1
+      ],
+      "values": [
+        2.3608388900756836
+      ]
+    },
+    "qkv.weight": {
+      "dtype": "torch.float32",
+      "numel": 3,
+      "shape": [
+        3,
+        1
+      ],
+      "values": [
+        0.28583890199661255,
+        -0.7531923651695251,
+        2.6703505516052246
+      ]
+    }
+  }
+}

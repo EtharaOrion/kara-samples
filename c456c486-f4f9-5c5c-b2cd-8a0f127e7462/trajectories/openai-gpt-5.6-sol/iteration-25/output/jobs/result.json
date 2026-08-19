@@ -1,0 +1,126 @@
+{
+    "id": "18853e37-a1bc-4a00-b401-ec2358cc7a4c",
+    "task_name": "arith/add-14d-trained",
+    "trial_name": "attempt-25__BmXZeJk",
+    "trial_uri": "trajectories/openai-gpt-5.6-sol/iteration-25/output/jobs",
+    "task_id": {
+        "path": "trajectories/openai-gpt-5.6-sol/iteration-25/input"
+    },
+    "source": null,
+    "task_checksum": "56d7b5e375e5826ffa70bf0693d847fe832a7ec3cef1f3bf2349e48f324ef2c2",
+    "config": {
+        "task": {
+            "path": "trajectories/openai-gpt-5.6-sol/iteration-25/input",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "attempt-25__BmXZeJk",
+        "trials_dir": "trajectories/openai-gpt-5.6-sol/iteration-25/output/jobs",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 0.6523,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "openai/gpt-5.6-sol",
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "0.62.0"
+            },
+            "env": {
+                "LLM_API_KEY": "${LLM_API_KEY}",
+                "LLM_BASE_URL": "http://172.17.0.1:8880/v1",
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "http://172.17.0.1:8880/v1"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "env": {},
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "f58dd35f-5dae-4307-8ad2-851d6244b7f3"
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "0.62.0",
+        "model_info": {
+            "name": "gpt-5.6-sol",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 812148,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 11657,
+        "cost_usd": 4.410450000000001,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "scores": {
+            "accuracy": 1.0,
+            "edge_accuracy": 1.0,
+            "elapsed_seconds": 196.82712577399798,
+            "model_use_rate": 1.0,
+            "output_dependence": 1.0,
+            "parameter_efficiency": 0.12502867646038768,
+            "parameters": 2412.0,
+            "qualified": 1.0,
+            "score": 0.5625143382301938
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-14T17:59:09.771773Z",
+    "finished_at": "2026-08-14T18:14:08.143407Z",
+    "environment_setup": {
+        "started_at": "2026-08-14T17:59:09.780149Z",
+        "finished_at": "2026-08-14T17:59:10.869932Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-14T17:59:10.869983Z",
+        "finished_at": "2026-08-14T17:59:40.611784Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-14T17:59:40.611895Z",
+        "finished_at": "2026-08-14T18:10:25.728938Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-14T18:10:38.654444Z",
+        "finished_at": "2026-08-14T18:14:08.143394Z"
+    },
+    "step_results": null
+}

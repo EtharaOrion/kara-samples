@@ -1,0 +1,181 @@
+/opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.
+It will be compatible before version 2.0.0.
+  from authlib.jose import JsonWebKey, JsonWebToken
+[92m03:29:32 - openhands:INFO[0m: utils.py:152 - config.toml not found: [Errno 2] No such file or directory: 'config.toml'. Toml values have not been applied.
+[92m03:29:32 - openhands:INFO[0m: llm_registry.py:87 - [LLM registry 03866f98-a368-4a9b-8895-357bec960b9d]: Registering service for agent
+[92m03:29:32 - openhands:WARNING[0m: local_runtime.py:160 - Initializing LocalRuntime. WARNING: NO SANDBOX IS USED. This is an experimental feature, please report issues to https://github.com/OpenHands/OpenHands/issues. `run_as_openhands` will be ignored since the current user will be used to launch the server. We highly recommend using a sandbox (eg. DockerRuntime) unless you are running in a controlled environment.
+User ID: 0. Username: root.
+[92m03:29:32 - openhands:WARNING[0m: local_runtime.py:251 - Workspace base path is set to /workspace. It will be used as the path for the agent to run in. Be careful, the agent can EDIT files in this directory!
+[92m03:29:32 - openhands:INFO[0m: local_runtime.py:268 - Using workspace directory: /workspace
+[92m03:29:32 - openhands:INFO[0m: local_runtime.py:633 - Creating a server
+[92m03:29:32 - openhands:INFO[0m: local_runtime.py:673 - Starting server with command: ['/opt/openhands-venv/bin/python', '-u', '-m', 'openhands.runtime.action_execution_server', '33323', '--working-dir', '/workspace', '--plugins', 'agent_skills', 'jupyter', '--username', 'root', '--user-id', '0', '--no-enable-browser']
+[92m03:29:32 - openhands:INFO[0m: local_runtime.py:366 - [runtime 688ebad8-29d4-43-f12d7260c1ea457] Waiting for server to become ready at http://localhost:33323...
+[92m03:29:42 - openhands:INFO[0m: local_runtime.py:715 - server: /opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.
+[92m03:29:42 - openhands:INFO[0m: local_runtime.py:715 - server: It will be compatible before version 2.0.0.
+[92m03:29:42 - openhands:INFO[0m: local_runtime.py:715 - server: from authlib.jose import JsonWebKey, JsonWebToken
+[92m03:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:43 - openhands:WARNING[0m: action_execution_server.py:654 - Starting Action Execution Server
+[92m03:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:43 - openhands:INFO[0m: action_execution_server.py:680 - Starting file viewer server
+[92m03:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:43 - openhands:INFO[0m: file_viewer_server.py:92 - File viewer server URL saved to /tmp/oh-server-url: http://localhost:33884
+[92m03:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:43 - openhands:INFO[0m: file_viewer_server.py:93 - Starting file viewer server on port 33884
+[92m03:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:43 - openhands:INFO[0m: action_execution_server.py:685 - File viewer server started at http://localhost:33884
+[92m03:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:43 - openhands:INFO[0m: action_execution_server.py:700 - Initializing ActionExecutor...
+[92m03:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:43 - openhands:INFO[0m: action_execution_server.py:217 - No max memory limit set, using all available system memory
+[92m03:29:44 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:44 - openhands:INFO[0m: action_execution_server.py:232 - Browser environment is not enabled in config
+[92m03:29:56 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:56 - openhands:INFO[0m: action_execution_server.py:366 - Initializing by running 1 bash commands...
+[92m03:29:57 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:57 - openhands:INFO[0m: action_execution_server.py:710 - ActionExecutor initialized.
+[92m03:29:57 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:57 - openhands:INFO[0m: action_execution_server.py:720 - Initializing MCP Proxy Manager...
+[92m03:29:57 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:57 - openhands.runtime.mcp.proxy.manager:INFO[0m: manager.py:58 - No MCP servers configured for FastMCP Proxy, skipping initialization.
+[92m03:29:57 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:29:57 - openhands.runtime.mcp.proxy.manager:INFO[0m: manager.py:92 - No MCP servers configured for FastMCP Proxy, skipping mount.
+[92m03:30:00 - openhands:INFO[0m: base.py:1061 - Successfully configured git: name=openhands, email=openhands@all-hands.dev
+[92m03:30:00 - openhands:INFO[0m: base.py:890 - [runtime 688ebad8-29d4-43-f12d7260c1ea457] Selected repo: None, loading microagents from /workspace/.openhands/microagents (inside runtime)
+[92m03:30:00 - openhands:INFO[0m: local_runtime.py:715 - server: [Errno 2] No such file or directory: '/workspace/.openhands_instructions'
+[92m03:30:00 - openhands:INFO[0m: base.py:637 - [runtime 688ebad8-29d4-43-f12d7260c1ea457] Attempting to list files in repository microagents directory: /workspace/.openhands/microagents
+[92m03:30:00 - openhands:INFO[0m: memory.py:261 - Loading user workspace microagents: []
+[92m03:30:00 - openhands:WARNING[0m: mcp_config.py:351 - No search engine API key found, skipping search engine
+[92m03:30:00 - openhands:INFO[0m: utils.py:334 - Loaded 0 MCP tools: []
+[92m03:30:00 - openhands:INFO[0m: agent.py:169 - Setting 0 MCP tools for agent CodeActAgent: []
+[92m03:30:00 - openhands:INFO[0m: agent.py:181 - Tools updated for agent CodeActAgent, total 6: ['execute_bash', 'think', 'finish', 'execute_ipython_cell', 'task_tracker', 'str_replace_editor']
+[92m03:30:00 - openhands:INFO[0m: state_tracker.py:94 - AgentController 688ebad8-29d4-43-f12d7260c1ea457 - created new state. start_id: 0
+[92m03:30:00 - openhands:INFO[0m: agent_controller.py:668 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Setting agent(CodeActAgent) state from AgentState.LOADING to AgentState.RUNNING
+[92m03:30:00 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m03:34:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 65.48s: CmdRunAction (id=39)
+[92m03:34:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 65.48s: CmdRunAction (id=39)
+[92m03:35:54 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 65.48s: CmdRunAction (id=45)
+[92m03:35:54 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 65.48s: CmdRunAction (id=45)
+[92m03:37:08 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 70.50s: CmdRunAction (id=47)
+[92m03:37:08 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 70.51s: CmdRunAction (id=47)
+[92m03:39:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 90.62s: CmdRunAction (id=53)
+[92m03:39:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 90.62s: CmdRunAction (id=53)
+[92m03:41:11 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 100.20s: CmdRunAction (id=55)
+[92m03:41:11 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 100.20s: CmdRunAction (id=55)
+[92m03:43:04 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 100.15s: CmdRunAction (id=59)
+[92m03:43:04 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 100.15s: CmdRunAction (id=59)
+[92m03:44:58 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 110.22s: CmdRunAction (id=61)
+[92m03:44:58 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 110.22s: CmdRunAction (id=61)
+[92m03:47:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.26s: CmdRunAction (id=63)
+[92m03:47:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.26s: CmdRunAction (id=63)
+[92m03:48:36 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 90.60s: CmdRunAction (id=65)
+[92m03:48:36 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 90.60s: CmdRunAction (id=65)
+[92m03:54:12 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:54:12 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 2 PS1 metadata blocks:
+[92m03:54:12 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m03:54:12 - openhands:INFO[0m: local_runtime.py:715 - server: '\n###PS1JSON###\n{\n  "pid": "2024",\n  "exit_code": "0",\n  "username": "root",\n  "hostname": "5b88063f06ea",\n  "working_dir": "/workspace",\n  "py_interpreter_path": "/opt/openhands-venv/bin/python"\n}\n###PS1END###\ncat > /workspace/validate.py <<\'PY\'\nimport torch, random, time\nfrom submission import AdditionTransformer\nfrom train import batch_data\nD=\'cuda\'\ndef random_eval(width, count=1000000):\n m=AdditionTransformer(width=width).to(D); m.load_state_dict(torch.load(f\'/workspace/model_w{width}.pt\', weights_only=True)); m.eval()\n exact=bad=0; first=[]; start=time.time()\n with torch.no_grad():\n  for _ in range(count//10000):\n   x,y=batch_data(10000); p=m(x).argmax(-1); ok=p.eq(y).all(1); exact+=ok.sum().item()\n   if len(first)<10:\n    ids=(~ok).nonzero().flatten()[:10-len(first)]\n    for i in ids: first.append((x[i].cpu(),y[i].cpu(),p[i].cpu()))\n print(width, exact/count, \'errors\',count-exact,\'seconds\',time.time()-start)\n print(\'first output digit mismatches\', [(y.ne(p)).nonzero().flatten().tolist() for _,y,p in first])\n return m\ndef encode(values):\n x=torch.zeros(len(values),15,2,dtype=torch.long,device=D); y=torch.zeros(len(values),15,dtype=torch.long,device=D)\n for row,(a,b) in enumerate(values):\n  s=a+b\n  for pos in range(14): a,x[row,pos,0]=divmod(a,10); b,x[row,pos,1]=divmod(b,10)\n  for pos in range(15): s,y[row,pos]=divmod(s,10)\n return x,y\ndef structured(m):\n vals=[(0,0),(99999999999999,99999999999999),(99999999999999,1),(50000000000000,50000000000000),(12345678901234,87654321098766)]\n for n in range(1,14):\n  ten=10**n\n  vals += [(ten-1,1),(ten-1,ten-1),(10**14-ten,ten),(int(str(n%10)*14),int(str((9-n)%10)*14))]\n random.seed(44)\n for _ in range(100000):\n  n=random.randrange(1,14); base=10**n\n  vals.append((random.randrange(10**14//base)*base+base-1,random.randrange(1,10)))\n x,y=encode(vals)\n with torch.no_grad(): p=m(x).argmax(-1)\n ok=p.eq(y).all(1); print(\'structured\',ok.float().mean().item(),\'errors\',(~ok).sum().item(),\'of\',len(vals))\n for i in (~ok).nonzero().flatten()[:20]: print(\'bad\',vals[i],y[i].tolist(),p[i].tolist())\nm=random_eval(10)\nstructured(m)\n# Demonstrate QK scores change with digit content.\nwith torch.no_grad():\n x1=torch.zeros(1,15,2,dtype=torch.long,device=D); x2=x1.clone(); x2[:,5:,0]=7\n h1=m.digit(x1[...,0])+m.digit(x1[...,1])+m.position\n h2=m.digit(x2[...,0])+m.digit(x2[...,1])+m.position\n q1,k1,_=m.block.qkv(m.block.norm1(h1)).chunk(3,-1)\n q2,k2,_=m.block.qkv(m.block.norm1(h2)).chunk(3,-1)\n print(\'qk content delta\',((q1@k1.transpose(-1,-2))-(q2@k2.transpose(-1,-2))).abs().max().item())\nPY\n\n###PS1JSON###\n{\n  "pid": "2024",\n  "exit_code": "0",\n  "username": "root",\n  "hostname": "5b88063f06ea",\n  "working_dir": "/workspace",\n  "py_interpreter_path": "/opt/openhands-venv/bin/python"\n}\n###PS1END###\ncd /workspace && env -u PYTHONPATH -u VIRTUAL_ENV /usr/local/bin/python validate.py\n^Lcd /workspace && env -u PYTHONPATH -u VIRTUAL_ENV /usr/local/bin/python validate.py > validate.log 2>&1; cat validate.log\n10 0.999173 errors 827 seconds 13.01909875869751\nfirst output digit mismatches [[13], [11], [9], [13], [9], [11], [2], [6], [9], [11]]'
+[92m03:54:12 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m03:54:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.22s: CmdRunAction (id=71)
+[92m03:54:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.22s: CmdRunAction (id=71)
+[92m03:56:15 - openhands:INFO[0m: local_runtime.py:715 - server: [92m03:56:15 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 2 PS1 metadata blocks:
+[92m03:56:15 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m03:56:15 - openhands:INFO[0m: local_runtime.py:715 - server: '\n###PS1JSON###\n{\n  "pid": "2024",\n  "exit_code": "0",\n  "username": "root",\n  "hostname": "5b88063f06ea",\n  "working_dir": "/workspace",\n  "py_interpreter_path": "/opt/openhands-venv/bin/python"\n}\n###PS1END###\ncat > /workspace/validate.py <<\'PY\'\nimport torch, random, time\nfrom submission import AdditionTransformer\nfrom train import batch_data\nD=\'cuda\'\ndef random_eval(width, count=1000000):\n m=AdditionTransformer(width=width).to(D); m.load_state_dict(torch.load(f\'/workspace/model_w{width}.pt\', weights_only=True)); m.eval()\n exact=bad=0; first=[]; start=time.time()\n with torch.no_grad():\n  for _ in range(count//10000):\n   x,y=batch_data(10000); p=m(x).argmax(-1); ok=p.eq(y).all(1); exact+=ok.sum().item()\n   if len(first)<10:\n    ids=(~ok).nonzero().flatten()[:10-len(first)]\n    for i in ids: first.append((x[i].cpu(),y[i].cpu(),p[i].cpu()))\n print(width, exact/count, \'errors\',count-exact,\'seconds\',time.time()-start)\n print(\'first output digit mismatches\', [(y.ne(p)).nonzero().flatten().tolist() for _,y,p in first])\n return m\ndef encode(values):\n x=torch.zeros(len(values),15,2,dtype=torch.long,device=D); y=torch.zeros(len(values),15,dtype=torch.long,device=D)\n for row,(a,b) in enumerate(values):\n  s=a+b\n  for pos in range(14): a,x[row,pos,0]=divmod(a,10); b,x[row,pos,1]=divmod(b,10)\n  for pos in range(15): s,y[row,pos]=divmod(s,10)\n return x,y\ndef structured(m):\n vals=[(0,0),(99999999999999,99999999999999),(99999999999999,1),(50000000000000,50000000000000),(12345678901234,87654321098766)]\n for n in range(1,14):\n  ten=10**n\n  vals += [(ten-1,1),(ten-1,ten-1),(10**14-ten,ten),(int(str(n%10)*14),int(str((9-n)%10)*14))]\n random.seed(44)\n for _ in range(100000):\n  n=random.randrange(1,14); base=10**n\n  vals.append((random.randrange(10**14//base)*base+base-1,random.randrange(1,10)))\n x,y=encode(vals)\n with torch.no_grad(): p=m(x).argmax(-1)\n ok=p.eq(y).all(1); print(\'structured\',ok.float().mean().item(),\'errors\',(~ok).sum().item(),\'of\',len(vals))\n for i in (~ok).nonzero().flatten()[:20]: print(\'bad\',vals[i],y[i].tolist(),p[i].tolist())\nm=random_eval(10)\nstructured(m)\n# Demonstrate QK scores change with digit content.\nwith torch.no_grad():\n x1=torch.zeros(1,15,2,dtype=torch.long,device=D); x2=x1.clone(); x2[:,5:,0]=7\n h1=m.digit(x1[...,0])+m.digit(x1[...,1])+m.position\n h2=m.digit(x2[...,0])+m.digit(x2[...,1])+m.position\n q1,k1,_=m.block.qkv(m.block.norm1(h1)).chunk(3,-1)\n q2,k2,_=m.block.qkv(m.block.norm1(h2)).chunk(3,-1)\n print(\'qk content delta\',((q1@k1.transpose(-1,-2))-(q2@k2.transpose(-1,-2))).abs().max().item())\nPY\n\n###PS1JSON###\n{\n  "pid": "2024",\n  "exit_code": "0",\n  "username": "root",\n  "hostname": "5b88063f06ea",\n  "working_dir": "/workspace",\n  "py_interpreter_path": "/opt/openhands-venv/bin/python"\n}\n###PS1END###\ncd /workspace && env -u PYTHONPATH -u VIRTUAL_ENV /usr/local/bin/python validate.py\n^Lcd /workspace && env -u PYTHONPATH -u VIRTUAL_ENV /usr/local/bin/python validate.py > validate.log 2>&1; cat validate.log\n10 0.999173 errors 827 seconds 13.01909875869751\nfirst output digit mismatches [[13], [11], [9], [13], [9], [11], [2], [6], [9], [11]]'
+[92m03:56:15 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m03:56:15 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.20s: CmdRunAction (id=73)
+[92m03:56:15 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.20s: CmdRunAction (id=73)
+[92m03:59:01 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 100.16s: CmdRunAction (id=85)
+[92m03:59:01 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 100.16s: CmdRunAction (id=85)
+[92m04:01:05 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.26s: CmdRunAction (id=87)
+[92m04:01:05 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.26s: CmdRunAction (id=87)
+[92m04:02:33 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:02:33 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:02:33 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:02:33 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:02:33 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:02:46 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:02:46 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:02:46 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:02:46 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:02:46 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:02:59 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:02:59 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:02:59 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:02:59 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:02:59 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:06:24 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:06:24 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:06:24 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:06:24 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:06:24 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:06:24 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 200.35s: CmdRunAction (id=103)
+[92m04:06:24 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 200.35s: CmdRunAction (id=103)
+[92m04:06:37 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:06:37 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:06:37 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:06:37 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:06:37 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:11:41 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:11:41 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:11:41 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:11:41 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:11:41 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:11:41 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.29s: CmdRunAction (id=107)
+[92m04:11:41 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.29s: CmdRunAction (id=107)
+[92m04:16:44 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:16:44 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:16:44 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:16:44 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:16:44 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:16:44 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.27s: CmdRunAction (id=109)
+[92m04:16:44 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.27s: CmdRunAction (id=109)
+[92m04:21:47 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:21:47 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:21:47 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:21:47 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:21:47 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:21:47 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.27s: CmdRunAction (id=111)
+[92m04:21:47 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.27s: CmdRunAction (id=111)
+[92m04:22:00 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:22:00 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:22:00 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:22:00 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:22:00 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:27:03 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:27:03 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:27:03 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:27:03 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:27:03 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:27:03 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.26s: CmdRunAction (id=115)
+[92m04:27:03 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.26s: CmdRunAction (id=115)
+[92m04:32:08 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:32:08 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:32:08 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:32:08 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:32:08 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:32:08 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.27s: CmdRunAction (id=117)
+[92m04:32:08 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.27s: CmdRunAction (id=117)
+[92m04:37:12 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:37:12 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:37:12 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:37:12 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:37:12 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:37:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.29s: CmdRunAction (id=119)
+[92m04:37:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.29s: CmdRunAction (id=119)
+[92m04:47:16 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:47:16 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:47:16 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:47:16 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:47:16 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:47:16 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 600.05s: CmdRunAction (id=121)
+[92m04:47:16 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 600.05s: CmdRunAction (id=121)
+[92m04:52:19 - openhands:INFO[0m: local_runtime.py:715 - server: [92m04:52:19 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m04:52:19 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:52:19 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m04:52:19 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m04:52:19 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.29s: CmdRunAction (id=123)
+[92m04:52:19 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 300.29s: CmdRunAction (id=123)
+[92m05:09:02 - openhands:INFO[0m: local_runtime.py:715 - server: [92m05:09:02 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m05:09:02 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:09:02 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m05:09:02 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:09:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.25s: CmdRunAction (id=125)
+[92m05:09:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.25s: CmdRunAction (id=125)
+[92m05:25:46 - openhands:INFO[0m: local_runtime.py:715 - server: [92m05:25:46 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m05:25:46 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:25:46 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m05:25:46 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:25:46 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.29s: CmdRunAction (id=127)
+[92m05:25:46 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.29s: CmdRunAction (id=127)
+[92m05:42:31 - openhands:INFO[0m: local_runtime.py:715 - server: [92m05:42:31 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m05:42:31 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:42:31 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m05:42:31 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:42:31 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.27s: CmdRunAction (id=129)
+[92m05:42:31 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.27s: CmdRunAction (id=129)
+[92m05:59:18 - openhands:INFO[0m: local_runtime.py:715 - server: [92m05:59:18 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m05:59:18 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:59:18 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m05:59:18 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m05:59:18 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.30s: CmdRunAction (id=131)
+[92m05:59:18 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 1000.30s: CmdRunAction (id=131)
+[92m06:02:48 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.01s: IPythonRunCellAction (id=139)
+[92m06:02:48 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.01s: IPythonRunCellAction (id=139)
+[92m06:05:03 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.01s: IPythonRunCellAction (id=145)
+[92m06:05:03 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Pending action active for 120.01s: IPythonRunCellAction (id=145)
+[92m06:05:53 - openhands:INFO[0m: agent_controller.py:668 - [Agent Controller 688ebad8-29d4-43-f12d7260c1ea457] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.FINISHED
+[92m06:05:53 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m06:05:54 - openhands:INFO[0m: local_runtime.py:715 - server: [92m06:05:54 - openhands:INFO[0m: action_execution_server.py:739 - Shutting down MCP Proxy Manager...
+[92m06:05:54 - openhands:INFO[0m: local_runtime.py:710 - server log thread received exit signal.
+[92m06:05:54 - openhands:INFO[0m: local_runtime.py:728 - server log output thread finished.

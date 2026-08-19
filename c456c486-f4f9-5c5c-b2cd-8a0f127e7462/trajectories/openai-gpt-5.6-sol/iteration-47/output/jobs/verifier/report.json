@@ -1,0 +1,28 @@
+{
+  "beat_target": false,
+  "claimed_params": null,
+  "degenerate_attention": false,
+  "error": "RuntimeError: RuntimeError: Training has not completed",
+  "findings": [],
+  "measured_params": 0,
+  "metrics": {
+    "accuracy": 0.0,
+    "edge_accuracy": 0.0,
+    "elapsed_seconds": 1.3931394119863398,
+    "model_use_rate": 0.0,
+    "output_dependence": 0.0,
+    "parameter_efficiency": 0.0,
+    "parameters": 0.0,
+    "qualified": 0.0,
+    "score": 0.0
+  },
+  "model_type": null,
+  "output_dependence": 0.0,
+  "output_dependent": false,
+  "passed": 0,
+  "structurally_valid": false,
+  "target_parameters": 115,
+  "task": "arith/add-14d-trained",
+  "total": 10010,
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef"
+}

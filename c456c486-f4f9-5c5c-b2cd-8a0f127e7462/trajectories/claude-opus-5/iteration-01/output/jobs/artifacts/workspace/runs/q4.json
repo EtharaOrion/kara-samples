@@ -1,0 +1,25 @@
+{
+  "cfg": {
+    "d": 3,
+    "dh": 1,
+    "ff": 4,
+    "steps": 50000,
+    "bs": 2048,
+    "lr": 0.004,
+    "seed": 93,
+    "eval_n": 200000,
+    "tag": "q4",
+    "sym": true,
+    "qkb": true,
+    "addemb": false,
+    "hyb": true,
+    "nobout": false,
+    "npair": 1,
+    "h0": 6,
+    "slope0": 2.0,
+    "emit": false
+  },
+  "acc_uniform": 0.593225,
+  "acc_stress": 0.67174,
+  "n_params": 154
+}

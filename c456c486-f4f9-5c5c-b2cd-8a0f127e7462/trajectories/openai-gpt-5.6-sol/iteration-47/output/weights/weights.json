@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "status": "training in progress"
+  },
+  "modules": [
+    "AdditionTransformer"
+  ],
+  "parameter_elements": 1,
+  "state_dict_elements": 1,
+  "tensors": {
+    "untrained": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        0.0
+      ]
+    }
+  }
+}
