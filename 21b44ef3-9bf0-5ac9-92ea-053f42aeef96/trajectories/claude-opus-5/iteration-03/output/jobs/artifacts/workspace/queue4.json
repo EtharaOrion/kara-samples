@@ -1,0 +1,115 @@
+[
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 2,
+  "f1": 3,
+  "f2": 3,
+  "dv": 1,
+  "tag": "d2_3_3_v1"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 2,
+  "f1": 2,
+  "f2": 2,
+  "dv": 1,
+  "tag": "d2_2_2_v1"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 2,
+  "f1": 4,
+  "f2": 4,
+  "dv": 1,
+  "tag": "d2_4_4_v1"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 2,
+  "f1": 1,
+  "f2": 1,
+  "dv": 1,
+  "tag": "d2_1_1_v1"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "no_res_bias": true,
+  "tag": "d3_1_1_nb"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "no_res_bias": true,
+  "init_from": "/workspace/ckpt/d3_1_1_steps30000_E256_rounds2.pt",
+  "init_member": 0,
+  "init_sigma": 0.5,
+  "lr": 0.008,
+  "tag": "w_d3_1_1_nb"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "share_qk": true,
+  "tag": "d3_1_1_sq"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 2,
+  "f1": 2,
+  "f2": 2,
+  "tag": "d2_2_2"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 2,
+  "f1": 3,
+  "f2": 3,
+  "tag": "d2_3_3"
+ },
+ {
+  "E": 256,
+  "steps": 30000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "d": 2,
+  "f1": 2,
+  "f2": 2,
+  "dv": 1,
+  "no_res_bias": true,
+  "tag": "d2_2_2_v1_nb"
+ }
+]

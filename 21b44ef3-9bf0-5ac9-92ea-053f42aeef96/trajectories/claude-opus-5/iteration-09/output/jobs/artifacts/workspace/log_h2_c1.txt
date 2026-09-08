@@ -1,0 +1,20 @@
+config {'E': 256, 'C': 3, 'U': 12, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': False, 'heads': 2, 'fold': False, 'q': 'free', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': (), 'b1': True, 'b2': True, 'seed': 21}
+parameters per member: 111
+  [shrink] code_free.*,1=0  start residual 8.3581
+  [shrink] code_free.*,2=0  start residual 6.0445
+  [shrink] w_o.1=0  start residual 0.6711
+  [shrink] w_o.2=0  start residual 0.5854
+  [shrink] w_o2.1=0  start residual 2.2251
+  [shrink] w_o2.2=0  start residual 3.9737
+step   4000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (172s)
+step   8000 loss 0.0021 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (342s)
+step  12000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (513s)
+step  16000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (668s)
+step  20000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (739s)
+saved /workspace/h2_c1.pt  n_par 111  best 1.000000  members>=0.999: 111/256
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00

@@ -1,0 +1,89 @@
+/opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.
+It will be compatible before version 2.0.0.
+  from authlib.jose import JsonWebKey, JsonWebToken
+/opt/openhands-venv/lib/python3.13/site-packages/authlib/integrations/httpx_client/assertion_client.py:5: AuthlibDeprecationWarning: The httpx module is deprecated; please use httpx2 instead.
+  from ._compat import httpx2
+[92m21:20:00 - openhands:INFO[0m: utils.py:152 - config.toml not found: [Errno 2] No such file or directory: 'config.toml'. Toml values have not been applied.
+[92m21:20:00 - openhands:INFO[0m: llm_registry.py:87 - [LLM registry c8d09c2e-04e9-4faa-a3df-5478e72203f4]: Registering service for agent
+[92m21:20:00 - openhands:WARNING[0m: local_runtime.py:160 - Initializing LocalRuntime. WARNING: NO SANDBOX IS USED. This is an experimental feature, please report issues to https://github.com/OpenHands/OpenHands/issues. `run_as_openhands` will be ignored since the current user will be used to launch the server. We highly recommend using a sandbox (eg. DockerRuntime) unless you are running in a controlled environment.
+User ID: 0. Username: root.
+[92m21:20:00 - openhands:WARNING[0m: local_runtime.py:251 - Workspace base path is set to /workspace. It will be used as the path for the agent to run in. Be careful, the agent can EDIT files in this directory!
+[92m21:20:00 - openhands:INFO[0m: local_runtime.py:268 - Using workspace directory: /workspace
+[92m21:20:00 - openhands:INFO[0m: local_runtime.py:633 - Creating a server
+[92m21:20:00 - openhands:INFO[0m: local_runtime.py:673 - Starting server with command: ['/opt/openhands-venv/bin/python', '-u', '-m', 'openhands.runtime.action_execution_server', '39160', '--working-dir', '/workspace', '--plugins', 'agent_skills', 'jupyter', '--username', 'root', '--user-id', '0', '--no-enable-browser']
+[92m21:20:00 - openhands:INFO[0m: local_runtime.py:366 - [runtime 4f3edf41-3804-4c-19c726bf40e1c84] Waiting for server to become ready at http://localhost:39160...
+[92m21:20:09 - openhands:INFO[0m: local_runtime.py:715 - server: /opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.
+[92m21:20:09 - openhands:INFO[0m: local_runtime.py:715 - server: It will be compatible before version 2.0.0.
+[92m21:20:09 - openhands:INFO[0m: local_runtime.py:715 - server: from authlib.jose import JsonWebKey, JsonWebToken
+[92m21:20:09 - openhands:INFO[0m: local_runtime.py:715 - server: /opt/openhands-venv/lib/python3.13/site-packages/authlib/integrations/httpx_client/assertion_client.py:5: AuthlibDeprecationWarning: The httpx module is deprecated; please use httpx2 instead.
+[92m21:20:09 - openhands:INFO[0m: local_runtime.py:715 - server: from ._compat import httpx2
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:WARNING[0m: action_execution_server.py:654 - Starting Action Execution Server
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:INFO[0m: action_execution_server.py:680 - Starting file viewer server
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:INFO[0m: file_viewer_server.py:92 - File viewer server URL saved to /tmp/oh-server-url: http://localhost:39941
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:INFO[0m: file_viewer_server.py:93 - Starting file viewer server on port 39941
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:INFO[0m: action_execution_server.py:685 - File viewer server started at http://localhost:39941
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:INFO[0m: action_execution_server.py:700 - Initializing ActionExecutor...
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:INFO[0m: action_execution_server.py:217 - No max memory limit set, using all available system memory
+[92m21:20:10 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:10 - openhands:INFO[0m: action_execution_server.py:232 - Browser environment is not enabled in config
+[92m21:20:21 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:21 - openhands:INFO[0m: action_execution_server.py:366 - Initializing by running 1 bash commands...
+[92m21:20:21 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:21 - openhands:INFO[0m: action_execution_server.py:710 - ActionExecutor initialized.
+[92m21:20:21 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:21 - openhands:INFO[0m: action_execution_server.py:720 - Initializing MCP Proxy Manager...
+[92m21:20:21 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:21 - openhands.runtime.mcp.proxy.manager:INFO[0m: manager.py:58 - No MCP servers configured for FastMCP Proxy, skipping initialization.
+[92m21:20:21 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:20:21 - openhands.runtime.mcp.proxy.manager:INFO[0m: manager.py:92 - No MCP servers configured for FastMCP Proxy, skipping mount.
+[92m21:20:24 - openhands:INFO[0m: base.py:1061 - Successfully configured git: name=openhands, email=openhands@all-hands.dev
+[92m21:20:24 - openhands:INFO[0m: base.py:890 - [runtime 4f3edf41-3804-4c-19c726bf40e1c84] Selected repo: None, loading microagents from /workspace/.openhands/microagents (inside runtime)
+[92m21:20:24 - openhands:INFO[0m: local_runtime.py:715 - server: [Errno 2] No such file or directory: '/workspace/.openhands_instructions'
+[92m21:20:24 - openhands:INFO[0m: base.py:637 - [runtime 4f3edf41-3804-4c-19c726bf40e1c84] Attempting to list files in repository microagents directory: /workspace/.openhands/microagents
+[92m21:20:24 - openhands:INFO[0m: memory.py:261 - Loading user workspace microagents: []
+[92m21:20:24 - openhands:WARNING[0m: mcp_config.py:351 - No search engine API key found, skipping search engine
+[92m21:20:24 - openhands:INFO[0m: utils.py:334 - Loaded 0 MCP tools: []
+[92m21:20:24 - openhands:INFO[0m: agent.py:169 - Setting 0 MCP tools for agent CodeActAgent: []
+[92m21:20:24 - openhands:INFO[0m: agent.py:181 - Tools updated for agent CodeActAgent, total 6: ['execute_bash', 'think', 'finish', 'execute_ipython_cell', 'task_tracker', 'str_replace_editor']
+[92m21:20:24 - openhands:INFO[0m: state_tracker.py:94 - AgentController 4f3edf41-3804-4c-19c726bf40e1c84 - created new state. start_id: 0
+[92m21:20:24 - openhands:INFO[0m: agent_controller.py:668 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Setting agent(CodeActAgent) state from AgentState.LOADING to AgentState.RUNNING
+[92m21:20:24 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m21:27:42 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 65.46s: CmdRunAction (id=49)
+[92m21:27:42 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 65.46s: CmdRunAction (id=49)
+[92m21:29:25 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 100.15s: CmdRunAction (id=51)
+[92m21:29:25 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 100.15s: CmdRunAction (id=51)
+[92m21:31:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 120.26s: CmdRunAction (id=53)
+[92m21:31:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 120.26s: CmdRunAction (id=53)
+[92m21:34:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 150.41s: CmdRunAction (id=55)
+[92m21:34:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 150.41s: CmdRunAction (id=55)
+[92m21:36:56 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 170.52s: CmdRunAction (id=57)
+[92m21:36:56 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 170.52s: CmdRunAction (id=57)
+[92m21:38:11 - openhands:INFO[0m: local_runtime.py:715 - server: [92m21:38:11 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 2 PS1 metadata blocks:
+[92m21:38:11 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m21:38:11 - openhands:INFO[0m: local_runtime.py:715 - server: '\n###PS1JSON###\n{\n  "pid": "2167",\n  "exit_code": "0",\n  "username": "root",\n  "hostname": "2e7fc7af480f",\n  "working_dir": "/workspace",\n  "py_interpreter_path": "/opt/openhands-venv/bin/python"\n}\n###PS1END###\ncd /workspace && cat > /workspace/resume.py <<\'PY\'\nimport argparse, torch\nimport train\np=argparse.ArgumentParser(); p.add_argument(\'src\'); p.add_argument(\'label\'); p.add_argument(\'--steps\',type=int,default=15000); p.add_argument(\'--lr\',type=float,default=1e-4); p.add_argument(\'--structured\',type=float,default=.4); a=p.parse_args()\nck=torch.load(\'/workspace/\'+a.src,weights_only=True)\nm=train.AdditionTransformer(ck[\'width\']).cuda(); m.load_state_dict(ck[\'state\'])\ntrain.train_stage(m,a.steps,a.lr,8192,a.structured,a.label)\nprint(\'R\',train.validate(m,200000,False)); print(\'S\',train.validate(m,200000,True)); train.export(m)\nPY\n\n\n###PS1JSON###\n{\n  "pid": "2167",\n  "exit_code": "0",\n  "username": "root",\n  "hostname": "2e7fc7af480f",\n  "working_dir": "/workspace",\n  "py_interpreter_path": "/opt/openhands-venv/bin/python"\n}\n###PS1END###\nPYTHONPATH=/usr/local/lib/python3.11/dist-packages /usr/bin/python3.11 resume.py teacher.pt stable --steps 15000 --lr 1e-4 --structured .4 > stable.log 2>&1 & echo $! > stable.pid; sleep 65; tail -8 stable.log\n[1] 3604\n^Lcat /workspace/stable.log; pgrep -a -P $(cat /workspace/stable.pid) || true; ps -p $(cat /workspace/stable.pid) -o pid,etime,cmd'
+[92m21:38:11 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m21:40:52 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 150.42s: CmdRunAction (id=71)
+[92m21:40:52 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 150.42s: CmdRunAction (id=71)
+[92m21:43:25 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 150.43s: CmdRunAction (id=73)
+[92m21:43:25 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 150.43s: CmdRunAction (id=73)
+[92m21:44:38 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 70.49s: CmdRunAction (id=75)
+[92m21:44:38 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 70.49s: CmdRunAction (id=75)
+[92m21:47:16 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 60.43s: CmdRunAction (id=83)
+[92m21:47:16 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 60.43s: CmdRunAction (id=83)
+[92m21:49:30 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 65.48s: CmdRunAction (id=89)
+[92m21:49:30 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 65.48s: CmdRunAction (id=89)
+[92m21:52:34 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.57s: CmdRunAction (id=91)
+[92m21:52:34 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.57s: CmdRunAction (id=91)
+[92m21:53:38 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 60.43s: CmdRunAction (id=93)
+[92m21:53:38 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 60.43s: CmdRunAction (id=93)
+[92m21:56:45 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.60s: CmdRunAction (id=95)
+[92m21:56:45 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.60s: CmdRunAction (id=95)
+[92m21:59:48 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.57s: CmdRunAction (id=97)
+[92m21:59:48 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.57s: CmdRunAction (id=97)
+[92m22:02:41 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 170.52s: CmdRunAction (id=99)
+[92m22:02:41 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 170.52s: CmdRunAction (id=99)
+[92m22:05:51 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.13s: CmdRunAction (id=101)
+[92m22:05:51 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 180.13s: CmdRunAction (id=101)
+[92m22:09:54 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 240.38s: CmdRunAction (id=103)
+[92m22:09:54 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 240.38s: CmdRunAction (id=103)
+[92m22:12:07 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 130.31s: CmdRunAction (id=105)
+[92m22:12:07 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Pending action active for 130.31s: CmdRunAction (id=105)
+[92m22:14:00 - openhands:INFO[0m: agent_controller.py:668 - [Agent Controller 4f3edf41-3804-4c-19c726bf40e1c84] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.FINISHED
+[92m22:14:00 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m22:14:01 - openhands:INFO[0m: local_runtime.py:715 - server: [92m22:14:01 - openhands:INFO[0m: action_execution_server.py:739 - Shutting down MCP Proxy Manager...
+[92m22:14:01 - openhands:INFO[0m: local_runtime.py:710 - server log thread received exit signal.
+[92m22:14:01 - openhands:INFO[0m: local_runtime.py:728 - server log output thread finished.

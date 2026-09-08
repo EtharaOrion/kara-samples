@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "architecture": "1 block: 2-unit clamp bank -> 2 masked attention heads (strictly causal, inclusively causal) sharing one key and one value stream -> tied prototype read-out",
+    "input_range": "[10000000, 99999999]",
+    "name": "DigitPairAdder",
+    "parameter_breakdown": "{'code_free': '9 - the learned digit code, tied embedding / read-out prototypes', 'bank_bias': '2 - the two clamp knees that split a+b into <=8 / ==9 / >=10', 'fold': '1 - the write weight of the carry-out head (the mod-10 fold)'}",
+    "parameters": "12",
+    "sequence": "P = places + 2 tokens, least-significant place first, (0,0) pads at both ends; every answer digit comes from one forward pass",
+    "trained": "from random initialisation on synthetic addition problems"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 21,
+  "tensors": {
+    "bank_bias": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        21.650171279907227,
+        -18.375497817993164
+      ]
+    },
+    "bank_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -2.0,
+        2.0
+      ]
+    },
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 9,
+      "shape": [
+        9
+      ],
+      "values": [
+        1.1934300661087036,
+        2.3201112747192383,
+        3.456360101699829,
+        4.593022346496582,
+        5.729194164276123,
+        6.864260196685791,
+        7.9870452880859375,
+        9.10706901550293,
+        10.309967041015625
+      ]
+    },
+    "code_zero": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        0.0
+      ]
+    },
+    "dist_bias": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -8.0
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -11.37629222869873
+      ]
+    },
+    "key_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -200.0,
+        -200.0
+      ]
+    },
+    "val_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

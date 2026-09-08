@@ -1,0 +1,20 @@
+{
+  "accuracy_threshold": 0.99,
+  "arity": 3,
+  "baseline_parameters": 1644,
+  "category": "trained",
+  "count_buffers": false,
+  "digits": 11,
+  "entrypoint": "add3",
+  "floor_parameters": 19,
+  "grader_version": "1.2.0",
+  "operation": "add3",
+  "random_tests": 10000,
+  "seed": 41547038766320,
+  "spec_digest": "sha256:a6a2accf9e98ccfe511d97aa7673275c4d17bfed20a37b1c22011eebc04e9b9c",
+  "target_parameters": 44,
+  "task": "arith/add3-11d-trained",
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef",
+  "worker_timeout_sec": 1920.0,
+  "worst_parameters": 16440
+}

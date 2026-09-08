@@ -1,0 +1,127 @@
+{
+    "id": "b2ca2ec8-37df-4c23-8223-1eadd52c6a26",
+    "task_name": "arith/add-14d-trained",
+    "trial_name": "attempt-07__4evdEEA",
+    "trial_uri": "file://trajectories/openrouter-meta-muse-spark-1.2/iteration-07/output/jobs",
+    "task_id": {
+        "path": "trajectories/openrouter-meta-muse-spark-1.2/iteration-07/input"
+    },
+    "source": null,
+    "task_checksum": "69afbfd18f878b44298322219b0fc2ebb8a21d817dcad0410c10a8a5542e5650",
+    "config": {
+        "task": {
+            "path": "trajectories/openrouter-meta-muse-spark-1.2/iteration-07/input",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "attempt-07__4evdEEA",
+        "trials_dir": "trajectories/openrouter-meta-muse-spark-1.2/iteration-07/output/jobs/2026-08-31__14-42-26",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 1.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "openrouter/meta/muse-spark-1.2",
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "0.62.0"
+            },
+            "env": {
+                "LLM_API_KEY": "${LLM_API_KEY}",
+                "LLM_BASE_URL": "https://openrouter.ai/api/v1",
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://openrouter.ai/api/v1",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "env": {},
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "9e9f5588-8a98-4add-96d3-e2150766abe4"
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "0.62.0",
+        "model_info": {
+            "name": "meta/muse-spark-1.2",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4766368,
+        "n_cache_tokens": 2376906,
+        "n_output_tokens": 82973,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "scores": {
+            "accuracy": 1.0,
+            "edge_accuracy": 1.0,
+            "elapsed_seconds": 157.37727552093565,
+            "model_use_rate": 1.0,
+            "output_dependence": 1.0,
+            "parameter_efficiency": 0.20552079637016857,
+            "parameters": 1161.0,
+            "qualified": 1.0,
+            "score": 0.6027603981850843
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-31T14:42:28.429925Z",
+    "finished_at": "2026-08-31T18:28:54.576949Z",
+    "environment_setup": {
+        "started_at": "2026-08-31T14:42:28.438122Z",
+        "finished_at": "2026-08-31T14:42:29.544766Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-31T14:42:29.544820Z",
+        "finished_at": "2026-08-31T14:43:01.586993Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-31T14:43:01.587112Z",
+        "finished_at": "2026-08-31T18:25:51.142019Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-31T18:26:04.557510Z",
+        "finished_at": "2026-08-31T18:28:54.576937Z"
+    },
+    "step_results": null
+}

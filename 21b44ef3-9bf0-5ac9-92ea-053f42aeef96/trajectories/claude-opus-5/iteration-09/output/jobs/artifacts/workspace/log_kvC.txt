@@ -1,0 +1,27 @@
+config {'E': 256, 'C': 1, 'U': 10, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': False, 'heads': 2, 'fold': False, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': [], 'b1': True, 'b2': True, 'seed': 43}
+parameters per member: 54
+  [tie]    val_w>key_w  start gap max 64.1792 median 14.6486
+  [shrink] key_w.4=0  start residual max 22.9093 median 5.7531
+  [shrink] key_w.5=0  start residual max 27.9363 median 5.1210
+  [shrink] key_w.8=0  start residual max 27.2245 median 7.3955
+  [shrink] key_w.3=0  start residual max 39.2895 median 14.3381
+  [shrink] key_w.2=0  start residual max 29.9833 median 9.3852
+step   2500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 0.6673, 0.1921, 0.1842, 0.097] (107s)
+step   5000 loss 0.0085 best 1.00000 n8 1.00000 top5 [1.0, 0.9981, 0.9981, 0.9914, 0.9846] (254s)
+step   7500 loss 0.0285 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 0.9933, 0.9791] (400s)
+step  10000 loss 0.0000 best 0.99907 n8 1.00000 top5 [0.9991, 0.9991, 0.9991, 0.9991, 0.9991] (546s)
+step  12500 loss 0.0096 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 0.999, 0.9751, 0.9642] (692s)
+step  15000 loss 1.4191 best 0.16650 n8 0.28185 top5 [0.1665, 0.0278, 0.0248, 0.0218, 0.0208] (838s)
+step  17500 loss 0.0177 best 0.60433 n8 0.69877 top5 [0.6043, 0.4459, 0.4094, 0.3809, 0.3159] (985s)
+step  20000 loss 0.0032 best 1.00000 n8 1.00000 top5 [1.0, 0.9033, 0.7631, 0.535, 0.458] (1131s)
+step  22500 loss 0.0007 best 1.00000 n8 1.00000 top5 [1.0, 0.999, 0.998, 0.9949, 0.9898] (1278s)
+step  25000 loss 0.0006 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 0.999, 0.998] (1424s)
+step  27500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1570s)
+step  30000 loss 0.0000 best 0.99905 n8 1.00000 top5 [0.999, 0.999, 0.999, 0.999, 0.999] (1716s)
+saved h2_kvC.pt  n_par 54  best 0.999876  members>=0.999: 6/256
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final tie gap  0.000e+00

@@ -1,0 +1,2 @@
+- [Minimal adder: 11-parameter recipe](minimal-adder-11-param-recipe.md) — architecture and training tricks for the smallest exact 8-digit adder
+- [Minimal adder: task rules](minimal-adder-task-rules.md) — scoring formula, why 11 params is the floor, and the /workspace conduct constraint

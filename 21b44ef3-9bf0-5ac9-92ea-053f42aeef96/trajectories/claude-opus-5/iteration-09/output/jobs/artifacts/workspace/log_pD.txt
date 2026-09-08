@@ -1,0 +1,27 @@
+config {'E': 256, 'C': 1, 'U': 10, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': False, 'heads': 2, 'fold': False, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': [], 'b1': True, 'b2': True, 'seed': 44}
+parameters per member: 54
+  [shrink] key_w.4=0  start residual max 26.7237 median 4.7414
+  [shrink] val_w.4=0  start residual max 1.3956 median 0.3390
+  [shrink] key_w.5=0  start residual max 31.5822 median 6.0533
+  [shrink] val_w.5=0  start residual max 1.7587 median 0.5485
+  [shrink] key_w.8=0  start residual max 27.8789 median 7.3747
+  [shrink] val_w.8=0  start residual max 3.5443 median 2.0561
+step   2500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 0.999, 0.999, 0.998, 0.997] (147s)
+step   5000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (294s)
+step   7500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (440s)
+step  10000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (587s)
+step  12500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (734s)
+step  15000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (880s)
+step  17500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1027s)
+step  20000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1174s)
+step  22500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1321s)
+step  25000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1467s)
+step  27500 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1614s)
+step  30000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1698s)
+saved h2_pD.pt  n_par 54  best 1.000000  members>=0.999: 95/256
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00

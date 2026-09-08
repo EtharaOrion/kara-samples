@@ -1,0 +1,2390 @@
+[
+ {
+  "member": 0,
+  "weights": {
+   "code": [
+    6.05807083178921,
+    12.044419147915168,
+    18.087682552111026,
+    24.142375924824734,
+    30.1653402202477,
+    36.23138125425449,
+    42.261460472472436,
+    48.299180664008894,
+    54.35828928254518
+   ],
+   "knee": [
+    -397.2796730459168,
+    -441.0950675464351
+   ],
+   "fold": [
+    -9.608903079630952
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    17.270775571844958,
+    19.175544167752555
+   ],
+   "code": [
+    -0.0,
+    2.1069,
+    4.1888,
+    6.2905,
+    8.3963,
+    10.4909,
+    12.6006,
+    14.6977,
+    16.7975,
+    18.9048
+   ],
+   "code_step": 2.0819364347544433,
+   "code_nonlinearity": 0.05751805622234585,
+   "key_w": [
+    -30.277,
+    30.283
+   ],
+   "val_w": [
+    1.9763,
+    0.3478
+   ],
+   "lam": -2.7542803287506104,
+   "rb": 0.5661280704613038,
+   "carry_w": 0.9999999999999999,
+   "fold_w": -9.60890307963095
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.018423745408654213,
+    977
+   ],
+   "5": [
+    0.053624626249074936,
+    1007
+   ],
+   "11": [
+    0.016520893201231956,
+    1029
+   ],
+   "3": [
+    0.13198459148406982,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 2.2737367544323206e-12
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 2790.761630717147
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 1.0658141036401503e-14
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 365.6294620411809
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 2423.737306608054
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 2425.091493819036
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 2422.4182273137244
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 969.846177765698
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 0.08743893683890747
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 15.55451680258011
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": false,
+    "max_logit_drift": 39.74058494065571
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 8809.426404037695
+   }
+  ]
+ },
+ {
+  "member": 2,
+  "weights": {
+   "code": [
+    23.16818863081843,
+    47.682703588322966,
+    68.8701486781543,
+    94.4085898370954,
+    117.02697850476258,
+    142.36623392544092,
+    163.68364009202068,
+    189.08195225413354,
+    212.61616243345657
+   ],
+   "knee": [
+    -1571.9008008237313,
+    -1698.1643934927813
+   ],
+   "fold": [
+    -9.283285984031828
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    13.691131119493866,
+    14.790876982556238
+   ],
+   "code": [
+    -0.0,
+    1.6143,
+    3.3225,
+    4.7988,
+    6.5783,
+    8.1544,
+    9.92,
+    11.4054,
+    13.1751,
+    14.815
+   ],
+   "code_step": 1.708155824785409,
+   "code_nonlinearity": 0.2858571373425427,
+   "key_w": [
+    -27.047,
+    27.002
+   ],
+   "val_w": [
+    1.7942,
+    0.0697
+   ],
+   "lam": -3.028064727783203,
+   "rb": 0.3383384647887968,
+   "carry_w": 1.0,
+   "fold_w": -9.283285984031828
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.018423745408654213,
+    977
+   ],
+   "5": [
+    0.053624626249074936,
+    1007
+   ],
+   "11": [
+    0.016520893201231956,
+    1029
+   ],
+   "3": [
+    0.13198459148406982,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 1.5916157281026244e-12
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 1617.4684804370029
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 1.0658141036401503e-14
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 222.14649374495968
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 1395.3388236306082
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 1395.338782792074
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 1394.972177075372
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 138.71804560359578
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 699.2817739425554
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 1.2950510416555403
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 1.9460669841100753
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 19.77379457939503
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 173006.47786146493
+   }
+  ]
+ },
+ {
+  "member": 5,
+  "weights": {
+   "code": [
+    16.596521192775953,
+    30.99921441547388,
+    45.604916316238835,
+    60.74307475507726,
+    75.85962876346395,
+    90.98474067028162,
+    106.00067988717502,
+    120.50940301272284,
+    136.3203543380775
+   ],
+   "knee": [
+    -983.9145627858874,
+    -1097.0787904102262
+   ],
+   "fold": [
+    -8.482580709486205
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    14.724594457983404,
+    16.418133126830124
+   ],
+   "code": [
+    -0.0,
+    1.987,
+    3.7113,
+    5.4599,
+    7.2723,
+    9.0821,
+    10.8929,
+    12.6907,
+    14.4277,
+    16.3206
+   ],
+   "code_step": 1.7243270895920102,
+   "code_nonlinearity": 1.5621800433710753,
+   "key_w": [
+    -29.625,
+    29.627
+   ],
+   "val_w": [
+    2.067,
+    0.1197
+   ],
+   "lam": -3.6467819213867188,
+   "rb": -0.00682497934414003,
+   "carry_w": 1.0,
+   "fold_w": -8.482580709486205
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.9970845580101013,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.9970845580101013,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.018423745408654213,
+    977
+   ],
+   "5": [
+    0.053624626249074936,
+    1007
+   ],
+   "11": [
+    0.016520893201231956,
+    1029
+   ],
+   "3": [
+    0.13198459148406982,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 2.2737367544323206e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 199.60256681543453
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 1.0658141036401503e-14
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 266.261708339907
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 66.64511341919936
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 66.65890215384397
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 66.12167801352732
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": true,
+    "max_logit_drift": 3.0867701952828384
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 801.3494825633419
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 0.49953390117065055
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 1.8287087860622933
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 0.43327689937041214
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 69301.06202807589
+   }
+  ]
+ },
+ {
+  "member": 22,
+  "weights": {
+   "code": [
+    409.52118960577724,
+    775.1517031688394,
+    1156.612929157002,
+    1543.8208043983097,
+    1929.077094747577,
+    2315.9507245487125,
+    2696.700695093046,
+    3075.5420652588195,
+    3475.2561872910287
+   ],
+   "knee": [
+    -25359.50163340065,
+    -27629.886800268203
+   ],
+   "fold": [
+    -8.395684828220757
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    12.35586840965913,
+    13.46206445272765
+   ],
+   "code": [
+    -0.0,
+    1.5962,
+    3.0214,
+    4.5083,
+    6.0175,
+    7.5192,
+    9.0272,
+    10.5113,
+    11.9879,
+    13.5459
+   ],
+   "code_step": 1.425164446036623,
+   "code_nonlinearity": 0.8202373264869642,
+   "key_w": [
+    -33.767,
+    33.799
+   ],
+   "val_w": [
+    1.8378,
+    0.0039
+   ],
+   "lam": -3.4278321266174316,
+   "rb": 0.034829098167597675,
+   "carry_w": 1.0,
+   "fold_w": -8.395684828220757
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.018423745408654213,
+    977
+   ],
+   "5": [
+    0.053624626249074936,
+    1007
+   ],
+   "11": [
+    0.016520893201231956,
+    1029
+   ],
+   "3": [
+    0.13198459148406982,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 2.842170943040401e-14
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 3.410605131648481e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 335.99129101751004
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 3.552713678800501e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 183.97364079203498
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 151.96630769745457
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 152.0167644059256
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 151.5716249232977
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 236.73759756757227
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 597.9580842507603
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 0.8113071961999765
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 0.8149482970645465
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 1.8863774939525229
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 48206137.16890657
+   }
+  ]
+ },
+ {
+  "member": 23,
+  "weights": {
+   "code": [
+    -47.31886365782279,
+    -90.03753224234362,
+    -133.98317286768108,
+    -179.04691280590745,
+    -224.1604843994424,
+    -269.1028908833628,
+    -313.5367251278791,
+    -357.8361599307152,
+    -403.40675982723815
+   ],
+   "knee": [
+    2896.4054464256305,
+    3202.273470141768
+   ],
+   "fold": [
+    -8.356051697839757
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    -10.737750675255448,
+    -11.871685353582375
+   ],
+   "code": [
+    0.0,
+    -1.4034,
+    -2.6703,
+    -3.9737,
+    -5.3102,
+    -6.6482,
+    -7.9811,
+    -9.2989,
+    -10.6128,
+    -11.9643
+   ],
+   "code_step": -1.266956359319165,
+   "code_nonlinearity": 0.6662112427860158,
+   "key_w": [
+    -32.448,
+    32.483
+   ],
+   "val_w": [
+    -1.6726,
+    0.0297
+   ],
+   "lam": -3.314763307571411,
+   "rb": -0.05210499493357243,
+   "carry_w": 1.0,
+   "fold_w": -8.356051697839757
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.999028205871582,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.999028205871582,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.018423745408654213,
+    977
+   ],
+   "5": [
+    0.053624626249074936,
+    1007
+   ],
+   "11": [
+    0.016520893201231956,
+    1029
+   ],
+   "3": [
+    0.13198459148406982,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 2.8421709430404007e-13
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 3.410605131648481e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 367.9083670700734
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 5.329070518200751e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 146.0306795617694
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 221.78112381244205
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 221.87598242515034
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 220.81550044655478
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 528.8143408279584
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 504.5161472428819
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 11.453851296771745
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 11.911746689851498
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 2.5190482481965546
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 650376.8755830189
+   }
+  ]
+ },
+ {
+  "member": 24,
+  "weights": {
+   "code": [
+    -55036.79795058,
+    -99977.85521196798,
+    -142776.1755552354,
+    -189363.85802687187,
+    -236010.81409201847,
+    -282293.83188719297,
+    -327300.8881876481,
+    -370591.5868692316,
+    -423444.54197844595
+   ],
+   "knee": [
+    3070051.407389812,
+    3401565.9707099083
+   ],
+   "fold": [
+    -8.64377719863225
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    -13.07039412980043,
+    -14.481779617330856
+   ],
+   "code": [
+    0.0,
+    -1.8745,
+    -3.4052,
+    -4.8628,
+    -6.4496,
+    -8.0383,
+    -9.6147,
+    -11.1476,
+    -12.622,
+    -14.4221
+   ],
+   "code_step": -1.5306514532033364,
+   "code_nonlinearity": 2.448393429956779,
+   "key_w": [
+    -30.74,
+    30.71
+   ],
+   "val_w": [
+    -1.8873,
+    0.0
+   ],
+   "lam": -3.794020891189575,
+   "rb": 0.050987384163023425,
+   "carry_w": 1.0,
+   "fold_w": -8.64377719863225
+  },
+  "acc_parent": {
+   "8": [
+    0.9979528784751892,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.9970845580101013,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    0.9979528784751892,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.9970845580101013,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.018423745408654213,
+    977
+   ],
+   "5": [
+    0.053624626249074936,
+    1007
+   ],
+   "11": [
+    0.016520893201231956,
+    1029
+   ],
+   "3": [
+    0.13198459148406982,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 1.1368683772161603e-13
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 8.526512829121202e-14
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 100.67358824445068
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 3.552713678800501e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 210.12921020225076
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 109.4387915927922
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 109.45536404555457
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 108.70886078623477
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 766.2697033266792
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 715.2429743934877
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 0.01646984552326103
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 0.008216871844240359
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 2.9388146248779776
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 717234066614.7202
+   }
+  ]
+ },
+ {
+  "member": 6,
+  "weights": {
+   "code": [
+    -8.691891754990607,
+    -16.989354937717547,
+    -25.485755779257108,
+    -33.81965011395443,
+    -42.3457592207042,
+    -50.8057885048084,
+    -59.14030780310981,
+    -67.60065959881524,
+    -76.09187279450802
+   ],
+   "knee": [
+    542.8921517269129,
+    602.8373011417046
+   ],
+   "fold": [
+    -8.43421038219111
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    -8.835004406087684,
+    -9.81054928644484
+   ],
+   "code": [
+    0.0,
+    -1.1316,
+    -2.2119,
+    -3.318,
+    -4.403,
+    -5.5131,
+    -6.6145,
+    -7.6996,
+    -8.801,
+    -9.9065
+   ],
+   "code_step": -1.0802605791305455,
+   "code_nonlinearity": 0.2779791324116996,
+   "key_w": [
+    -30.32,
+    30.358
+   ],
+   "val_w": [
+    -1.4756,
+    0.1302
+   ],
+   "lam": -3.4348957538604736,
+   "rb": -0.04037518161218852,
+   "carry_w": 1.0,
+   "fold_w": -8.43421038219111
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.9970845580101013,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    0.9970845580101013,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.0,
+    977
+   ],
+   "5": [
+    0.0,
+    1007
+   ],
+   "11": [
+    0.0,
+    1029
+   ],
+   "3": [
+    0.0,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 2.2737367544323206e-13
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 3.979039320256561e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 343.4206917821816
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 3.552713678800501e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 95.3734242597034
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 247.9649449153099
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 294.932700060499
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 247.44935866671207
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 362.78905292148835
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 361.7250989306787
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 33.771981334899635
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 1.5176849776080417
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 1.679697645017768
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 25046.044897008927
+   }
+  ]
+ },
+ {
+  "member": 8,
+  "weights": {
+   "code": [
+    10.88782670276091,
+    20.822017162233088,
+    30.936704239187176,
+    41.151316052757885,
+    51.448111780872196,
+    61.911386461649165,
+    72.16329968475718,
+    81.94929425123736,
+    92.96027071887445
+   ],
+   "knee": [
+    -670.2764703260422,
+    -741.314869402687
+   ],
+   "fold": [
+    -8.288616934865129
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    13.94921782277516,
+    15.427607929501317
+   ],
+   "code": [
+    -0.0,
+    1.8127,
+    3.4666,
+    5.1506,
+    6.8512,
+    8.5656,
+    10.3076,
+    12.0144,
+    13.6437,
+    15.4769
+   ],
+   "code_step": 1.6539346702080202,
+   "code_nonlinearity": 0.8579716292812165,
+   "key_w": [
+    -33.131,
+    33.156
+   ],
+   "val_w": [
+    1.9666,
+    0.1665
+   ],
+   "lam": -3.38342547416687,
+   "rb": 0.03646127251707755,
+   "carry_w": 1.0,
+   "fold_w": -8.288616934865129
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.0,
+    977
+   ],
+   "5": [
+    0.0109235355630517,
+    1007
+   ],
+   "11": [
+    0.0,
+    1029
+   ],
+   "3": [
+    0.049132950603961945,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 3.410605131648481e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 315.77330690271975
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 3.552713678800501e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 245.95429912267576
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 69.81920007082084
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 69.8192025793245
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 69.81333579053108
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 276.143458137629
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 699.5957764030015
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": false,
+    "max_logit_drift": 21.695530972049
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 3.0153920099793368
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 2.170065798386986
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": false,
+    "max_logit_drift": 31034.753582693484
+   }
+  ]
+ },
+ {
+  "member": 11,
+  "weights": {
+   "code": [
+    13.873358928173102,
+    25.51496914030977,
+    37.11889235293878,
+    49.49524877450379,
+    61.78832063794085,
+    74.09113591033318,
+    86.17902974204988,
+    97.83456753217705,
+    110.83619741183223
+   ],
+   "knee": [
+    -812.1747102258756,
+    -887.7091117312206
+   ],
+   "fold": [
+    -8.293253237569452
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    14.098271273429427,
+    15.409447882957599
+   ],
+   "code": [
+    -0.0,
+    1.9266,
+    3.5432,
+    5.1547,
+    6.8734,
+    8.5805,
+    10.289,
+    11.9676,
+    13.5862,
+    15.3918
+   ],
+   "code_step": 1.6166627870949928,
+   "code_nonlinearity": 1.947508271514364,
+   "key_w": [
+    -34.092,
+    34.092
+   ],
+   "val_w": [
+    1.9777,
+    0.1389
+   ],
+   "lam": -3.533987522125244,
+   "rb": -0.028570974284615733,
+   "carry_w": 1.0,
+   "fold_w": -8.293253237569452
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.0,
+    977
+   ],
+   "5": [
+    0.009930486790835857,
+    1007
+   ],
+   "11": [
+    0.0,
+    1029
+   ],
+   "3": [
+    0.04527938365936279,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 1.9895196601282805e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 158.81955800893374
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 3.552713678800501e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 246.62839680027548
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 87.78482166344952
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 87.80842038433644
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 86.9869367971173
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 297.79695275260536
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 701.7386501360546
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": false,
+    "max_logit_drift": 28.576704804110477
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": false,
+    "max_logit_drift": 28.056996232717523
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": false,
+    "max_logit_drift": 1.7003389942241256
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": false,
+    "max_logit_drift": 45080.37149175916
+   }
+  ]
+ },
+ {
+  "member": 12,
+  "weights": {
+   "code": [
+    -8.999452631884168,
+    -17.10826814912221,
+    -25.518458335111667,
+    -34.03985516544271,
+    -42.514320755663185,
+    -51.051703193295054,
+    -59.535373765918614,
+    -67.82868176692513,
+    -76.60288427512855
+   ],
+   "knee": [
+    551.334169436447,
+    610.0244809924694
+   ],
+   "fold": [
+    -8.452608227778446
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    -10.110972115232311,
+    -11.187299570473852
+   ],
+   "code": [
+    0.0,
+    -1.3203,
+    -2.51,
+    -3.7439,
+    -4.9941,
+    -6.2374,
+    -7.4899,
+    -8.7346,
+    -9.9513,
+    -11.2386
+   ],
+   "code_step": -1.1896669878619999,
+   "code_nonlinearity": 0.6443903843393528,
+   "key_w": [
+    -33.415,
+    33.45
+   ],
+   "val_w": [
+    -1.6647,
+    0.1467
+   ],
+   "lam": -3.4341604709625244,
+   "rb": -0.034108885332539154,
+   "carry_w": 1.0,
+   "fold_w": -8.452608227778446
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.0,
+    977
+   ],
+   "5": [
+    0.0,
+    1007
+   ],
+   "11": [
+    0.0,
+    1029
+   ],
+   "3": [
+    0.0,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 2.8421709430404007e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 383.91443371270674
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 2.6645352591003757e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 128.36834749056547
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 255.4615981840088
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 278.39137047061564
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 254.08243711646202
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 465.2651799125398
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 463.32730582928855
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 55.01320378363454
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 57.006526108404216
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 1.6090998946159516
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": true,
+    "max_logit_drift": 22966.78090717289
+   }
+  ]
+ },
+ {
+  "member": 17,
+  "weights": {
+   "code": [
+    6.458936500961963,
+    12.403117250183875,
+    18.309247407477304,
+    24.37684918993314,
+    30.4584582505579,
+    36.58939794240101,
+    42.63640863135408,
+    48.53285857551194,
+    54.88387693063083
+   ],
+   "knee": [
+    -397.92286837332983,
+    -435.7096161150228
+   ],
+   "fold": [
+    -8.424811768412262
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    13.805076887303823,
+    15.11600671656364
+   ],
+   "code": [
+    -0.0,
+    1.7926,
+    3.4424,
+    5.0816,
+    6.7656,
+    8.4535,
+    10.1551,
+    11.8334,
+    13.4699,
+    15.2326
+   ],
+   "code_step": 1.6497643899782402,
+   "code_nonlinearity": 0.9010569176176944,
+   "key_w": [
+    -36.678,
+    36.7
+   ],
+   "val_w": [
+    1.7832,
+    0.2775
+   ],
+   "lam": -3.492739200592041,
+   "rb": 0.024842157480035206,
+   "carry_w": 1.0,
+   "fold_w": -8.424811768412262
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.0,
+    977
+   ],
+   "5": [
+    0.008937438018620014,
+    1007
+   ],
+   "11": [
+    0.0,
+    1029
+   ],
+   "3": [
+    0.03660886362195015,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 3.979039320256561e-13
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 328.01899701263505
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 3.552713678800501e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 237.44363730340217
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 90.54877596228803
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 90.57490576586284
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 89.99753705277308
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 295.4471399714111
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 617.7761366294069
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": false,
+    "max_logit_drift": 63.25051994555952
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": false,
+    "max_logit_drift": 63.7430251148466
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": true,
+    "max_logit_drift": 1.4118774247523334
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": false,
+    "max_logit_drift": 9682.948361323091
+   }
+  ]
+ },
+ {
+  "member": 18,
+  "weights": {
+   "code": [
+    -18.25606989703606,
+    -36.55907276365452,
+    -54.39426331069171,
+    -72.47135124892749,
+    -91.08424632270625,
+    -108.67790272553972,
+    -126.91274312373729,
+    -144.47237984592022,
+    -163.12187094079687
+   ],
+   "knee": [
+    1164.4267483090437,
+    1297.711760954267
+   ],
+   "fold": [
+    -9.683034059241603
+   ]
+  },
+  "diag": {
+   "knee_positions": [
+    -13.245617516100934,
+    -14.76176466807167
+   ],
+   "code": [
+    0.0,
+    -1.6613,
+    -3.3269,
+    -4.95,
+    -6.595,
+    -8.2888,
+    -9.8899,
+    -11.5493,
+    -13.1472,
+    -14.8444
+   ],
+   "code_step": -1.6656063644665358,
+   "code_nonlinearity": 0.1434351698097629,
+   "key_w": [
+    -33.575,
+    33.557
+   ],
+   "val_w": [
+    -1.884,
+    0.091
+   ],
+   "lam": -2.928929090499878,
+   "rb": -0.32994888631550917,
+   "carry_w": 1.0,
+   "fold_w": -9.683034059241603
+  },
+  "acc_parent": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_exact": {
+   "8": [
+    1.0,
+    977
+   ],
+   "5": [
+    1.0,
+    1007
+   ],
+   "11": [
+    1.0,
+    1029
+   ],
+   "3": [
+    1.0,
+    1038
+   ]
+  },
+  "acc_sub": {
+   "8": [
+    0.0,
+    977
+   ],
+   "5": [
+    0.0019860973116010427,
+    1007
+   ],
+   "11": [
+    0.0,
+    1029
+   ],
+   "3": [
+    0.011560693383216858,
+    1038
+   ]
+  },
+  "exact_moves": [
+   {
+    "step": "absorb query scale into keys",
+    "argmax_same": true,
+    "max_logit_drift": 1.1368683772161603e-12
+   },
+   {
+    "step": "absorb value bias into residual bias",
+    "argmax_same": true,
+    "max_logit_drift": 1.5916157281026244e-12
+   },
+   {
+    "step": "drop read-out temperature (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 1964.1813110569403
+   },
+   {
+    "step": "translate so code[0] = 0",
+    "argmax_same": true,
+    "max_logit_drift": 3.552713678800501e-15
+   },
+   {
+    "step": "scale so the carry write is 1.0 (arg-max invariant)",
+    "argmax_same": true,
+    "max_logit_drift": 227.63955706289698
+   },
+   {
+    "step": "flip bank units so both rise with the digit sum",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "order bank units by knee position",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "orient the value stream so a carry writes positively",
+    "argmax_same": true,
+    "max_logit_drift": 0.0
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 1736.5781077204767
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 1736.5796293518872
+   },
+   {
+    "step": "exact chain (other widths)",
+    "argmax_same": true,
+    "max_logit_drift": 1735.8614088608183
+   }
+  ],
+  "exact_moves_clean": true,
+  "sub_moves": [
+   {
+    "step": "bank gain -> 8.0 (knees held)",
+    "argmax_same": false,
+    "max_logit_drift": 822.2529421783893
+   },
+   {
+    "step": "value read-out -> (0,1)",
+    "argmax_same": false,
+    "max_logit_drift": 806.9771717903232
+   },
+   {
+    "step": "key read-out -> (-400,400)",
+    "argmax_same": true,
+    "max_logit_drift": 48.09617894432017
+   },
+   {
+    "step": "recency slope -> -12.0",
+    "argmax_same": true,
+    "max_logit_drift": 11.03646717194465
+   },
+   {
+    "step": "residual bias -> 0",
+    "argmax_same": false,
+    "max_logit_drift": 20.221852452134044
+   },
+   {
+    "step": "re-scale so the carry write is 1.0",
+    "argmax_same": false,
+    "max_logit_drift": 111246.97931390324
+   }
+  ]
+ }
+]

@@ -1,0 +1,8 @@
+an_8     606
+an_5     286
+an_4     200
+an_3     144
+[an_8] DONE params=606 best_comb=1.00000 u=1.00000 h=1.00000 -> /workspace/ck/an_8.pt
+[an_5] DONE params=286 best_comb=1.00000 u=1.00000 h=1.00000 -> /workspace/ck/an_5.pt
+[an_4] DONE params=200 best_comb=0.72205 u=0.89282 h=0.72205 -> /workspace/ck/an_4.pt
+[an_3] DONE params=144 best_comb=1.00000 u=1.00000 h=1.00000 -> /workspace/ck/an_3.pt

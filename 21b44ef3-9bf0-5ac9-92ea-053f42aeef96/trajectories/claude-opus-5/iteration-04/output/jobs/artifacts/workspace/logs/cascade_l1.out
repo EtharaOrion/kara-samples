@@ -1,0 +1,8 @@
+o_97        62  14000 steps
+o_75        50  14000 steps
+o_54        41  14000 steps
+o_43        35  14000 steps
+o_33        32  14000 steps
+o_32        29  14000 steps
+o_97          62 params  seed 0 sigma 0.30  acc 0.87000  (729s)
+o_97          62 params  seed 1 sigma 0.60  acc 0.87000  (598s)

@@ -1,0 +1,6 @@
+mw=0.0  mt=0.5: exact=  230/4096  slope median 1.031  lin-err median 0.0468  frac lin<0.15: 0.97  margin median 0.844
+mw=0.0  mt=0.8: exact=  230/4096  slope median 1.031  lin-err median 0.0468  frac lin<0.15: 0.97  margin median 0.844
+mw=1.0  mt=0.5: exact=  376/4096  slope median 1.036  lin-err median 0.0496  frac lin<0.15: 1.00  margin median 0.839
+mw=1.0  mt=0.8: exact=  381/4096  slope median 1.023  lin-err median 0.0403  frac lin<0.15: 0.99  margin median 0.869
+mw=4.0  mt=0.5: exact=  318/4096  slope median 1.041  lin-err median 0.0498  frac lin<0.15: 1.00  margin median 0.848
+mw=4.0  mt=0.8: exact=  168/4096  slope median 1.025  lin-err median 0.0354  frac lin<0.15: 0.88  margin median 0.896

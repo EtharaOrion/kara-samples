@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "architecture": "1 block: clamp bank -> 2-head causal self-attention (shared key/value) -> tied 1-D digit-code read-out",
+    "digits": "8",
+    "n_parameters": "11",
+    "name": "digit-pair-adder"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 11,
+  "state_dict_elements": 16,
+  "tensors": {
+    "alpha": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        3.0
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 9,
+      "shape": [
+        9
+      ],
+      "values": [
+        0.9538252353668213,
+        1.8876423835754395,
+        2.828805446624756,
+        3.7717952728271484,
+        4.713268280029297,
+        5.656259059906006,
+        6.597424030303955,
+        7.531238555908203,
+        8.489241600036621
+      ]
+    },
+    "code_pin": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        0.0
+      ]
+    },
+    "e1": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0
+      ]
+    },
+    "e2": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -9.693588256835938
+      ]
+    },
+    "kw": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        2000.0
+      ]
+    },
+    "lam": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -8.0
+      ]
+    },
+    "theta": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        8.587167739868164
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[d2_5_5] params/member = 82  E=256  steps=30000
+[d2_5_5] step      0 loss 2.7208 best_acc 0.0001 n>=99%   0 (1s, 1.5 it/s)
+[d2_5_5] step   2000 loss 0.7195 best_acc 0.0775 n>=99%   0 (66s, 30.2 it/s)
+[d2_5_5] step   4000 loss 0.3984 best_acc 0.2296 n>=99%   0 (132s, 30.4 it/s)
+[d2_5_5] step   6000 loss 0.2699 best_acc 0.4974 n>=99%   0 (197s, 30.4 it/s)
+[d2_5_5] step   8000 loss 0.2012 best_acc 0.6255 n>=99%   0 (263s, 30.5 it/s)
+[d2_5_5] step  10000 loss 0.1469 best_acc 0.6776 n>=99%   0 (328s, 30.5 it/s)
+[d2_5_5] step  12000 loss 0.1384 best_acc 0.7343 n>=99%   0 (393s, 30.5 it/s)
+[d2_5_5] step  14000 loss 0.1062 best_acc 0.7349 n>=99%   0 (459s, 30.5 it/s)
+[d2_5_5] step  16000 loss 0.0912 best_acc 0.7908 n>=99%   0 (525s, 30.5 it/s)
+[d2_5_5] step  18000 loss 0.0886 best_acc 0.8022 n>=99%   0 (590s, 30.5 it/s)
+[d2_5_5] step  20000 loss 0.0715 best_acc 0.8212 n>=99%   0 (655s, 30.5 it/s)
+[d2_5_5] step  22000 loss 0.0668 best_acc 0.8321 n>=99%   0 (721s, 30.5 it/s)
+[d2_5_5] step  24000 loss 0.0614 best_acc 0.8401 n>=99%   0 (786s, 30.5 it/s)
+[d2_5_5] step  26000 loss 0.0602 best_acc 0.8441 n>=99%   0 (852s, 30.5 it/s)
+[d2_5_5] step  28000 loss 0.0569 best_acc 0.8529 n>=99%   0 (917s, 30.5 it/s)
+[d2_5_5] step  29999 loss 0.0562 best_acc 0.8508 n>=99%   0 (982s, 30.5 it/s)
+[d2_5_5] FINAL best=0.851513 n>=99.9%=0 n>=99.99%=0

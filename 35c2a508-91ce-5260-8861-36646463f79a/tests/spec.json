@@ -1,0 +1,20 @@
+{
+  "accuracy_threshold": 0.99,
+  "arity": 3,
+  "baseline_parameters": 1644,
+  "category": "trained",
+  "count_buffers": false,
+  "digits": 9,
+  "entrypoint": "add3",
+  "floor_parameters": 19,
+  "grader_version": "1.2.0",
+  "operation": "add3",
+  "random_tests": 10000,
+  "seed": 230895311333348,
+  "spec_digest": "sha256:d52081892b29af52f05d8bd19acb25f6de616942680c4ffaee9c4b611a7eaf08",
+  "target_parameters": 36,
+  "task": "arith/add3-9d-trained",
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef",
+  "worker_timeout_sec": 1800.0,
+  "worst_parameters": 16440
+}

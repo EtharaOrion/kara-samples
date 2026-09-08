@@ -1,0 +1,13 @@
+config {'E': 128, 'C': 1, 'U': 3, 'U2': 6, 'tie': False, 'act': 'relu', 'act_t': 0.0, 'f_in': 'sign', 'f2_in': 'free', 'signs': [1.0, 1.0, 1.0], 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': True, 'heads': 2, 'fold': False, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': [[0, 0.0], [1, 1.0]], 'b1': True, 'b2': True, 'seed': 0}
+parameters per member: 18
+  [shrink] lam=-8.0  start residual max 2.9255 median 2.6007
+step   2000 loss 0.0000 best 0.99902 n8 1.00000 top5 [0.999, 0.999, 0.998, 0.998, 0.9892] (40s)
+step   4000 loss 0.2970 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (80s)
+step   6000 loss 12.1008 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (119s)
+step   8000 loss 0.6624 best 0.99124 n8 0.99519 top5 [0.9912, 0.9912, 0.9912, 0.9912, 0.9912] (158s)
+step  10000 loss 0.4361 best 0.99311 n8 1.00000 top5 [0.9931, 0.9931, 0.9931, 0.9931, 0.9931] (197s)
+step  12000 loss 5.4782 best 0.99412 n8 0.99596 top5 [0.9941, 0.9941, 0.9941, 0.9941, 0.9941] (237s)
+step  14000 loss 5.5116 best 0.98603 n8 0.99693 top5 [0.986, 0.986, 0.986, 0.986, 0.986] (276s)
+step  16000 loss 5.5269 best 0.99140 n8 0.99704 top5 [0.9914, 0.9914, 0.9914, 0.9914, 0.9914] (307s)
+saved lam8.pt  n_par 18  best 0.992763  members>=0.999: 0/128
+  final residual 0.000e+00

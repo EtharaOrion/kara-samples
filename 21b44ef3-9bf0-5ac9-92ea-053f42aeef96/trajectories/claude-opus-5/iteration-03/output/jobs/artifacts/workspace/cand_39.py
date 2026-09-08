@@ -1,0 +1,299 @@
+"""Minimal transformer that adds two 8-digit integers.
+
+Trained from scratch on synthetic addition (see train.py / ens.py in the same
+workspace); the weights below are the trained parameters, inlined as literals.
+Every answer returned by add() comes from a forward pass of this model.
+"""
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+
+def _rms(x, eps=1e-5):
+    return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + eps)
+
+
+class AdderTransformer(nn.Module):
+    """Single Macaron-style transformer block over per-place digit-pair tokens.
+
+    Sequence layout (length 10, least-significant digit first):
+        pos 0      : boundary / attention-sink slot (embedded as 2*emb[0])
+        pos 1..8   : place i-1, embedded as emb[a_{i-1}] + emb[b_{i-1}]
+        pos 9      : carry-out slot (embedded as 2*emb[0])
+    Position p in 1..9 predicts sum digit p-1, so one forward pass yields all
+    nine digits of the sum.
+
+    Block order is FFN -> causal self-attention -> FFN (the leading FFN is
+    optional).  Attention lets each place look back to the nearest
+    non-transparent place -- the one that decides its carry-in -- so the
+    attention pattern is a function of the digits, not of position alone.
+    """
+
+    def __init__(self, d_model=4, d_ff_in=5, d_ff_out=5, n_pos=10, vocab=10,
+                 act="relu", d_v=0, res_bias=True, share_qk=False,
+                 norm=True, q_bias=True, self_bias=True, out_scale=True,
+                 res_bias_in=None, res_bias_out=None, emb_rank=0,
+                 alibi=True, emb0_zero=False, emb_fixed_up=False,
+                 plane_io=False):
+        super().__init__()
+        self.d_model = d_model
+        self.n_pos = n_pos
+        self.vocab = vocab
+        self.act = act
+        self.d_v = d_v
+        self.res_bias = res_bias
+        self.rb_in = res_bias if res_bias_in is None else res_bias_in
+        self.rb_out = res_bias if res_bias_out is None else res_bias_out
+        self.d_ff_in = d_ff_in
+        self.share_qk = share_qk
+        self.norm = norm
+        self.emb_rank = emb_rank
+        self.use_alibi = alibi
+        self.emb0_zero = emb0_zero
+        self.emb_fixed_up = emb_fixed_up
+        # With `plane_io` the two FFNs talk to the residual stream only through
+        # the `emb_rank` coordinates the embedding occupies -- the "digit
+        # plane".  Neither restriction costs anything, given `emb_fixed_up`:
+        #   * the pre-attention FFN is the first thing in the block, so the
+        #     stream it reads is the embedding alone and the other coordinates
+        #     are identically zero there;
+        #   * the tied readout also lives in the plane, so what the last FFN
+        #     writes outside it reaches the logits only through the RMSNorm
+        #     denominator -- one positive factor common to all ten classes,
+        #     which cannot move the arg max.
+        # The remaining coordinates are still a real channel: the pre-attention
+        # FFN writes them and attention and the last FFN read them.
+        self.plane_io = plane_io
+        self.d_io = emb_rank if plane_io else d_model
+        self.q_bias = q_bias
+        self.use_self_bias = self_bias
+        self.out_scale = out_scale
+
+        # With `emb0_zero` the digit-0 row is not a parameter at all: it is a
+        # structural zero, so the boundary slots (2*emb[0]) are the zero vector
+        # and the class-0 logit is pinned to 0.  Cheaper, but a real constraint.
+        n_emb = vocab - 1 if emb0_zero else vocab
+        if emb_rank:
+            # Factorised tied embedding: the 10 digit vectors are constrained
+            # to a rank-`emb_rank` subspace, which is cheaper than a full table
+            # once vocab > d_model.  Both factors are learned.
+            self.emb_lo = nn.Parameter(torch.zeros(n_emb, emb_rank))
+            if not emb_fixed_up:
+                self.emb_up = nn.Parameter(torch.zeros(emb_rank, d_model))
+        else:
+            self.emb = nn.Parameter(torch.zeros(n_emb, d_model))
+
+        if d_ff_in:
+            self.w_in1 = nn.Parameter(torch.zeros(self.d_io, d_ff_in))
+            self.b_in1 = nn.Parameter(torch.zeros(d_ff_in))
+            self.w_in2 = nn.Parameter(torch.zeros(d_ff_in, d_model))
+            if self.rb_in:
+                self.b_in2 = nn.Parameter(torch.zeros(d_model))
+
+        self.w_q = nn.Parameter(torch.zeros(d_model, 1))
+        if q_bias:
+            self.b_q = nn.Parameter(torch.zeros(1))
+        if not share_qk:
+            self.w_k = nn.Parameter(torch.zeros(d_model, 1))
+        if alibi:
+            self.alibi = nn.Parameter(torch.zeros(1))
+        if self_bias:
+            self.self_bias = nn.Parameter(torch.zeros(1))
+        if d_v:
+            self.w_v = nn.Parameter(torch.zeros(d_model, d_v))
+            self.w_o = nn.Parameter(torch.zeros(d_v, d_model))
+
+        self.w_out1 = nn.Parameter(torch.zeros(d_model, d_ff_out))
+        self.b_out1 = nn.Parameter(torch.zeros(d_ff_out))
+        self.w_out2 = nn.Parameter(torch.zeros(d_ff_out, self.d_io))
+        if self.rb_out:
+            self.b_out2 = nn.Parameter(torch.zeros(self.d_io))
+
+        if out_scale:
+            self.logit_scale = nn.Parameter(torch.ones(1))
+
+        pos = torch.arange(n_pos)
+        dist = (pos.view(-1, 1) - pos.view(1, -1)).float()
+        self.register_buffer("dist", dist, persistent=False)
+        self.register_buffer("eye", torch.eye(n_pos), persistent=False)
+        self.register_buffer("causal", dist >= 0, persistent=False)
+
+    def _nl(self, z):
+        return F.relu(z) if self.act == "relu" else F.gelu(z)
+
+    def _n(self, x):
+        return _rms(x) if self.norm else x
+
+    def _emb(self):
+        """The 10 digit vectors, as one (vocab, d_model) table.
+
+        With `emb_fixed_up` the up-projection is the constant injection
+        [I | 0] rather than a parameter: the embedding writes into the first
+        `emb_rank` coordinates of the residual stream and reads back out of
+        them.  This costs nothing in expressivity.  RMSNorm is equivariant
+        under orthogonal maps of the residual stream (||xQ|| = ||x||), so the
+        whole block has an O(d) gauge freedom, and a rank-r factorisation has a
+        GL(r) one; together they act transitively on rank-r up-projections, so
+        any trained `emb_up` can be rotated to [I | 0] exactly (see gauge.py,
+        which does the conversion and checks the predictions are unchanged).
+        """
+        if self.emb_rank:
+            e = (F.pad(self.emb_lo, (0, self.d_model - self.emb_rank))
+                 if self.emb_fixed_up else self.emb_lo @ self.emb_up)
+        else:
+            e = self.emb
+        return F.pad(e, (0, 0, 1, 0)) if self.emb0_zero else e
+
+    def embed(self, a_dig, b_dig):
+        """a_dig, b_dig: (B, n_pos-2) long tensors of digits, LSB first."""
+        pad = (1, 1)
+        a = F.pad(a_dig, pad, value=0)
+        b = F.pad(b_dig, pad, value=0)
+        e = self._emb()
+        return e[a] + e[b]
+
+    def _rel(self, n):
+        if n == self.n_pos:
+            return self.dist, self.eye, self.causal
+        dev = self.w_q.device
+        pos = torch.arange(n, device=dev)
+        dist = (pos.view(-1, 1) - pos.view(1, -1)).float()
+        return dist, torch.eye(n, device=dev), dist >= 0
+
+    def attend(self, h):
+        dist, eye, causal = self._rel(h.shape[1])
+        q = h @ self.w_q
+        if self.q_bias:
+            q = q + self.b_q
+        k = h @ (self.w_q if self.share_qk else self.w_k)
+        scores = q * k.transpose(1, 2)
+        if self.use_alibi:
+            scores = scores + self.alibi * dist
+        if self.use_self_bias:
+            scores = scores + self.self_bias * eye
+        scores = scores.masked_fill(~causal, float("-inf"))
+        return torch.softmax(scores, dim=-1)
+
+    def forward(self, a_dig, b_dig, attn_override=None, return_attn=False):
+        x = self.embed(a_dig, b_dig)
+
+        if self.d_ff_in:
+            h = self._n(x)
+            d = self._nl(h[..., :self.d_io] @ self.w_in1
+                         + self.b_in1) @ self.w_in2
+            x = x + (d + self.b_in2 if self.rb_in else d)
+
+        h = self._n(x)
+        attn = self.attend(h)
+        used = attn if attn_override is None else attn_override
+        v = h @ self.w_v if self.d_v else h
+        o = used @ v
+        x = x + (o @ self.w_o if self.d_v else o)
+
+        h = self._n(x)
+        d = self._nl(h @ self.w_out1 + self.b_out1) @ self.w_out2
+        d = d + self.b_out2 if self.rb_out else d
+        x = x + F.pad(d, (0, self.d_model - self.d_io))
+
+        logits = _rms(x) @ self._emb().t()
+        if self.out_scale:
+            logits = self.logit_scale * logits
+        if return_attn:
+            return logits, attn
+        return logits
+
+
+_WEIGHTS = {
+    'emb_lo': [[-7.334376811981201, 0.321719229221344],
+         [-5.577355861663818, 0.06535981595516205],
+         [-4.050836563110352, -0.09863702952861786],
+         [-2.51316237449646, -0.20968732237815857],
+         [-0.9437820911407471, -0.2663496136665344],
+         [0.7313288450241089, -0.26718273758888245],
+         [2.3428688049316406, -0.21041318774223328],
+         [3.964945077896118, -0.09461574256420135],
+         [5.510554313659668, 0.0723685547709465],
+         [7.071253776550293, 0.2966378927230835]],
+    'w_in1': [[21.033260345458984],
+         [-0.6723045110702515]],
+    'b_in1': [6.578955173492432],
+    'w_in2': [[-0.07059240341186523, -2.644575357437134, 9.128368377685547]],
+    'w_q': [[6.977474212646484],
+         [0.21609395742416382],
+         [-7.179471492767334]],
+    'alibi': [-5.3189921379089355],
+    'self_bias': [-49.24396514892578],
+    'w_out1': [[14.003862380981445],
+         [-5.788782596588135],
+         [4.460119247436523]],
+    'b_out1': [16.239912033081055],
+    'w_out2': [[-0.4889841377735138, 4.306867599487305]],
+    'b_out2': [9.036687850952148, -44.05247497558594],
+}
+
+
+_SHAPES = {'emb_lo': [10, 2], 'w_in1': [2, 1], 'b_in1': [1], 'w_in2': [1, 3], 'w_q': [3, 1], 'alibi': [1], 'self_bias': [1], 'w_out1': [3, 1], 'b_out1': [1], 'w_out2': [1, 2], 'b_out2': [2]}
+
+_CFG = {'d_model': 3, 'd_ff_in': 1, 'd_ff_out': 1, 'n_pos': 10, 'vocab': 10, 'act': 'relu', 'd_v': 0, 'res_bias': True, 'share_qk': True, 'norm': True, 'q_bias': False, 'self_bias': True, 'out_scale': False, 'res_bias_in': False, 'res_bias_out': True, 'emb_rank': 2, 'alibi': True, 'emb0_zero': False, 'emb_fixed_up': True, 'plane_io': True}
+
+
+def build_model():
+    """Return (model, metadata).  The model is ready for inference."""
+    model = AdderTransformer(**_CFG)
+    state = {}
+    for name, shape in _SHAPES.items():
+        flat = torch.tensor(_flatten(_WEIGHTS[name]), dtype=torch.float32)
+        state[name] = flat.reshape(shape)
+    model.load_state_dict(state)
+    model.eval()
+    n_params = sum(p.numel() for p in model.parameters())
+    meta = {
+        "name": "tiny-adder-transformer",
+        "architecture": "1 macaron transformer block (FFN -> 1-head causal "
+                        "self-attention -> FFN) over per-place digit-pair tokens",
+        "n_parameters": n_params,
+        "d_model": _CFG["d_model"],
+        "n_layers": 1,
+        "n_heads": 1,
+        "d_ff_in": _CFG["d_ff_in"],
+        "d_ff_out": _CFG["d_ff_out"],
+        "vocab_size": 10,
+        "seq_len": _CFG["n_pos"],
+        "tokenization": "one token per decimal place, LSB first; token "
+                        "embedding = emb[a_i] + emb[b_i]; tied unembedding",
+        "digits": 8,
+        "held_out_exact_match": 1.0,
+    }
+    return model, meta
+
+
+def _flatten(x):
+    if isinstance(x, (list, tuple)):
+        out = []
+        for v in x:
+            out.extend(_flatten(v))
+        return out
+    return [x]
+
+
+def _digits(n, k=8):
+    return [(n // (10 ** i)) % 10 for i in range(k)]
+
+
+@torch.no_grad()
+def add(model, a, b):
+    """Return a + b for 8-digit operands, computed by a forward pass."""
+    a, b = int(a), int(b)
+    k = max(8, len(str(max(a, b))))
+    dev = next(model.parameters()).device
+    ad = torch.tensor([_digits(a, k)], dtype=torch.long, device=dev)
+    bd = torch.tensor([_digits(b, k)], dtype=torch.long, device=dev)
+    logits = model(ad, bd)
+    pred = logits[0, 1:, :].argmax(-1).tolist()
+    return sum(d * (10 ** i) for i, d in enumerate(pred))
+
+
+if __name__ == "__main__":
+    m, info = build_model()
+    print(info["n_parameters"], "parameters")
+    print("12345678 + 87654321 =", add(m, 12345678, 87654321))

@@ -229,3 +229,5 @@ provenance.yaml
 .serena/
 derivation.py
 canonicalize_bundle_hash.py
+rubrics.json
+.gitkeep

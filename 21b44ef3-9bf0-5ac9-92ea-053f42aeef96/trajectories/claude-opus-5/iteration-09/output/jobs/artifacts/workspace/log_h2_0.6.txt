@@ -1,0 +1,7 @@
+  [init] no source for w_o2; small random init (scale 0.05)
+config {'E': 256, 'C': 1, 'U': 6, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': False, 'heads': 2, 'fold': True, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': (), 'b1': True, 'b2': True, 'seed': 6}
+parameters per member: 56
+  [shrink] O2=0  start residual 8.3948
+step   5000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 0.999] (210s)
+step  10000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (388s)
+step  15000 loss 1.7519 best 0.00000 n8 0.00202 top5 [0.0, 0.0, 0.0, 0.0, 0.0] (573s)

@@ -1,0 +1,24 @@
+free scalars / member = 34
+phase1: 72/16384 exact on n=1 (144s)
+  p2 step   250 loss 2.4775 max 0.1091 #>=.999 0
+  p2 step   500 loss 2.0256 max 0.6724 #>=.999 0
+  p2 step   750 loss 1.7350 max 0.9404 #>=.999 0
+  p2 step  1000 loss 1.9285 max 0.9839 #>=.999 0
+  p2 step  1250 loss 1.6702 max 0.9919 #>=.999 0
+  p2 step  1500 loss 1.8922 max 0.9963 #>=.999 0
+  p2 step  1750 loss 1.6486 max 0.9998 #>=.999 8
+  p2 step  2000 loss 1.8456 max 1.0000 #>=.999 62
+  p2 step  2250 loss 1.6035 max 1.0000 #>=.999 163
+  p2 step  2500 loss 1.8045 max 1.0000 #>=.999 311
+  p2 step  2750 loss 1.5477 max 1.0000 #>=.999 426
+  p2 step  3000 loss 1.7652 max 1.0000 #>=.999 570
+  p2 step  3250 loss 1.5365 max 1.0000 #>=.999 703
+  p2 step  3500 loss 1.7402 max 1.0000 #>=.999 795
+  p2 step  3750 loss 1.5273 max 1.0000 #>=.999 827
+  p2 step  4000 loss 1.7450 max 1.0000 #>=.999 849
+  p2 step  4250 loss 1.5138 max 1.0000 #>=.999 857
+  p2 step  4500 loss 1.7408 max 1.0000 #>=.999 859
+  p2 step  4750 loss 1.5092 max 1.0000 #>=.999 860
+  p2 step  5000 loss 1.7379 max 1.0000 #>=.999 860
+phase2: max 1.00000 #=1.0 547 #>=.999 860 (379s)
+saved parent.pt with 860 members

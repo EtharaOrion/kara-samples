@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "architecture": "1 macaron transformer block (FFN -> 1-head causal self-attention -> FFN) over per-place digit-pair tokens",
+    "d_ff_in": "1",
+    "d_ff_out": "1",
+    "d_model": "3",
+    "digits": "8",
+    "held_out_exact_match": "1.0",
+    "n_heads": "1",
+    "n_layers": "1",
+    "n_parameters": "37",
+    "name": "tiny-adder-transformer",
+    "seq_len": "10",
+    "tokenization": "one token per decimal place, LSB first; token embedding = emb[a_i] + emb[b_i]; tied unembedding",
+    "vocab_size": "10"
+  },
+  "modules": [
+    "AdderTransformer"
+  ],
+  "parameter_elements": 37,
+  "state_dict_elements": 37,
+  "tensors": {
+    "alibi": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -5.3189921379089355
+      ]
+    },
+    "b_in1": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        0.31262850761413574
+      ]
+    },
+    "b_out1": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        16.239912033081055
+      ]
+    },
+    "b_out2": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        10.439444541931152,
+        43.74128723144531
+      ]
+    },
+    "emb_lo": {
+      "dtype": "torch.float32",
+      "numel": 20,
+      "shape": [
+        10,
+        2
+      ],
+      "values": [
+        -7.340910911560059,
+        -0.087239570915699,
+        -5.576596736907959,
+        0.11285645514726639,
+        -4.045617580413818,
+        0.22800102829933167,
+        -2.505180597305298,
+        0.2898696959018707,
+        -0.934791088104248,
+        0.2963652014732361,
+        0.73949134349823,
+        0.24368217587471008,
+        2.3483951091766357,
+        0.135456845164299,
+        3.9659438133239746,
+        -0.03210287168622017,
+        5.505429267883301,
+        -0.2483803778886795,
+        7.058167457580566,
+        -0.5223957896232605
+      ]
+    },
+    "self_bias": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -49.24396514892578
+      ]
+    },
+    "w_in2": {
+      "dtype": "torch.float32",
+      "numel": 3,
+      "shape": [
+        1,
+        3
+      ],
+      "values": [
+        0.29317155480384827,
+        55.67150115966797,
+        192.097412109375
+      ]
+    },
+    "w_out1": {
+      "dtype": "torch.float32",
+      "numel": 3,
+      "shape": [
+        3,
+        1
+      ],
+      "values": [
+        14.18165111541748,
+        5.338438510894775,
+        4.460119247436523
+      ]
+    },
+    "w_out2": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        1,
+        2
+      ],
+      "values": [
+        -0.6263284683227539,
+        -4.2890472412109375
+      ]
+    },
+    "w_q": {
+      "dtype": "torch.float32",
+      "numel": 3,
+      "shape": [
+        3,
+        1
+      ],
+      "values": [
+        6.9670090675354,
+        -0.43889692425727844,
+        -7.179471492767334
+      ]
+    }
+  }
+}

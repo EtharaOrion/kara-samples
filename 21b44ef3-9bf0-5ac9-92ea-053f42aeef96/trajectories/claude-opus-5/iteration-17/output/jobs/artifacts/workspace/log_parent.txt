@@ -1,0 +1,19 @@
+free scalars / member = 35
+step    500  loss 2.0835  best-acc max 0.0139  #>=0.999    0  7s
+step   1000  loss 1.8142  best-acc max 0.0273  #>=0.999    0  14s
+step   1500  loss 1.7841  best-acc max 0.0284  #>=0.999    0  20s
+step   2000  loss 1.7792  best-acc max 0.0291  #>=0.999    0  27s
+step   2500  loss 1.7669  best-acc max 0.0409  #>=0.999    0  33s
+step   3000  loss 1.7488  best-acc max 0.0409  #>=0.999    0  40s
+step   3500  loss 1.7432  best-acc max 0.0409  #>=0.999    0  47s
+step   4000  loss 1.7560  best-acc max 0.0409  #>=0.999    0  53s
+step   4500  loss 1.7538  best-acc max 0.0409  #>=0.999    0  60s
+step   5000  loss 1.7580  best-acc max 0.0409  #>=0.999    0  67s
+step   5500  loss 1.7508  best-acc max 0.0409  #>=0.999    0  73s
+step   6000  loss 1.7478  best-acc max 0.0409  #>=0.999    0  80s
+step   6500  loss 1.7473  best-acc max 0.0409  #>=0.999    0  87s
+step   7000  loss 1.7436  best-acc max 0.0409  #>=0.999    0  93s
+step   7500  loss 1.7519  best-acc max 0.0409  #>=0.999    0  100s
+step   8000  loss 1.7396  best-acc max 0.0409  #>=0.999    0  107s
+top-10 held-out exact: [0.04089, 0.03369, 0.03052, 0.03027, 0.02942, 0.02905, 0.02905, 0.02881, 0.02759, 0.02747]
+saved parent.pt

@@ -1,0 +1,15 @@
+g43_strict    37  16000 steps
+g43_alifix    36  16000 steps
+g43_cfix1    35  16000 steps
+g43_f1id    31  16000 steps
+g43_f2id    28  16000 steps
+g43_cfix2    27  16000 steps
+g43_strict    37 params  seed 0 sigma 0.30  acc 1.00000  (810s)
+g43_alifix    36 params  seed 0 sigma 0.30  acc 0.99329  (679s)
+g43_alifix    36 params  seed 1 sigma 0.60  acc 0.96704  (440s)
+g43_alifix    36 params  seed 2 sigma 1.00  acc 0.97351  (375s)
+g43_cfix1     35 params  seed 0 sigma 0.30  acc 0.99329  (442s)
+g43_cfix1     35 params  seed 1 sigma 0.60  acc 0.99329  (213s)
+g43_cfix1     35 params  seed 2 sigma 1.00  acc 0.99329  (396s)
+g43_f1id      31 params  seed 0 sigma 0.30  acc 0.03894  (461s)
+g43_f1id      31 params  seed 1 sigma 0.60  acc 0.01392  (458s)

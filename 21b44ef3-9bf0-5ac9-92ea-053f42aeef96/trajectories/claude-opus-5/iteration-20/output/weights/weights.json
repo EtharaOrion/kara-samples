@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "architecture": "1-block transformer, scalar residual, 2 heads over 1 key/value stream",
+    "decoding": "one forward pass; position p reads out answer digit p-1",
+    "name": "digit-pair-adder",
+    "operand_range": "[10000000, 99999999]",
+    "parameters": "12",
+    "tokenization": "one token per decimal place, least significant first, plus a (0,0) pad at each end"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 17,
+  "tensors": {
+    "bank_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        8.0
+      ]
+    },
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0000375509262085
+      ]
+    },
+    "code01": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 8,
+      "shape": [
+        8
+      ],
+      "values": [
+        2.0013251304626465,
+        3.0014944076538086,
+        4.001891613006592,
+        5.002549171447754,
+        6.002996921539307,
+        7.003268241882324,
+        8.00351333618164,
+        9.004511833190918
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -10.004655838012695
+      ]
+    },
+    "key_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        400.0
+      ]
+    },
+    "knee": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        8.357324600219727,
+        9.228425979614258
+      ]
+    },
+    "lam": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -12.0
+      ]
+    }
+  }
+}

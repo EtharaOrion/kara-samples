@@ -1,0 +1,9 @@
+g32_strict    30  16000 steps
+g32_alifix    29  16000 steps
+g32_cfix1    28  16000 steps
+g32_f1id    25  16000 steps
+g32_f2id    23  16000 steps
+g32_cfix2    22  16000 steps
+g32_strict    30 params  seed 0 sigma 0.30  acc 1.00000  (219s)
+g32_alifix    29 params  seed 0 sigma 0.30  acc 0.86316  (212s)
+g32_alifix    29 params  seed 1 sigma 0.60  acc 0.84570  (213s)

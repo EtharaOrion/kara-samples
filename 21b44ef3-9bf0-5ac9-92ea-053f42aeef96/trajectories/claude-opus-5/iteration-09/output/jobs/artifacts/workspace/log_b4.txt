@@ -1,0 +1,22 @@
+config {'E': 128, 'C': 1, 'U': 5, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': True, 'heads': 2, 'fold': False, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': [], 'b1': True, 'b2': True, 'seed': 94}
+parameters per member: 29
+  [shift]  code_free@0=0  start residual max 3.2523
+  [shrink] key_w.0=0  start residual max 32.5152 median 25.9642
+  [shrink] lam=-4.0  start residual max 2.3012 median 1.2089
+step   2000 loss 0.0001 best 1.00000 n8 1.00000 top5 [1.0, 0.8895, 0.2267, 0.1133, 0.0848] (64s)
+step   4000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 0.4409] (128s)
+step   6000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 0.9904, 0.6788, 0.6184] (189s)
+step   8000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 0.7698] (239s)
+step  10000 loss 0.0004 best 1.00000 n8 1.00000 top5 [1.0, 0.999, 0.999, 0.8169, 0.6654] (288s)
+step  12000 loss 0.0001 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 0.3994, 0.2907] (338s)
+step  14000 loss 0.0075 best 0.91023 n8 0.92857 top5 [0.9102, 0.2307, 0.1461, 0.0898, 0.0772] (388s)
+step  16000 loss 1.9528 best 0.07468 n8 0.16157 top5 [0.0747, 0.0349, 0.0339, 0.0272, 0.0242] (438s)
+step  18000 loss 1.9528 best 0.01382 n8 0.04743 top5 [0.0138, 0.0079, 0.003, 0.003, 0.0019] (488s)
+step  20000 loss 1.9563 best 0.00098 n8 0.00668 top5 [0.001, 0.001, 0.001, 0.001, 0.001] (538s)
+step  22000 loss 1.9292 best 0.00097 n8 0.00706 top5 [0.001, 0.0, 0.0, 0.0, 0.0] (588s)
+step  24000 loss 1.9335 best 0.00098 n8 0.00682 top5 [0.001, 0.001, 0.0, 0.0, 0.0] (638s)
+step  26000 loss 1.9451 best 0.00000 n8 0.00390 top5 [0.0, 0.0, 0.0, 0.0, 0.0] (688s)
+step  28000 loss 2.0390 best 0.00000 n8 0.00398 top5 [0.0, 0.0, 0.0, 0.0, 0.0] (738s)
+step  30000 loss 2.0314 best 0.00000 n8 0.00200 top5 [0.0, 0.0, 0.0, 0.0, 0.0] (787s)
+step  32000 loss 2.0367 best 0.00000 n8 0.00100 top5 [0.0, 0.0, 0.0, 0.0, 0.0] (848s)
+step  34000 loss 2.0447 best 0.00000 n8 0.00400 top5 [0.0, 0.0, 0.0, 0.0, 0.0] (911s)

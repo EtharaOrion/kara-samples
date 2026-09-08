@@ -1,0 +1,8 @@
+p1_8_16 615
+p1_8_16r 615
+p1_16_32 2239
+p2_8_16 634
+[p1_8_16] DONE params=615 best_comb=1.00000 u=1.00000 h=1.00000 -> /workspace/ck/p1_8_16.pt
+[p1_8_16r] DONE params=615 best_comb=1.00000 u=1.00000 h=1.00000 -> /workspace/ck/p1_8_16r.pt
+[p1_16_32] DONE params=2239 best_comb=1.00000 u=1.00000 h=1.00000 -> /workspace/ck/p1_16_32.pt
+[p2_8_16] DONE params=634 best_comb=1.00000 u=1.00000 h=1.00000 -> /workspace/ck/p2_8_16.pt

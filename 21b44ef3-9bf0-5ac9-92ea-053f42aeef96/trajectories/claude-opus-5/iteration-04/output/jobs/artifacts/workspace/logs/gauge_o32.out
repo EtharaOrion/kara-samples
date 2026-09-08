@@ -1,0 +1,12 @@
+og32_strict    28  16000 steps
+og32_alifix    27  16000 steps
+og32_cfix1    26  16000 steps
+og32_f1id    23  16000 steps
+og32_f2id    21  16000 steps
+og32_cfix2    20  16000 steps
+og32_strict    28 params  seed 0 sigma 0.30  acc 1.00000  (202s)
+og32_alifix    27 params  seed 0 sigma 0.30  acc 1.00000  (202s)
+og32_cfix1    26 params  seed 0 sigma 0.30  acc 1.00000  (201s)
+og32_f1id     23 params  seed 0 sigma 0.30  acc 1.00000  (195s)
+og32_f2id     21 params  seed 0 sigma 0.30  acc 1.00000  (192s)
+og32_cfix2    20 params  seed 0 sigma 0.30  acc 0.00513  (197s)

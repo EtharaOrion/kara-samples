@@ -1,0 +1,14 @@
+cs_h        70  12000 steps
+cs_75       56  14000 steps
+cs_54       45  14000 steps
+cs_43       38  14000 steps
+cs_33       34  14000 steps
+cs_32       31  14000 steps
+cs_h          70 params  seed 0 sigma 0.30  acc 1.00000  (174s)
+cs_75         56 params  seed 0 sigma 0.30  acc 1.00000  (285s)
+cs_54         45 params  seed 0 sigma 0.30  acc 1.00000  (371s)
+cs_43         38 params  seed 0 sigma 0.30  acc 0.99719  (243s)
+cs_33         34 params  seed 0 sigma 0.30  acc 0.03918  (189s)
+cs_33         34 params  seed 1 sigma 0.60  acc 0.06494  (193s)
+cs_33         34 params  seed 2 sigma 1.00  acc 0.11011  (653s)
+  -> stop: cs_33 did not reach 0.99

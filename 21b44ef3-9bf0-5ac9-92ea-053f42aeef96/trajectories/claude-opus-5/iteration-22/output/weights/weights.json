@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "architecture": "1 block: clamp bank -> 2-head self-attention (strict and inclusive causal over one content key/value stream) -> tied read-out on a scalar residual stream",
+    "decode": "argmax over tied prototypes at positions 1..n+1, one forward pass",
+    "name": "DigitPairAdder",
+    "parameters": "12",
+    "tokens": "one token per decimal place, embedded as code[a]+code[b]"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 17,
+  "tensors": {
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.000701665878296
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 8,
+      "shape": [
+        8
+      ],
+      "values": [
+        1.9969927072525024,
+        2.9947073459625244,
+        3.9941275119781494,
+        4.992620468139648,
+        5.991181373596191,
+        6.989222526550293,
+        7.987253189086914,
+        8.985689163208008
+      ]
+    },
+    "code_pin": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -9.987625122070312
+      ]
+    },
+    "gate_slope": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        8.0
+      ]
+    },
+    "key_scale": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        400.0
+      ]
+    },
+    "knee": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        8.360455513000488,
+        9.355072021484375
+      ]
+    },
+    "recency": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -12.0
+      ]
+    }
+  }
+}

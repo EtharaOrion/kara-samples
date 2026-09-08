@@ -1,0 +1,18 @@
+[d3_6_6] params/member = 130  E=256  steps=30000
+[d3_6_6] step      0 loss 3.1090 best_acc 0.0000 n>=99%   0 (1s, 1.4 it/s)
+[d3_6_6] step   2000 loss 0.3512 best_acc 0.4638 n>=99%   0 (66s, 30.2 it/s)
+[d3_6_6] step   4000 loss 0.1488 best_acc 0.6996 n>=99%   0 (132s, 30.4 it/s)
+[d3_6_6] step   6000 loss 0.0800 best_acc 0.8490 n>=99%   0 (197s, 30.4 it/s)
+[d3_6_6] step   8000 loss 0.0359 best_acc 0.9038 n>=99%   0 (263s, 30.5 it/s)
+[d3_6_6] step  10000 loss 0.0033 best_acc 0.9973 n>=99%   1 (328s, 30.5 it/s)
+[d3_6_6] step  12000 loss 0.0001 best_acc 1.0000 n>=99%   1 (394s, 30.5 it/s)
+[d3_6_6] step  14000 loss 0.0000 best_acc 1.0000 n>=99%   1 (459s, 30.5 it/s)
+[d3_6_6] step  16000 loss 0.0000 best_acc 1.0000 n>=99%   1 (525s, 30.5 it/s)
+[d3_6_6] step  18000 loss 0.0000 best_acc 1.0000 n>=99%   1 (590s, 30.5 it/s)
+[d3_6_6] step  20000 loss 0.0000 best_acc 1.0000 n>=99%   1 (656s, 30.5 it/s)
+[d3_6_6] step  22000 loss 0.0000 best_acc 1.0000 n>=99%   1 (721s, 30.5 it/s)
+[d3_6_6] step  24000 loss 0.0000 best_acc 1.0000 n>=99%   1 (786s, 30.5 it/s)
+[d3_6_6] step  26000 loss 0.0000 best_acc 1.0000 n>=99%   1 (852s, 30.5 it/s)
+[d3_6_6] step  28000 loss 0.0000 best_acc 1.0000 n>=99%   1 (917s, 30.5 it/s)
+[d3_6_6] step  29999 loss 0.0000 best_acc 1.0000 n>=99%   1 (983s, 30.5 it/s)
+[d3_6_6] FINAL best=1.000000 n>=99.9%=1 n>=99.99%=1

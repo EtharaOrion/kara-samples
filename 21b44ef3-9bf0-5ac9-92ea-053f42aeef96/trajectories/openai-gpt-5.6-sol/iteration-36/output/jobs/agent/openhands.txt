@@ -1,0 +1,167 @@
+/opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.
+It will be compatible before version 2.0.0.
+  from authlib.jose import JsonWebKey, JsonWebToken
+/opt/openhands-venv/lib/python3.13/site-packages/authlib/integrations/httpx_client/assertion_client.py:5: AuthlibDeprecationWarning: The httpx module is deprecated; please use httpx2 instead.
+  from ._compat import httpx2
+[92m10:23:13 - openhands:INFO[0m: utils.py:152 - config.toml not found: [Errno 2] No such file or directory: 'config.toml'. Toml values have not been applied.
+[92m10:23:13 - openhands:INFO[0m: llm_registry.py:87 - [LLM registry 3077a833-0f5b-44ee-9dbc-139cc43a23c9]: Registering service for agent
+[92m10:23:13 - openhands:WARNING[0m: local_runtime.py:160 - Initializing LocalRuntime. WARNING: NO SANDBOX IS USED. This is an experimental feature, please report issues to https://github.com/OpenHands/OpenHands/issues. `run_as_openhands` will be ignored since the current user will be used to launch the server. We highly recommend using a sandbox (eg. DockerRuntime) unless you are running in a controlled environment.
+User ID: 0. Username: root.
+[92m10:23:13 - openhands:WARNING[0m: local_runtime.py:251 - Workspace base path is set to /workspace. It will be used as the path for the agent to run in. Be careful, the agent can EDIT files in this directory!
+[92m10:23:13 - openhands:INFO[0m: local_runtime.py:268 - Using workspace directory: /workspace
+[92m10:23:13 - openhands:INFO[0m: local_runtime.py:633 - Creating a server
+[92m10:23:13 - openhands:INFO[0m: local_runtime.py:673 - Starting server with command: ['/opt/openhands-venv/bin/python', '-u', '-m', 'openhands.runtime.action_execution_server', '33984', '--working-dir', '/workspace', '--plugins', 'agent_skills', 'jupyter', '--username', 'root', '--user-id', '0', '--no-enable-browser']
+[92m10:23:13 - openhands:INFO[0m: local_runtime.py:366 - [runtime 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Waiting for server to become ready at http://localhost:33984...
+[92m10:23:22 - openhands:INFO[0m: local_runtime.py:715 - server: /opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.
+[92m10:23:22 - openhands:INFO[0m: local_runtime.py:715 - server: It will be compatible before version 2.0.0.
+[92m10:23:22 - openhands:INFO[0m: local_runtime.py:715 - server: from authlib.jose import JsonWebKey, JsonWebToken
+[92m10:23:22 - openhands:INFO[0m: local_runtime.py:715 - server: /opt/openhands-venv/lib/python3.13/site-packages/authlib/integrations/httpx_client/assertion_client.py:5: AuthlibDeprecationWarning: The httpx module is deprecated; please use httpx2 instead.
+[92m10:23:22 - openhands:INFO[0m: local_runtime.py:715 - server: from ._compat import httpx2
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:WARNING[0m: action_execution_server.py:654 - Starting Action Execution Server
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:INFO[0m: action_execution_server.py:680 - Starting file viewer server
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:INFO[0m: file_viewer_server.py:92 - File viewer server URL saved to /tmp/oh-server-url: http://localhost:34698
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:INFO[0m: file_viewer_server.py:93 - Starting file viewer server on port 34698
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:INFO[0m: action_execution_server.py:685 - File viewer server started at http://localhost:34698
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:INFO[0m: action_execution_server.py:700 - Initializing ActionExecutor...
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:INFO[0m: action_execution_server.py:217 - No max memory limit set, using all available system memory
+[92m10:23:23 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:23 - openhands:INFO[0m: action_execution_server.py:232 - Browser environment is not enabled in config
+[92m10:23:33 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:33 - openhands:INFO[0m: action_execution_server.py:366 - Initializing by running 1 bash commands...
+[92m10:23:34 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:34 - openhands:INFO[0m: action_execution_server.py:710 - ActionExecutor initialized.
+[92m10:23:34 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:34 - openhands:INFO[0m: action_execution_server.py:720 - Initializing MCP Proxy Manager...
+[92m10:23:34 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:34 - openhands.runtime.mcp.proxy.manager:INFO[0m: manager.py:58 - No MCP servers configured for FastMCP Proxy, skipping initialization.
+[92m10:23:34 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:23:34 - openhands.runtime.mcp.proxy.manager:INFO[0m: manager.py:92 - No MCP servers configured for FastMCP Proxy, skipping mount.
+[92m10:23:36 - openhands:INFO[0m: base.py:1061 - Successfully configured git: name=openhands, email=openhands@all-hands.dev
+[92m10:23:36 - openhands:INFO[0m: base.py:890 - [runtime 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Selected repo: None, loading microagents from /workspace/.openhands/microagents (inside runtime)
+[92m10:23:36 - openhands:INFO[0m: local_runtime.py:715 - server: [Errno 2] No such file or directory: '/workspace/.openhands_instructions'
+[92m10:23:36 - openhands:INFO[0m: base.py:637 - [runtime 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Attempting to list files in repository microagents directory: /workspace/.openhands/microagents
+[92m10:23:36 - openhands:INFO[0m: memory.py:261 - Loading user workspace microagents: []
+[92m10:23:36 - openhands:WARNING[0m: mcp_config.py:351 - No search engine API key found, skipping search engine
+[92m10:23:36 - openhands:INFO[0m: utils.py:334 - Loaded 0 MCP tools: []
+[92m10:23:36 - openhands:INFO[0m: agent.py:169 - Setting 0 MCP tools for agent CodeActAgent: []
+[92m10:23:36 - openhands:INFO[0m: agent.py:181 - Tools updated for agent CodeActAgent, total 6: ['execute_bash', 'think', 'finish', 'execute_ipython_cell', 'task_tracker', 'str_replace_editor']
+[92m10:23:36 - openhands:INFO[0m: state_tracker.py:94 - AgentController 3fe8c9ff-2521-41-5a99d9d0ec68bb3 - created new state. start_id: 0
+[92m10:23:36 - openhands:INFO[0m: agent_controller.py:668 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Setting agent(CodeActAgent) state from AgentState.LOADING to AgentState.RUNNING
+[92m10:23:36 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m10:28:21 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:28:21 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m10:28:21 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:28:21 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m10:28:21 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:28:30 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:28:30 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m10:28:30 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:28:30 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m10:28:30 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:28:36 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:28:36 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m10:28:36 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:28:36 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m10:28:36 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:28:40 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:28:40 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m10:28:40 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:28:40 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m10:28:40 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:29:43 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m10:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m10:29:43 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:29:43 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 60.26s: CmdRunAction (id=51)
+[92m10:29:43 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 60.26s: CmdRunAction (id=51)
+[92m10:30:02 - openhands:INFO[0m: local_runtime.py:715 - server: [92m10:30:02 - openhands:WARNING[0m: bash.py:426 - Expected exactly one PS1 metadata block BEFORE the execution of a command, but got 0 PS1 metadata blocks:
+[92m10:30:02 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:30:02 - openhands:INFO[0m: local_runtime.py:715 - server: ''
+[92m10:30:02 - openhands:INFO[0m: local_runtime.py:715 - server: ---
+[92m10:31:18 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 60.01s: IPythonRunCellAction (id=61)
+[92m10:31:18 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 60.01s: IPythonRunCellAction (id=61)
+[92m10:33:26 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=63)
+[92m10:33:26 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=63)
+[92m10:35:37 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=67)
+[92m10:35:37 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=67)
+[92m10:37:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.05s: IPythonRunCellAction (id=71)
+[92m10:37:28 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.05s: IPythonRunCellAction (id=71)
+[92m10:38:52 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 80.01s: IPythonRunCellAction (id=73)
+[92m10:38:52 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 80.01s: IPythonRunCellAction (id=73)
+[92m10:41:59 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=79)
+[92m10:41:59 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=79)
+[92m10:44:05 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=83)
+[92m10:44:05 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=83)
+[92m10:46:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=87)
+[92m10:46:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=87)
+[92m10:48:18 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=91)
+[92m10:48:18 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=91)
+[92m10:50:35 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=97)
+[92m10:50:35 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=97)
+[92m10:52:41 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=101)
+[92m10:52:41 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=101)
+[92m10:54:17 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 90.01s: IPythonRunCellAction (id=105)
+[92m10:54:17 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 90.01s: IPythonRunCellAction (id=105)
+[92m10:55:20 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 60.01s: IPythonRunCellAction (id=107)
+[92m10:55:20 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 60.01s: IPythonRunCellAction (id=107)
+[92m10:57:35 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=111)
+[92m10:57:35 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=111)
+[92m10:59:40 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=115)
+[92m10:59:40 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=115)
+[92m11:01:53 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=121)
+[92m11:01:53 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=121)
+[92m11:04:00 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=125)
+[92m11:04:00 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=125)
+[92m11:06:33 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=135)
+[92m11:06:33 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=135)
+[92m11:08:39 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=139)
+[92m11:08:39 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=139)
+[92m11:10:26 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.01s: IPythonRunCellAction (id=143)
+[92m11:10:26 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.01s: IPythonRunCellAction (id=143)
+[92m11:12:09 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.01s: IPythonRunCellAction (id=145)
+[92m11:12:09 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.01s: IPythonRunCellAction (id=145)
+[92m11:14:21 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=149)
+[92m11:14:21 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=149)
+[92m11:16:30 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=153)
+[92m11:16:30 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=153)
+[92m11:18:45 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=159)
+[92m11:18:45 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=159)
+[92m11:20:54 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=163)
+[92m11:20:54 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=163)
+[92m11:23:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=167)
+[92m11:23:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=167)
+[92m11:25:16 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=173)
+[92m11:25:16 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=173)
+[92m11:27:23 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=177)
+[92m11:27:23 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=177)
+[92m11:30:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=189)
+[92m11:30:02 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=189)
+[92m11:32:09 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=193)
+[92m11:32:09 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=193)
+[92m11:34:23 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=197)
+[92m11:34:23 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=197)
+[92m11:36:30 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=201)
+[92m11:36:30 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=201)
+[92m11:39:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=211)
+[92m11:39:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=211)
+[92m11:41:19 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=215)
+[92m11:41:19 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=215)
+[92m11:43:27 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=219)
+[92m11:43:27 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=219)
+[92m11:45:39 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=223)
+[92m11:45:39 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=223)
+[92m11:47:26 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.01s: IPythonRunCellAction (id=227)
+[92m11:47:26 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 100.01s: IPythonRunCellAction (id=227)
+[92m11:49:38 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=231)
+[92m11:49:38 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=231)
+[92m11:51:45 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=235)
+[92m11:51:45 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=235)
+[92m11:53:56 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=239)
+[92m11:53:56 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=239)
+[92m11:56:03 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=243)
+[92m11:56:03 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=243)
+[92m11:58:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=247)
+[92m11:58:12 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=247)
+[92m12:04:13 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=269)
+[92m12:04:13 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=269)
+[92m12:06:21 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=273)
+[92m12:06:21 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=273)
+[92m12:08:31 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=277)
+[92m12:08:31 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 120.01s: IPythonRunCellAction (id=277)
+[92m12:10:09 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 63.23s: IPythonRunCellAction (id=283)
+[92m12:10:09 - openhands:INFO[0m: agent_controller.py:1027 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Pending action active for 63.23s: IPythonRunCellAction (id=283)
+[92m12:10:30 - openhands:INFO[0m: agent_controller.py:668 - [Agent Controller 3fe8c9ff-2521-41-5a99d9d0ec68bb3] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.FINISHED
+[92m12:10:30 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m12:10:31 - openhands:INFO[0m: local_runtime.py:715 - server: [92m12:10:31 - openhands:INFO[0m: action_execution_server.py:739 - Shutting down MCP Proxy Manager...
+[92m12:10:31 - openhands:INFO[0m: local_runtime.py:710 - server log thread received exit signal.
+[92m12:10:31 - openhands:INFO[0m: local_runtime.py:728 - server log output thread finished.

@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "architecture": "1 block: digit-pair embedding -> clamp bank -> 2-head shared-KV self-attention -> tied nearest-prototype readout",
+    "d_model": "1",
+    "decoding": "single forward pass, argmax per position",
+    "n_heads": "2",
+    "n_layers": "1",
+    "n_parameters": "12",
+    "name": "DigitPairAdder",
+    "task": "exact addition of two 8-digit integers"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 25,
+  "tensors": {
+    "Bw": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        1,
+        2
+      ],
+      "values": [
+        8.0,
+        8.0
+      ]
+    },
+    "bb": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -68.54444122314453,
+        -74.98519134521484
+      ]
+    },
+    "code": {
+      "dtype": "torch.float32",
+      "numel": 9,
+      "shape": [
+        9,
+        1
+      ],
+      "values": [
+        1.1695805788040161,
+        2.1409554481506348,
+        3.12552547454834,
+        4.0946245193481445,
+        5.081859588623047,
+        6.063814640045166,
+        7.029851913452148,
+        8.033966064453125,
+        9.07771110534668
+      ]
+    },
+    "code0": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1,
+        1
+      ],
+      "values": [
+        0.0
+      ]
+    },
+    "kw": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -400.0,
+        400.0
+      ]
+    },
+    "lam": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -12.0
+      ]
+    },
+    "ls": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0
+      ]
+    },
+    "q": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0
+      ]
+    },
+    "rb": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        0.0
+      ]
+    },
+    "vb": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        0.0
+      ]
+    },
+    "vw": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "w1": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        1.0
+      ]
+    },
+    "w2": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -10.276185035705566
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+o53         38  24000 steps
+o43         35  24000 steps
+o33         32  24000 steps
+o32         29  24000 steps
+o53           38 params  seed 0 sigma 0.50  acc 1.00000  (662s)
+o43           35 params  seed 0 sigma 0.50  acc 1.00000  (631s)
+o33           32 params  seed 0 sigma 0.50  acc 0.00684  (307s)

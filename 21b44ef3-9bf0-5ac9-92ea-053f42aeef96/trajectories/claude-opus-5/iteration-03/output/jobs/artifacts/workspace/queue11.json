@@ -1,0 +1,30 @@
+[
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 60000,
+  "rounds": 4,
+  "final_eval": 1000000,
+  "share_qk": true,
+  "no_bin2": true,
+  "init_from": "/workspace/ckpt/sq_r4.pt",
+  "init_member": 7,
+  "init_sigma": 0.6,
+  "tag": "w_nbi_sq"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 60000,
+  "rounds": 4,
+  "final_eval": 1000000,
+  "share_qk": true,
+  "no_qb": true,
+  "no_sb": true,
+  "tag": "sq_nq_ns"
+ }
+]

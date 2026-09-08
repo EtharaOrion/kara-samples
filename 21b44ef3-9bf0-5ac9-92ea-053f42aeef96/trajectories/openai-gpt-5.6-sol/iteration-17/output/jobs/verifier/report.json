@@ -1,0 +1,38 @@
+{
+  "attention_probe": {
+    "dependence_rate": 1.0,
+    "detected": true,
+    "mechanisms": [
+      "nn.MultiheadAttention"
+    ],
+    "output_dependent": true
+  },
+  "beat_target": false,
+  "claimed_params": null,
+  "error": null,
+  "findings": [],
+  "has_attention": true,
+  "measured_params": 2799,
+  "metrics": {
+    "accuracy": 0.0,
+    "edge_accuracy": 0.0,
+    "elapsed_seconds": 30.428733418229967,
+    "model_use_rate": 1.0,
+    "output_dependence": 1.0,
+    "parameter_efficiency": 0.11533483721068036,
+    "parameters": 2799.0,
+    "qualified": 0.0,
+    "score": 0.0
+  },
+  "model_type": "Model",
+  "operation": "add2",
+  "output_dependence": 1.0,
+  "output_dependent": true,
+  "passed": 0,
+  "structural_failures": [],
+  "structurally_valid": true,
+  "target_parameters": 21,
+  "task": "arith/add2-8d-trained",
+  "total": 10010,
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef"
+}

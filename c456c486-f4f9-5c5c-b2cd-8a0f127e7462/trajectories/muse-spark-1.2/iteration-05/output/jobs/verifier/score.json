@@ -1,0 +1,11 @@
+{
+  "accuracy": 0.9993006993006993,
+  "edge_accuracy": 1.0,
+  "elapsed_seconds": 152.48885197401978,
+  "model_use_rate": 1.0,
+  "output_dependence": 1.0,
+  "parameter_efficiency": 0.20265957428082057,
+  "parameters": 1182.0,
+  "qualified": 1.0,
+  "score": 0.6013297871404103
+}

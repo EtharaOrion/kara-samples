@@ -1,0 +1,1 @@
+{"C": 1, "U": 3, "kv_share": true, "heads": 2, "fold": false, "q": "fix", "q_val": 1.0, "f_in": "sign", "signs": [1.0, 1.0, 1.0], "pin_code": [[0, 0.0], [1, 1.0]], "lam": "fix", "lam_val": -8.0}

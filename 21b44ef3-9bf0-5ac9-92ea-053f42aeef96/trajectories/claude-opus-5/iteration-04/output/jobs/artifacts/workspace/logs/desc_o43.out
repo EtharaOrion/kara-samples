@@ -1,0 +1,4 @@
+od_33       32  24000 steps
+od_32       29  24000 steps
+od_33         32 params  seed 0 sigma 0.30  acc 1.00000  (308s)
+od_32         29 params  seed 0 sigma 0.30  acc 1.00000  (306s)

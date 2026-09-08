@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "d_head": "1",
+    "d_model": "2",
+    "description": "single Macaron transformer block; positions 1..9 emit the 9 sum digits in one forward pass",
+    "n_heads": "1",
+    "n_layers": "1",
+    "n_params": "21",
+    "seq_len": "10",
+    "task": "8-digit decimal addition",
+    "vocab": "10"
+  },
+  "modules": [
+    "Adder"
+  ],
+  "parameter_elements": 21,
+  "state_dict_elements": 21,
+  "tensors": {
+    "b_q": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        22.152545928955078
+      ]
+    },
+    "code_p": {
+      "dtype": "torch.float32",
+      "numel": 9,
+      "shape": [
+        9
+      ],
+      "values": [
+        1.1267646551132202,
+        0.8741064071655273,
+        0.7482900023460388,
+        0.6224234700202942,
+        0.4965442419052124,
+        0.3707185983657837,
+        0.24484629929065704,
+        0.11883068829774857,
+        -0.008700908161699772
+      ]
+    },
+    "f1_b": {
+      "dtype": "torch.float32",
+      "numel": 3,
+      "shape": [
+        3
+      ],
+      "values": [
+        -0.9955086708068848,
+        -1.244898796081543,
+        -1.1001861095428467
+      ]
+    },
+    "f1_o": {
+      "dtype": "torch.float32",
+      "numel": 3,
+      "shape": [
+        3,
+        1
+      ],
+      "values": [
+        -18.56531524658203,
+        -14.03720474243164,
+        32.604373931884766
+      ]
+    },
+    "f2_b": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -1.248042106628418,
+        -1.1373040676116943
+      ]
+    },
+    "f2_o": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2,
+        1
+      ],
+      "values": [
+        11.411001205444336,
+        -11.410008430480957
+      ]
+    },
+    "w_o": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        1.5111526250839233
+      ]
+    }
+  }
+}

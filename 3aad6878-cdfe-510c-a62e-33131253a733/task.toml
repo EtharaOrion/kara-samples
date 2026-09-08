@@ -1,0 +1,54 @@
+schema_version = "1.3"
+
+artifacts = ["/workspace/submission.py", "/workspace"]
+
+[task]
+name = "arith/sub2-15d-trained"
+description = "Optimize a trained transformer for exact 15-digit subtraction"
+authors = [{ name = "KARA RL Harness" }]
+keywords = ["arithmetic", "machine-learning", "transformer", "rl", "optimization", "bounded-continuous"]
+
+[metadata]
+difficulty = "frontier"
+category = "ml-research"
+
+[verifier]
+# Must exceed the grader's own worker_timeout_sec in spec.json, which scales
+# with digit width. Harbor enforces this one and kills the verifier container
+# outright, so a value below the worker's budget means wider tasks are killed
+# mid-grade and recorded as agent failures. That happened at 12 and 14 digits
+# with this pinned at 300.
+timeout_sec = 2520.0
+environment_mode = "separate"
+
+[verifier.environment]
+workdir = "/workspace"
+network_mode = "no-network"
+cpus = 4
+memory_mb = 8192
+storage_mb = 20480
+gpus = 0
+
+[agent]
+# timeout_sec is the ceiling Harbor enforces on one agent trial. For a budgeted
+# family it equals budget_hours, so the client's per-attempt bound is enforced
+# structurally; attempts still draw from the shared max_timeout pool, and the
+# loop driver narrows this further to the time remaining when an attempt starts.
+timeout_sec = 21600.0
+max_timeout = 6.0  # hours, total refinement-loop budget shared across all attempts
+N = 50  # maximum attempts; the loop stops at whichever of N or the shared budget binds first
+budget_hours = 6.0  # per-attempt completion bound, the client budget; timeout_sec above enforces it
+budget_envelope = "at most one H100 GPU"
+budget_margin = "20 percent"
+
+[environment]
+docker_image = "426628337772.dkr.ecr.ap-south-1.amazonaws.com/kara:kara-arith-rl_v1@sha256:d6ff33b01911559ed76cf4d52df47d489e89e4ac34e25b6854c9c403e6ef9550"
+workdir = "/workspace"
+network_mode = "public"
+cpus = 8
+memory_mb = 32768
+storage_mb = 61440
+# Harbor's Docker backend cannot allocate GPUs from this field; the agent's GPU
+# comes from environment/docker-compose.yaml instead. Kept at zero so the
+# manifest validates.
+gpus = 0

@@ -1,0 +1,20 @@
+{
+  "accuracy_threshold": 0.99,
+  "arity": 2,
+  "baseline_parameters": 1644,
+  "category": "trained",
+  "count_buffers": false,
+  "digits": 15,
+  "entrypoint": "subtract",
+  "floor_parameters": 11,
+  "grader_version": "1.2.0",
+  "operation": "sub2",
+  "random_tests": 10000,
+  "seed": 274065115100754,
+  "spec_digest": "sha256:ed1230c45f8735add06ad758210d0a7d4fd06f06f276488ea90e2c0670b9fe3c",
+  "target_parameters": 39,
+  "task": "arith/sub2-15d-trained",
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef",
+  "worker_timeout_sec": 2400.0,
+  "worst_parameters": 16440
+}

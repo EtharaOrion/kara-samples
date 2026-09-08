@@ -1,0 +1,7 @@
+{
+  "attempt": 7,
+  "counts_as_correct": true,
+  "score": 0.6027603981850843,
+  "rule": "best",
+  "source": "trajectories/openrouter-meta-muse-spark-1.2/iteration-07/output/jobs/artifacts/submission.py"
+}

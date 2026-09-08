@@ -1,0 +1,8 @@
+config {'E': 128, 'C': 3, 'U': 12, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': False, 'heads': 2, 'fold': False, 'q': 'free', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': (), 'b1': True, 'b2': True, 'seed': 3}
+parameters per member: 111
+step   5000 loss 1.0881 best 0.71499 n8 0.77237 top5 [0.715, 0.0108, 0.0078, 0.0049, 0.0039] (214s)
+step  10000 loss 0.0004 best 0.99903 n8 1.00000 top5 [0.999, 0.0465, 0.0058, 0.0058, 0.0058] (324s)
+step  15000 loss 1.0561 best 0.95577 n8 0.96982 top5 [0.9558, 0.0558, 0.0115, 0.0087, 0.0077] (390s)
+step  20000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 0.0946, 0.0527, 0.0088, 0.0078] (457s)
+step  25000 loss 0.0000 best 1.00000 n8 1.00000 top5 [1.0, 0.1021, 0.0716, 0.0088, 0.0069] (590s)
+saved /workspace/h2_cold.pt  n_par 111  best 1.000000  members>=0.999: 1/128

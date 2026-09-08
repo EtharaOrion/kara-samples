@@ -1,0 +1,1222 @@
+[
+ {
+  "member": 169,
+  "certified": true,
+  "slack": 1.0000381469726562,
+  "classes_ok": true,
+  "margin": 0.9462472102521247,
+  "drift": 6.144212353342837e-06,
+  "safety": 702.3496885235155,
+  "code_gap": 1.0826053619384766
+ },
+ {
+  "member": 167,
+  "certified": true,
+  "slack": 0.9990110397338867,
+  "classes_ok": true,
+  "margin": 0.9436282104685034,
+  "drift": 6.144212353342837e-06,
+  "safety": 707.3526456717244,
+  "code_gap": 1.0763612985610962
+ },
+ {
+  "member": 165,
+  "certified": true,
+  "slack": 0.9999923706054688,
+  "classes_ok": true,
+  "margin": 0.9426255752094335,
+  "drift": 6.144212353342837e-06,
+  "safety": 704.4985865000643,
+  "code_gap": 1.0782155990600586
+ },
+ {
+  "member": 101,
+  "certified": true,
+  "slack": 1.0001449584960938,
+  "classes_ok": true,
+  "margin": 0.9382426929679042,
+  "drift": 6.144212353342837e-06,
+  "safety": 711.6993320333879,
+  "code_gap": 1.0682920217514038
+ },
+ {
+  "member": 172,
+  "certified": true,
+  "slack": 0.9999971389770508,
+  "classes_ok": true,
+  "margin": 0.9378719449526471,
+  "drift": 6.144212353342837e-06,
+  "safety": 707.0027087240736,
+  "code_gap": 1.0728329420089722
+ },
+ {
+  "member": 184,
+  "certified": true,
+  "slack": 0.9999971389770508,
+  "classes_ok": true,
+  "margin": 0.9374757372683149,
+  "drift": 6.144212353342837e-06,
+  "safety": 708.8314003651394,
+  "code_gap": 1.070769190788269
+ },
+ {
+  "member": 104,
+  "certified": true,
+  "slack": 0.999903678894043,
+  "classes_ok": true,
+  "margin": 0.9357168012366657,
+  "drift": 6.144212353342837e-06,
+  "safety": 710.5136529021938,
+  "code_gap": 1.0682588815689087
+ },
+ {
+  "member": 175,
+  "certified": true,
+  "slack": 1.000075340270996,
+  "classes_ok": true,
+  "margin": 0.9351347814271804,
+  "drift": 6.144212353342837e-06,
+  "safety": 708.9779660060454,
+  "code_gap": 1.0692893266677856
+ },
+ {
+  "member": 171,
+  "certified": true,
+  "slack": 1.0000152587890625,
+  "classes_ok": true,
+  "margin": 0.933132817493231,
+  "drift": 6.144212353342837e-06,
+  "safety": 710.3363701695853,
+  "code_gap": 1.0667567253112793
+ },
+ {
+  "member": 185,
+  "certified": true,
+  "slack": 0.9999990463256836,
+  "classes_ok": true,
+  "margin": 0.9331288256515933,
+  "drift": 6.144212353342837e-06,
+  "safety": 711.1616752595099,
+  "code_gap": 1.0658823251724243
+ },
+ {
+  "member": 114,
+  "certified": true,
+  "slack": 1.0000019073486328,
+  "classes_ok": true,
+  "margin": 0.9331083119243999,
+  "drift": 6.144212353342837e-06,
+  "safety": 711.4610589540202,
+  "code_gap": 1.065516710281372
+ },
+ {
+  "member": 164,
+  "certified": true,
+  "slack": 0.999969482421875,
+  "classes_ok": true,
+  "margin": 0.9318076560821282,
+  "drift": 6.144212353342837e-06,
+  "safety": 711.623542487674,
+  "code_gap": 1.0646017789840698
+ },
+ {
+  "member": 246,
+  "certified": true,
+  "slack": 0.9999275207519531,
+  "classes_ok": true,
+  "margin": 0.9302195874593053,
+  "drift": 6.144212353342837e-06,
+  "safety": 714.8584807962548,
+  "code_gap": 1.0606465339660645
+ },
+ {
+  "member": 176,
+  "certified": true,
+  "slack": 1.0000228881835938,
+  "classes_ok": true,
+  "margin": 0.9301326064323803,
+  "drift": 6.144212353342837e-06,
+  "safety": 713.350852173215,
+  "code_gap": 1.062164545059204
+ },
+ {
+  "member": 68,
+  "certified": true,
+  "slack": 1.0001258850097656,
+  "classes_ok": true,
+  "margin": 0.92888150010549,
+  "drift": 6.144212353342837e-06,
+  "safety": 713.9151366535166,
+  "code_gap": 1.0606483221054077
+ },
+ {
+  "member": 187,
+  "certified": true,
+  "slack": 1.0000762939453125,
+  "classes_ok": true,
+  "margin": 0.9284320764990213,
+  "drift": 6.144212353342837e-06,
+  "safety": 714.7923290201362,
+  "code_gap": 1.0596588850021362
+ },
+ {
+  "member": 81,
+  "certified": true,
+  "slack": 1.00006103515625,
+  "classes_ok": true,
+  "margin": 0.9275634500102825,
+  "drift": 6.144212353342837e-06,
+  "safety": 709.7969297080372,
+  "code_gap": 1.0641413927078247
+ },
+ {
+  "member": 215,
+  "certified": true,
+  "slack": 1.0001468658447266,
+  "classes_ok": true,
+  "margin": 0.9274309957226592,
+  "drift": 6.144212353342837e-06,
+  "safety": 714.5068227836022,
+  "code_gap": 1.0592501163482666
+ },
+ {
+  "member": 181,
+  "certified": true,
+  "slack": 1.0006532669067383,
+  "classes_ok": true,
+  "margin": 0.9273127771842411,
+  "drift": 6.144212353342837e-06,
+  "safety": 697.8614906670934,
+  "code_gap": 1.0766814947128296
+ },
+ {
+  "member": 118,
+  "certified": true,
+  "slack": 0.9998893737792969,
+  "classes_ok": true,
+  "margin": 0.9271297166316828,
+  "drift": 6.144212353342837e-06,
+  "safety": 715.0394249282054,
+  "code_gap": 1.0585910081863403
+ },
+ {
+  "member": 183,
+  "certified": true,
+  "slack": 0.9998893737792969,
+  "classes_ok": true,
+  "margin": 0.9270759252030984,
+  "drift": 6.144212353342837e-06,
+  "safety": 715.8311770008734,
+  "code_gap": 1.0578703880310059
+ },
+ {
+  "member": 219,
+  "certified": true,
+  "slack": 1.0009269714355469,
+  "classes_ok": true,
+  "margin": 0.9253220666528961,
+  "drift": 6.144212353342837e-06,
+  "safety": 718.5348298247922,
+  "code_gap": 1.0534600019454956
+ },
+ {
+  "member": 160,
+  "certified": true,
+  "slack": 0.9999980926513672,
+  "classes_ok": true,
+  "margin": 0.924759721549151,
+  "drift": 6.144212353342837e-06,
+  "safety": 715.1598554236161,
+  "code_gap": 1.0570042133331299
+ },
+ {
+  "member": 216,
+  "certified": true,
+  "slack": 0.9998855590820312,
+  "classes_ok": true,
+  "margin": 0.9246862616326581,
+  "drift": 6.144212353342837e-06,
+  "safety": 716.4247725361474,
+  "code_gap": 1.055836796760559
+ },
+ {
+  "member": 59,
+  "certified": true,
+  "slack": 1.000030517578125,
+  "classes_ok": true,
+  "margin": 0.924396934920324,
+  "drift": 6.144212353342837e-06,
+  "safety": 716.3933748435066,
+  "code_gap": 1.0556999444961548
+ },
+ {
+  "member": 86,
+  "certified": true,
+  "slack": 1.0002260208129883,
+  "classes_ok": true,
+  "margin": 0.9239640544709715,
+  "drift": 6.144212353342837e-06,
+  "safety": 716.6186655124276,
+  "code_gap": 1.0552066564559937
+ },
+ {
+  "member": 108,
+  "certified": true,
+  "slack": 1.000244140625,
+  "classes_ok": true,
+  "margin": 0.9213949160660633,
+  "drift": 6.144212353342837e-06,
+  "safety": 718.0995669236194,
+  "code_gap": 1.0521501302719116
+ },
+ {
+  "member": 33,
+  "certified": true,
+  "slack": 1.0000543594360352,
+  "classes_ok": true,
+  "margin": 0.9212630670019308,
+  "drift": 6.144212353342837e-06,
+  "safety": 717.9555700947482,
+  "code_gap": 1.0522254705429077
+ },
+ {
+  "member": 170,
+  "certified": true,
+  "slack": 1.0000724792480469,
+  "classes_ok": true,
+  "margin": 0.9208395192143399,
+  "drift": 6.144212353342837e-06,
+  "safety": 718.1181696765452,
+  "code_gap": 1.0518015623092651
+ },
+ {
+  "member": 211,
+  "certified": true,
+  "slack": 1.0000343322753906,
+  "classes_ok": true,
+  "margin": 0.9204323016374474,
+  "drift": 6.144212353342837e-06,
+  "safety": 718.5558019994877,
+  "code_gap": 1.051039695739746
+ },
+ {
+  "member": 254,
+  "certified": true,
+  "slack": 1.0000152587890625,
+  "classes_ok": true,
+  "margin": 0.9202874111523016,
+  "drift": 6.144212353342837e-06,
+  "safety": 719.1065352690896,
+  "code_gap": 1.0505114793777466
+ },
+ {
+  "member": 186,
+  "certified": true,
+  "slack": 1.0000839233398438,
+  "classes_ok": true,
+  "margin": 0.9180069023408919,
+  "drift": 6.144212353342837e-06,
+  "safety": 703.0989515476243,
+  "code_gap": 1.065784215927124
+ },
+ {
+  "member": 88,
+  "certified": true,
+  "slack": 1.0001678466796875,
+  "classes_ok": true,
+  "margin": 0.9177818764676999,
+  "drift": 6.144212353342837e-06,
+  "safety": 719.7755494001444,
+  "code_gap": 1.0483274459838867
+ },
+ {
+  "member": 43,
+  "certified": true,
+  "slack": 1.0,
+  "classes_ok": true,
+  "margin": 0.9177642048399122,
+  "drift": 6.144212353342837e-06,
+  "safety": 719.196688846439,
+  "code_gap": 1.0489591360092163
+ },
+ {
+  "member": 220,
+  "certified": true,
+  "slack": 1.0000476837158203,
+  "classes_ok": true,
+  "margin": 0.9176719366978432,
+  "drift": 6.144212353342837e-06,
+  "safety": 719.7392558459377,
+  "code_gap": 1.0484468936920166
+ },
+ {
+  "member": 225,
+  "certified": true,
+  "slack": 0.9999608993530273,
+  "classes_ok": true,
+  "margin": 0.9174279521508453,
+  "drift": 6.144212353342837e-06,
+  "safety": 720.439719649892,
+  "code_gap": 1.047613263130188
+ },
+ {
+  "member": 120,
+  "certified": true,
+  "slack": 0.9999961853027344,
+  "classes_ok": true,
+  "margin": 0.9163337409295309,
+  "drift": 6.144212353342837e-06,
+  "safety": 720.0189753589407,
+  "code_gap": 1.047234058380127
+ },
+ {
+  "member": 63,
+  "certified": true,
+  "slack": 1.0000381469726562,
+  "classes_ok": true,
+  "margin": 0.9153097102469587,
+  "drift": 6.144212353342837e-06,
+  "safety": 720.6080712970188,
+  "code_gap": 1.0460264682769775
+ },
+ {
+  "member": 50,
+  "certified": true,
+  "slack": 0.9999542236328125,
+  "classes_ok": true,
+  "margin": 0.9152127287634357,
+  "drift": 6.144212353342837e-06,
+  "safety": 720.6953607157859,
+  "code_gap": 1.046055793762207
+ },
+ {
+  "member": 44,
+  "certified": true,
+  "slack": 0.9999542236328125,
+  "classes_ok": true,
+  "margin": 0.9144234506429854,
+  "drift": 6.144212353342837e-06,
+  "safety": 721.0416916735236,
+  "code_gap": 1.045146107673645
+ },
+ {
+  "member": 54,
+  "certified": true,
+  "slack": 0.9999771118164062,
+  "classes_ok": true,
+  "margin": 0.9140011768784575,
+  "drift": 6.144212353342837e-06,
+  "safety": 721.3141274400965,
+  "code_gap": 1.0445690155029297
+ },
+ {
+  "member": 168,
+  "certified": true,
+  "slack": 1.0002059936523438,
+  "classes_ok": true,
+  "margin": 0.9139247156284824,
+  "drift": 6.144212353342837e-06,
+  "safety": 722.092488348977,
+  "code_gap": 1.043880820274353
+ },
+ {
+  "member": 213,
+  "certified": true,
+  "slack": 1.0001163482666016,
+  "classes_ok": true,
+  "margin": 0.9134291921197928,
+  "drift": 6.144212353342837e-06,
+  "safety": 721.8378134156154,
+  "code_gap": 1.043903112411499
+ },
+ {
+  "member": 245,
+  "certified": true,
+  "slack": 0.9997997283935547,
+  "classes_ok": true,
+  "margin": 0.9132868130050866,
+  "drift": 6.144212353342837e-06,
+  "safety": 723.2281805642968,
+  "code_gap": 1.0424009561538696
+ },
+ {
+  "member": 96,
+  "certified": true,
+  "slack": 0.9999313354492188,
+  "classes_ok": true,
+  "margin": 0.9132358043757449,
+  "drift": 6.144212353342837e-06,
+  "safety": 721.8723112988521,
+  "code_gap": 1.043759822845459
+ },
+ {
+  "member": 202,
+  "certified": true,
+  "slack": 0.9999847412109375,
+  "classes_ok": true,
+  "margin": 0.9132329704524977,
+  "drift": 6.144212353342837e-06,
+  "safety": 722.1211702345774,
+  "code_gap": 1.0435309410095215
+ },
+ {
+  "member": 203,
+  "certified": true,
+  "slack": 1.0001564025878906,
+  "classes_ok": true,
+  "margin": 0.9120305349649271,
+  "drift": 6.144212353342837e-06,
+  "safety": 722.9194325149065,
+  "code_gap": 1.0418416261672974
+ },
+ {
+  "member": 251,
+  "certified": true,
+  "slack": 1.0001678466796875,
+  "classes_ok": true,
+  "margin": 0.9112002736533782,
+  "drift": 6.144212353342837e-06,
+  "safety": 723.1940891733175,
+  "code_gap": 1.0410380363464355
+ },
+ {
+  "member": 226,
+  "certified": true,
+  "slack": 1.0004501342773438,
+  "classes_ok": true,
+  "margin": 0.9111638990320472,
+  "drift": 6.144212353342837e-06,
+  "safety": 724.3912567392442,
+  "code_gap": 1.039929986000061
+ },
+ {
+  "member": 65,
+  "certified": true,
+  "slack": 1.000030517578125,
+  "classes_ok": true,
+  "margin": 0.9104798288731217,
+  "drift": 6.144212353342837e-06,
+  "safety": 724.382651691102,
+  "code_gap": 1.039552927017212
+ },
+ {
+  "member": 250,
+  "certified": true,
+  "slack": 0.9998588562011719,
+  "classes_ok": true,
+  "margin": 0.9096328251883534,
+  "drift": 6.144212353342837e-06,
+  "safety": 723.7723576447792,
+  "code_gap": 1.0394967794418335
+ },
+ {
+  "member": 180,
+  "certified": true,
+  "slack": 0.9999771118164062,
+  "classes_ok": true,
+  "margin": 0.9085297372989771,
+  "drift": 6.144212353342837e-06,
+  "safety": 708.1237701710812,
+  "code_gap": 1.054884910583496
+ },
+ {
+  "member": 56,
+  "certified": true,
+  "slack": 0.9997873306274414,
+  "classes_ok": true,
+  "margin": 0.9082035847120693,
+  "drift": 6.144212353342837e-06,
+  "safety": 724.7893575932802,
+  "code_gap": 1.0379585027694702
+ },
+ {
+  "member": 72,
+  "certified": true,
+  "slack": 1.0001068115234375,
+  "classes_ok": true,
+  "margin": 0.9081770204194868,
+  "drift": 6.144212353342837e-06,
+  "safety": 708.9249251088359,
+  "code_gap": 1.053910493850708
+ },
+ {
+  "member": 37,
+  "certified": true,
+  "slack": 0.9999151229858398,
+  "classes_ok": true,
+  "margin": 0.9079906985736699,
+  "drift": 6.144212353342837e-06,
+  "safety": 724.3735248112592,
+  "code_gap": 1.0382767915725708
+ },
+ {
+  "member": 223,
+  "certified": true,
+  "slack": 1.0,
+  "classes_ok": true,
+  "margin": 0.9075993472224582,
+  "drift": 6.144212353342837e-06,
+  "safety": 708.7289406483612,
+  "code_gap": 1.053795576095581
+ },
+ {
+  "member": 210,
+  "certified": true,
+  "slack": 1.0002708435058594,
+  "classes_ok": true,
+  "margin": 0.9074243848854735,
+  "drift": 6.144212353342837e-06,
+  "safety": 709.9917351676256,
+  "code_gap": 1.0526328086853027
+ },
+ {
+  "member": 230,
+  "certified": true,
+  "slack": 1.0004348754882812,
+  "classes_ok": true,
+  "margin": 0.9067703402627671,
+  "drift": 6.144212353342837e-06,
+  "safety": 725.7569220205846,
+  "code_gap": 1.0358340740203857
+ },
+ {
+  "member": 58,
+  "certified": true,
+  "slack": 0.9997959136962891,
+  "classes_ok": true,
+  "margin": 0.9060620538446074,
+  "drift": 6.144212353342837e-06,
+  "safety": 725.7041431145358,
+  "code_gap": 1.0356695652008057
+ },
+ {
+  "member": 249,
+  "certified": true,
+  "slack": 1.0000762939453125,
+  "classes_ok": true,
+  "margin": 0.9060614895015533,
+  "drift": 6.144212353342837e-06,
+  "safety": 725.3261056276807,
+  "code_gap": 1.036113977432251
+ },
+ {
+  "member": 24,
+  "certified": true,
+  "slack": 0.9999332427978516,
+  "classes_ok": true,
+  "margin": 0.9059429807710018,
+  "drift": 6.144212353342837e-06,
+  "safety": 726.1616498535778,
+  "code_gap": 1.0350638628005981
+ },
+ {
+  "member": 70,
+  "certified": true,
+  "slack": 0.9998130798339844,
+  "classes_ok": true,
+  "margin": 0.905411270132106,
+  "drift": 6.144212353342837e-06,
+  "safety": 725.9402717035271,
+  "code_gap": 1.035141944885254
+ },
+ {
+  "member": 235,
+  "certified": true,
+  "slack": 1.000335693359375,
+  "classes_ok": true,
+  "margin": 0.9049677817397566,
+  "drift": 6.144212353342837e-06,
+  "safety": 710.9295533110571,
+  "code_gap": 1.0500096082687378
+ },
+ {
+  "member": 64,
+  "certified": true,
+  "slack": 1.0000629425048828,
+  "classes_ok": true,
+  "margin": 0.9046058529043535,
+  "drift": 6.144212353342837e-06,
+  "safety": 726.4964659971058,
+  "code_gap": 1.0341646671295166
+ },
+ {
+  "member": 69,
+  "certified": true,
+  "slack": 1.0000543594360352,
+  "classes_ok": true,
+  "margin": 0.9041680961006051,
+  "drift": 6.144212353342837e-06,
+  "safety": 711.8075436663114,
+  "code_gap": 1.0488556623458862
+ },
+ {
+  "member": 48,
+  "certified": true,
+  "slack": 1.0004043579101562,
+  "classes_ok": true,
+  "margin": 0.9037377474075612,
+  "drift": 6.144212353342837e-06,
+  "safety": 727.5769540582639,
+  "code_gap": 1.0325008630752563
+ },
+ {
+  "member": 224,
+  "certified": true,
+  "slack": 1.0000019073486328,
+  "classes_ok": true,
+  "margin": 0.9029017806408319,
+  "drift": 6.144212353342837e-06,
+  "safety": 727.7006969482354,
+  "code_gap": 1.0318210124969482
+ },
+ {
+  "member": 166,
+  "certified": true,
+  "slack": 1.0000762939453125,
+  "classes_ok": true,
+  "margin": 0.9013675196197823,
+  "drift": 6.144212353342837e-06,
+  "safety": 728.5812979999915,
+  "code_gap": 1.0300889015197754
+ },
+ {
+  "member": 47,
+  "certified": true,
+  "slack": 0.9997940063476562,
+  "classes_ok": true,
+  "margin": 0.9011690574741493,
+  "drift": 6.144212353342837e-06,
+  "safety": 728.4938004293294,
+  "code_gap": 1.0300301313400269
+ },
+ {
+  "member": 192,
+  "certified": true,
+  "slack": 0.9999675750732422,
+  "classes_ok": true,
+  "margin": 0.9011369604256174,
+  "drift": 6.144212353342837e-06,
+  "safety": 729.1199249639704,
+  "code_gap": 1.029428482055664
+ },
+ {
+  "member": 62,
+  "certified": true,
+  "slack": 1.0001497268676758,
+  "classes_ok": true,
+  "margin": 0.9009825807459748,
+  "drift": 6.144212353342837e-06,
+  "safety": 729.3670089977425,
+  "code_gap": 1.0291332006454468
+ },
+ {
+  "member": 205,
+  "certified": true,
+  "slack": 1.0,
+  "classes_ok": true,
+  "margin": 0.9009674722419732,
+  "drift": 6.144212353342837e-06,
+  "safety": 712.8672860242661,
+  "code_gap": 1.0457401275634766
+ },
+ {
+  "member": 57,
+  "certified": true,
+  "slack": 1.0,
+  "classes_ok": true,
+  "margin": 0.9008005905517535,
+  "drift": 6.144212353342837e-06,
+  "safety": 728.3419104648171,
+  "code_gap": 1.0300146341323853
+ },
+ {
+  "member": 38,
+  "certified": true,
+  "slack": 1.0000991821289062,
+  "classes_ok": true,
+  "margin": 0.8998504635201243,
+  "drift": 6.144212353342837e-06,
+  "safety": 729.0066779823005,
+  "code_gap": 1.0287468433380127
+ },
+ {
+  "member": 32,
+  "certified": true,
+  "slack": 1.0000076293945312,
+  "classes_ok": true,
+  "margin": 0.8976097427717633,
+  "drift": 6.144212353342837e-06,
+  "safety": 730.8053261804963,
+  "code_gap": 1.02570641040802
+ },
+ {
+  "member": 1,
+  "certified": true,
+  "slack": 0.9999971389770508,
+  "classes_ok": true,
+  "margin": 0.8912559707361112,
+  "drift": 6.144212353342837e-06,
+  "safety": 732.6445117111285,
+  "code_gap": 1.0200728178024292
+ },
+ {
+  "member": 244,
+  "certified": true,
+  "slack": 1.0,
+  "classes_ok": true,
+  "margin": 0.8903514717069925,
+  "drift": 6.144212353342837e-06,
+  "safety": 719.4898514552581,
+  "code_gap": 1.0329418182373047
+ },
+ {
+  "member": 241,
+  "certified": true,
+  "slack": 0.9999990463256836,
+  "classes_ok": true,
+  "margin": 0.8897497656623727,
+  "drift": 6.144212353342837e-06,
+  "safety": 732.5289032809036,
+  "code_gap": 1.0191279649734497
+ },
+ {
+  "member": 115,
+  "certified": true,
+  "slack": 1.0001983642578125,
+  "classes_ok": true,
+  "margin": 0.8858969448447169,
+  "drift": 6.144212353342837e-06,
+  "safety": 731.3792301123485,
+  "code_gap": 1.0175042152404785
+ },
+ {
+  "member": 236,
+  "certified": true,
+  "slack": 0.9999771118164062,
+  "classes_ok": true,
+  "margin": 0.8855907500947069,
+  "drift": 6.144212353342837e-06,
+  "safety": 731.4031210903076,
+  "code_gap": 1.0171685218811035
+ },
+ {
+  "member": 125,
+  "certified": true,
+  "slack": 1.0005340576171875,
+  "classes_ok": true,
+  "margin": 0.8794391471951712,
+  "drift": 6.144212353342837e-06,
+  "safety": 735.7932077709037,
+  "code_gap": 1.0058025121688843
+ },
+ {
+  "member": 248,
+  "certified": true,
+  "slack": 0.9999961853027344,
+  "classes_ok": true,
+  "margin": 0.878446774075428,
+  "drift": 6.144212353342837e-06,
+  "safety": 729.9180797811244,
+  "code_gap": 1.013028621673584
+ },
+ {
+  "member": 28,
+  "certified": true,
+  "slack": 0.9999980926513672,
+  "classes_ok": true,
+  "margin": 0.8739567243501369,
+  "drift": 6.144212353342837e-06,
+  "safety": 727.2011947983281,
+  "code_gap": 1.0129172801971436
+ },
+ {
+  "member": 75,
+  "certified": true,
+  "slack": 0.9999971389770508,
+  "classes_ok": true,
+  "margin": 0.8685340059375903,
+  "drift": 6.144212353342837e-06,
+  "safety": 725.6472731562106,
+  "code_gap": 1.0103305578231812
+ },
+ {
+  "member": 107,
+  "certified": true,
+  "slack": 0.9999980926513672,
+  "classes_ok": true,
+  "margin": 0.8678984791210382,
+  "drift": 6.144212353342837e-06,
+  "safety": 725.1606953936301,
+  "code_gap": 1.0104444026947021
+ },
+ {
+  "member": 10,
+  "certified": true,
+  "slack": 0.9999971389770508,
+  "classes_ok": true,
+  "margin": 0.851153195592687,
+  "drift": 6.144212353342837e-06,
+  "safety": 717.9101767041934,
+  "code_gap": 1.0057291984558105
+ },
+ {
+  "member": 25,
+  "certified": true,
+  "slack": 0.9999980926513672,
+  "classes_ok": true,
+  "margin": 0.8434901841685587,
+  "drift": 6.144212353342837e-06,
+  "safety": 716.601437381125,
+  "code_gap": 1.0005018711090088
+ },
+ {
+  "member": 52,
+  "certified": true,
+  "slack": 0.9999990463256836,
+  "classes_ok": true,
+  "margin": 0.837173206111288,
+  "drift": 6.144212353342837e-06,
+  "safety": 714.4200040531432,
+  "code_gap": 0.9978128671646118
+ },
+ {
+  "member": 34,
+  "certified": true,
+  "slack": 0.9999985694885254,
+  "classes_ok": true,
+  "margin": 0.8358709587874138,
+  "drift": 6.144212353342837e-06,
+  "safety": 719.875443141476,
+  "code_gap": 0.9883491396903992
+ },
+ {
+  "member": 11,
+  "certified": true,
+  "slack": 0.9999980926513672,
+  "classes_ok": true,
+  "margin": 0.8356880389741974,
+  "drift": 6.144212353342837e-06,
+  "safety": 713.6721375042112,
+  "code_gap": 0.9975320100784302
+ },
+ {
+  "member": 13,
+  "certified": true,
+  "slack": 0.9999933242797852,
+  "classes_ok": true,
+  "margin": 0.8215882508130967,
+  "drift": 6.144212353342837e-06,
+  "safety": 708.6118974113162,
+  "code_gap": 0.9918051362037659
+ },
+ {
+  "member": 253,
+  "certified": true,
+  "slack": 1.0001449584960938,
+  "classes_ok": true,
+  "margin": 0.82001102424897,
+  "drift": 6.144212353342837e-06,
+  "safety": 708.5448436143834,
+  "code_gap": 0.990264356136322
+ },
+ {
+  "member": 0,
+  "certified": true,
+  "slack": 0.9999961853027344,
+  "classes_ok": true,
+  "margin": 0.8187154106533967,
+  "drift": 6.144212353342837e-06,
+  "safety": 707.0478840484736,
+  "code_gap": 0.9911590814590454
+ },
+ {
+  "member": 46,
+  "certified": true,
+  "slack": 0.9999971389770508,
+  "classes_ok": true,
+  "margin": 0.8119657814531678,
+  "drift": 6.144212353342837e-06,
+  "safety": 702.1939969340565,
+  "code_gap": 0.9807195663452148
+ },
+ {
+  "member": 51,
+  "certified": true,
+  "slack": 1.0002822875976562,
+  "classes_ok": true,
+  "margin": 0.7939641616800941,
+  "drift": 6.144212353342837e-06,
+  "safety": 699.9114844702359,
+  "code_gap": 0.9758877754211426
+ },
+ {
+  "member": 2,
+  "certified": true,
+  "slack": 0.9999961853027344,
+  "classes_ok": true,
+  "margin": 0.7861510499472502,
+  "drift": 6.144212353342837e-06,
+  "safety": 691.0166211905778,
+  "code_gap": 0.9809068441390991
+ },
+ {
+  "member": 5,
+  "certified": true,
+  "slack": 0.9999971389770508,
+  "classes_ok": true,
+  "margin": 0.7855806659592304,
+  "drift": 6.144212353342837e-06,
+  "safety": 687.6828692258279,
+  "code_gap": 0.9856895208358765
+ },
+ {
+  "member": 29,
+  "certified": true,
+  "slack": 0.9999980926513672,
+  "classes_ok": true,
+  "margin": 0.7850398544116501,
+  "drift": 6.144212353342837e-06,
+  "safety": 687.4481061998849,
+  "code_gap": 0.9854614734649658
+ },
+ {
+  "member": 229,
+  "certified": true,
+  "slack": 0.9999980926513672,
+  "classes_ok": true,
+  "margin": 0.7832293493157039,
+  "drift": 6.144212353342837e-06,
+  "safety": 691.9724149864197,
+  "code_gap": 0.9693772792816162
+ },
+ {
+  "member": 84,
+  "certified": false,
+  "slack": -0.27722930908203125,
+  "classes_ok": true,
+  "margin": 0.731665463872897,
+  "drift": 6.144212353342837e-06,
+  "safety": 585.7587837116537,
+  "code_gap": 0.9828206896781921
+ },
+ {
+  "member": 231,
+  "certified": false,
+  "slack": -0.27732086181640625,
+  "classes_ok": true,
+  "margin": 0.7135697493507074,
+  "drift": 6.144212353342837e-06,
+  "safety": 577.9396953745392,
+  "code_gap": 0.9760268330574036
+ },
+ {
+  "member": 222,
+  "certified": false,
+  "slack": -0.2774200439453125,
+  "classes_ok": true,
+  "margin": 0.687241396553631,
+  "drift": 6.144212353342837e-06,
+  "safety": 566.0823509510521,
+  "code_gap": 0.9667011499404907
+ },
+ {
+  "member": 76,
+  "certified": false,
+  "slack": -0.2899169921875,
+  "classes_ok": true,
+  "margin": 0.69553788763778,
+  "drift": 6.144212353342837e-06,
+  "safety": 570.5817555966956,
+  "code_gap": 0.9686304926872253
+ },
+ {
+  "member": 113,
+  "certified": false,
+  "slack": -0.290740966796875,
+  "classes_ok": true,
+  "margin": 0.7348687972016705,
+  "drift": 6.144212353342837e-06,
+  "safety": 587.9039220925689,
+  "code_gap": 0.9836034774780273
+ },
+ {
+  "member": 36,
+  "certified": false,
+  "slack": -0.293548583984375,
+  "classes_ok": true,
+  "margin": 0.7118627091755592,
+  "drift": 6.144212353342837e-06,
+  "safety": 577.0306051501215,
+  "code_gap": 0.975886881351471
+ },
+ {
+  "member": 91,
+  "certified": false,
+  "slack": -0.2939262390136719,
+  "classes_ok": true,
+  "margin": 0.5875953905217557,
+  "drift": 6.144212353342837e-06,
+  "safety": 491.89384052917023,
+  "code_gap": 0.9958975315093994
+ },
+ {
+  "member": 191,
+  "certified": false,
+  "slack": -0.301055908203125,
+  "classes_ok": true,
+  "margin": 0.744793870585454,
+  "drift": 6.144212353342837e-06,
+  "safety": 585.1062138693907,
+  "code_gap": 0.9944601058959961
+ },
+ {
+  "member": 77,
+  "certified": false,
+  "slack": -0.3029289245605469,
+  "classes_ok": true,
+  "margin": 0.5481601240346237,
+  "drift": 6.144212353342837e-06,
+  "safety": 456.9554695069276,
+  "code_gap": 1.0372389554977417
+ },
+ {
+  "member": 173,
+  "certified": false,
+  "slack": -0.303375244140625,
+  "classes_ok": true,
+  "margin": 0.746238935218571,
+  "drift": 6.144212353342837e-06,
+  "safety": 587.572378463127,
+  "code_gap": 0.9931076765060425
+ },
+ {
+  "member": 162,
+  "certified": false,
+  "slack": -0.30501556396484375,
+  "classes_ok": true,
+  "margin": 0.7167406739635247,
+  "drift": 6.144212353342837e-06,
+  "safety": 580.9094505943704,
+  "code_gap": 0.9759647250175476
+ },
+ {
+  "member": 198,
+  "certified": false,
+  "slack": -0.3120880126953125,
+  "classes_ok": true,
+  "margin": 0.5665663867566764,
+  "drift": 6.144212353342837e-06,
+  "safety": 476.05452883419576,
+  "code_gap": 0.9926190376281738
+ },
+ {
+  "member": 247,
+  "certified": false,
+  "slack": -0.3146018981933594,
+  "classes_ok": true,
+  "margin": 0.5531132614332819,
+  "drift": 6.144212353342837e-06,
+  "safety": 465.7754075519026,
+  "code_gap": 0.9928861260414124
+ },
+ {
+  "member": 83,
+  "certified": false,
+  "slack": -0.3215203285217285,
+  "classes_ok": true,
+  "margin": 0.47123514628583507,
+  "drift": 6.144212353342837e-06,
+  "safety": 399.51713446950663,
+  "code_gap": 0.953870952129364
+ },
+ {
+  "member": 189,
+  "certified": false,
+  "slack": -0.3247547149658203,
+  "classes_ok": true,
+  "margin": 0.6194028536822742,
+  "drift": 6.144212353342837e-06,
+  "safety": 500.65931228648185,
+  "code_gap": 1.0522096157073975
+ },
+ {
+  "member": 95,
+  "certified": false,
+  "slack": -0.3306121826171875,
+  "classes_ok": true,
+  "margin": 0.5656148207146998,
+  "drift": 6.144212353342837e-06,
+  "safety": 482.2099942734832,
+  "code_gap": 1.0452351570129395
+ },
+ {
+  "member": 228,
+  "certified": false,
+  "slack": -0.3347949981689453,
+  "classes_ok": true,
+  "margin": 0.598490188793221,
+  "drift": 6.144212353342837e-06,
+  "safety": 500.6998471333989,
+  "code_gap": 0.9959816336631775
+ },
+ {
+  "member": 126,
+  "certified": false,
+  "slack": -0.33705902099609375,
+  "classes_ok": true,
+  "margin": 0.7380857715574471,
+  "drift": 6.144212353342837e-06,
+  "safety": 593.8313148878452,
+  "code_gap": 0.9802709221839905
+ },
+ {
+  "member": 117,
+  "certified": false,
+  "slack": -0.34148406982421875,
+  "classes_ok": true,
+  "margin": 0.5880686387627065,
+  "drift": 6.144212353342837e-06,
+  "safety": 486.49008100042346,
+  "code_gap": 0.9498909711837769
+ },
+ {
+  "member": 196,
+  "certified": false,
+  "slack": -0.3494682312011719,
+  "classes_ok": true,
+  "margin": 0.5699971056228605,
+  "drift": 6.144212353342837e-06,
+  "safety": 474.93897975382504,
+  "code_gap": 0.9996254444122314
+ },
+ {
+  "member": 67,
+  "certified": false,
+  "slack": -0.36723899841308594,
+  "classes_ok": true,
+  "margin": 0.4785338038709597,
+  "drift": 6.144212353342837e-06,
+  "safety": 401.6898288162647,
+  "code_gap": 0.9320014119148254
+ },
+ {
+  "member": 193,
+  "certified": false,
+  "slack": -0.385498046875,
+  "classes_ok": true,
+  "margin": 0.5727490753276925,
+  "drift": 6.144212353342837e-06,
+  "safety": 479.2364691113066,
+  "code_gap": 0.9966488480567932
+ },
+ {
+  "member": 89,
+  "certified": false,
+  "slack": -0.39014434814453125,
+  "classes_ok": true,
+  "margin": 0.5608090214807362,
+  "drift": 6.144212353342837e-06,
+  "safety": 459.25916612251,
+  "code_gap": 0.9535572528839111
+ }
+]

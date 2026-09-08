@@ -1,0 +1,14 @@
+free scalars / member = 34
+phase1 (cached): 72/16384 exact on n=1
+  p2 step   250 loss 2.0341 max 0.2136 #>=.999 0
+  p2 step   500 loss 2.0150 max 0.7773 #>=.999 0
+  p2 step   750 loss 1.7309 max 0.8928 #>=.999 0
+  p2 step  1000 loss 1.9266 max 0.9802 #>=.999 0
+  p2 step  1250 loss 1.6365 max 0.9812 #>=.999 0
+  p2 step  1500 loss 1.8526 max 0.9993 #>=.999 1
+  p2 step  1750 loss 1.6047 max 0.9998 #>=.999 13
+  p2 step  2000 loss 1.8049 max 1.0000 #>=.999 43
+  p2 step  2250 loss 1.5897 max 1.0000 #>=.999 70
+  p2 step  2500 loss 1.8042 max 1.0000 #>=.999 75
+phase2: max 1.00000 #=1.0 1 #>=.999 75 (105s)
+saved parent_fast.pt with 75 members

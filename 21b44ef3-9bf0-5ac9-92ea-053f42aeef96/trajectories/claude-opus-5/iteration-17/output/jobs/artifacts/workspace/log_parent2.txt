@@ -1,0 +1,21 @@
+free scalars / member = 34
+phase1: 72/16384 exact on n=1 (144s)
+Traceback (most recent call last):
+  File "/workspace/run_parent.py", line 62, in <module>
+    main()
+  File "/workspace/run_parent.py", line 48, in main
+    b2, w2 = tp.train(cfg, p2, keys, a.p2_steps, 512, a.lr2, a.seed + 3,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/two_phase.py", line 57, in train
+    acc = lab.eval_exact(params, cfg, corners)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/lab.py", line 81, in eval_exact
+    lg = arch.forward(params, cfg, tok[i:i + chunk])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/arch.py", line 216, in forward
+    d2 = ((y[..., None, :] - code[:, None, None, :, :]) ** 2).sum(-1)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.25 GiB. GPU 0 has a total capacity of 79.10 GiB of which 15.99 GiB is free. Process 3159133 has 63.09 GiB memory in use. Of the allocated memory 45.89 GiB is allocated by PyTorch, and 16.49 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

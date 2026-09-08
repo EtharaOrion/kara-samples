@@ -1,0 +1,1 @@
+{"C": 1, "U": 10, "U2": 6, "tie": false, "f_in": "free", "f2_in": "free", "signs": null, "signs2": null, "key_lin": false, "val": "bank", "kv_share": false, "heads": 2, "fold": false, "q": "fix", "q_val": 1.0, "lam": "free", "lam_val": -1.0, "wo": "free", "wo_val": 1.0, "ls": "free", "ls_val": 1.0, "fold_out": "free", "pin_code": [], "b1": true, "b2": true, "seed": 21}

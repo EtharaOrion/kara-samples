@@ -1,0 +1,16 @@
+cs_d       141  10000 steps
+cs_e       111  12000 steps
+cs_f        81  12000 steps
+cs_g        75  12000 steps
+cs_h        70  12000 steps
+cs_75       56  14000 steps
+cs_54       45  14000 steps
+cs_43       38  14000 steps
+cs_33       34  14000 steps
+cs_32       31  14000 steps
+cs_22       27  14000 steps
+cs_22s      26  16000 steps
+cs_d         141 params  seed 0 sigma 0.30  acc 1.00000  (158s)
+cs_e         111 params  seed 0 sigma 0.30  acc 1.00000  (190s)
+cs_f          81 params  seed 0 sigma 0.30  acc 1.00000  (177s)
+cs_g          75 params  seed 0 sigma 0.30  acc 1.00000  (172s)

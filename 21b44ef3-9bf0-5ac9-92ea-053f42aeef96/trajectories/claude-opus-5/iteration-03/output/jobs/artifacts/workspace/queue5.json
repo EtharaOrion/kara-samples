@@ -1,0 +1,92 @@
+[
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_res_bias": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_res_bias": true,
+  "init_from": "ckpt/d3_1_1_steps30000_E256_rounds2.pt",
+  "init_member": 0,
+  "init_sigma": 0.5,
+  "tag": "w_d3_1_1_nb"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_res_bias": true,
+  "no_ls": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_res_bias": true,
+  "share_qk": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_res_bias": true,
+  "no_qb": true,
+  "no_sb": true,
+  "no_ls": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_res_bias": true,
+  "no_qb": true,
+  "no_sb": true,
+  "no_ls": true,
+  "init_from": "ckpt/d3_1_1_steps30000_E256_rounds2.pt",
+  "init_member": 0,
+  "init_sigma": 0.5,
+  "tag": "w_d3_1_1_nb_nq_ns_nl"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_res_bias": true,
+  "share_qk": true,
+  "no_qb": true,
+  "no_sb": true,
+  "no_ls": true
+ }
+]

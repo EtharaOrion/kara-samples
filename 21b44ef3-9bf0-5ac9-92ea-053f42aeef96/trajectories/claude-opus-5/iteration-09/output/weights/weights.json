@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "activation": "clamp(.,0,1)",
+    "architecture": "one block: clamp(.,0,1) projection -> self-attention with two heads (strictly-causal and inclusively-causal) sharing one set of keys and values, tied digit code used as both embedding and read-out",
+    "bank_units": "2",
+    "heads": "2",
+    "key_value_shared": "True",
+    "learned_mechanism": "the key is flat, notched at a place sum of 9 and flat again above it, so each head attends to the nearest earlier place that is not carry-transparent; the two masks read the carry in and the carry out of the current place",
+    "name": "digit-pair single-block transformer",
+    "parameters": "13",
+    "residual_width": "1",
+    "sequence": "LSB-first, one token per decimal place, (0,0) pad at each end",
+    "task": "decimal addition, graded at 8 digits",
+    "trained_by": "train.py (AdamW, ensemble seed lottery, warm-started shrink ladder)"
+  },
+  "modules": [
+    "DigitAdder"
+  ],
+  "parameter_elements": 13,
+  "state_dict_elements": 31,
+  "tensors": {
+    "W1f": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        1,
+        2,
+        1
+      ],
+      "values": [
+        1.0,
+        1.0
+      ]
+    },
+    "b1": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        1,
+        2
+      ],
+      "values": [
+        -8.27690315246582,
+        -7.518288612365723
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 8,
+      "shape": [
+        1,
+        8,
+        1
+      ],
+      "values": [
+        1.9386556148529053,
+        2.81889009475708,
+        3.7306923866271973,
+        4.6589131355285645,
+        5.573622703552246,
+        6.458117485046387,
+        7.3382415771484375,
+        8.333834648132324
+      ]
+    },
+    "key_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        1,
+        2
+      ],
+      "values": [
+        64.23500061035156,
+        -63.128387451171875
+      ]
+    },
+    "lamf": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -4.0
+      ]
+    },
+    "lsf": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        1.0
+      ]
+    },
+    "perm": {
+      "dtype": "torch.int64",
+      "numel": 10,
+      "shape": [
+        10
+      ],
+      "values": [
+        8,
+        9,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "pin_val": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2,
+        1
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "qf": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        1.0
+      ]
+    },
+    "w_o2": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1,
+        1
+      ],
+      "values": [
+        -8.308281898498535
+      ]
+    },
+    "w_of": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1,
+        1
+      ],
+      "values": [
+        1.0
+      ]
+    }
+  }
+}

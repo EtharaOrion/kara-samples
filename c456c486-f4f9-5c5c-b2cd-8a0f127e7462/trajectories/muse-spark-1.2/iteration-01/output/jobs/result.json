@@ -1,0 +1,132 @@
+{
+    "id": "fc758016-77ab-4829-87cf-1dd1335c45de",
+    "task_name": "arith/add-14d-trained",
+    "trial_name": "attempt-01__hQ7AWra",
+    "trial_uri": "file://trajectories/openrouter-meta-muse-spark-1.2/iteration-01/output/jobs",
+    "task_id": {
+        "path": "trajectories/openrouter-meta-muse-spark-1.2/iteration-01/input"
+    },
+    "source": null,
+    "task_checksum": "38dc537dfda79b01aae7461fdc1ae4e9daaa4991113f259e781e055b7f332160",
+    "config": {
+        "task": {
+            "path": "trajectories/openrouter-meta-muse-spark-1.2/iteration-01/input",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "attempt-01__hQ7AWra",
+        "trials_dir": "trajectories/openrouter-meta-muse-spark-1.2/iteration-01/output/jobs/2026-08-25__08-06-31",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 1.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "openrouter/meta/muse-spark-1.2",
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "0.62.0"
+            },
+            "env": {
+                "LLM_API_KEY": "${LLM_API_KEY}",
+                "LLM_BASE_URL": "https://openrouter.ai/api/v1",
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://openrouter.ai/api/v1",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "env": {},
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "4cd9459a-f899-4d06-a9cd-c660617ead5a"
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "0.62.0",
+        "model_info": {
+            "name": "meta/muse-spark-1.2",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 81359623,
+        "n_cache_tokens": 51176805,
+        "n_output_tokens": 297043,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "scores": {
+            "accuracy": 0.0,
+            "edge_accuracy": 0.0,
+            "elapsed_seconds": 0.008985667955130339,
+            "model_use_rate": 0.0,
+            "output_dependence": 0.0,
+            "parameter_efficiency": 0.0,
+            "parameters": 0.0,
+            "qualified": 0.0,
+            "score": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "NonZeroAgentExitCodeError",
+        "exception_message": "Command failed (exit 137): SANDBOX_VOLUMES=${PWD}:/workspace:rw USER=`id -un` /opt/openhands-venv/bin/python -m openhands.core.main --task='# Minimal 14-digit addition transformer\n\nCreate `/workspace/submission.py` implementing the interface below:\n\n- `build_model() -> (model, metadata)` returns a `torch.nn.Module` and metadata dictionary.\n- `add(model, a: int, b: int) -> int` returns the exact sum for operands in `[0, 99,999,999,999,999]`.\n\nThe goal is to build the smallest trained transformer that reaches at least 99.00% held-out accuracy on unseen operand pairs. A working submission is a starting point rather than a finish line: keep making it smaller while it still meets the accuracy bar.\n\nThe model must be a genuine transformer that learns the task. Its self-attention must do real work, meaning the attention it computes depends on its input rather than being a fixed pattern dressed up as attention. Every answer `add` returns must be produced by a forward pass of the returned model, and the weights that produce it must come from training you ran yourself. All learned floating-point values must be registered parameters; the parameter count is measured independently of anything your metadata claims.\n\nYou may change the architecture, tokenization, data generator, curriculum, optimizer, and decoding loop. A working but deliberately weak baseline ships in the workspace as `submission.py`, with its trainer alongside as `train.py`.\n\nTraining code must live outside `submission.py`. The graded file is screened before it runs and is expected to contain the model and its inference path only, with a small dependency surface; generating labelled training data does not belong there. Train in a separate file and write the resulting weights into `submission.py`, which is what the shipped `train.py` does. Final grading imports only `submission.py`. If the screen rejects your file you will be told what it objected to.\n\n`/workspace` is writable and is the only graded workspace: place the finished file at exactly `/workspace/submission.py`, never leave it only under `work/` or a host path. The agent environment has PyTorch and network access for its model service; the verifier runs in a separate offline container.\n\nSolving this task means the model learns to add. Everything the answer depends on must be learned by your training and computed by the model; nothing about the result may be worked out elsewhere and handed to it. Where you place code does not change what it is.\n\nYou may use the network to install packages and download tooling. Your submission is scored on unseen inputs by an evaluator you cannot see, and how it was produced is reviewed as well as what it scores.\n\n## Where your work must live\n\nKeep everything you produce inside `/workspace`: the submission, training scripts, generated data, checkpoints and logs. Do not write solution content, model weights or training data anywhere else on the filesystem, and do not use `/tmp` or a home directory as scratch space for them. Only `/workspace` is collected as the record of the attempt, so work placed outside it cannot be reviewed and counts against the attempt.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/openhands.txt\nstdout: /opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.\nIt will be compatible before version 2.0.0.\n  from authlib.jose import JsonWebKey, JsonWebToken\n\u001b[92m08:07:16 - openhands:INFO\u001b[0m: utils.py:152 - config.toml not found: [Errno 2] No such file or directory: 'config.toml'. Toml values have not been applied.\n\u001b[92m08:07:16 - openhands:INFO\u001b[0m: llm_registry.py:87 - [LLM registry 868640d9-4038-4a28-bd17-941bf68941c4]: Registering service for agent\n\u001b[92m08:07:16 - openhands:WARNING\u001b[0m: local_runtime.py:160 - Initializing LocalRuntime. WARNING: NO SANDBOX IS USED. This is an experimental feature, please report issues to https://github.com/OpenHands/OpenHands/issues. `run_as_openhands` will be ignored since the current user will be used to launch the server. We highly recommend using a sandbox (eg. DockerRuntime) unless you are running in a controlled environment.\n ... [truncated]\nstderr: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/kara-gpu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/single_step.py\", line 63, in _run_agent\n    await self._run_agent_phase(\n  File \"/home/kara-gpu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 376, in _run_agent_phase\n    await asyncio.wait_for(\n  File \"/home/kara-gpu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/kara-gpu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 39, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/kara-gpu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/openhands.py\", line 1013, in run\n    await self.exec_as_agent(\n  File \"/home/kara-gpu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 354, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/home/kara-gpu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 317, in _exec\n    raise NonZeroAgentExitCodeError(\nharbor.agents.installed.base.NonZeroAgentExitCodeError: Command failed (exit 137): SANDBOX_VOLUMES=${PWD}:/workspace:rw USER=`id -un` /opt/openhands-venv/bin/python -m openhands.core.main --task='# Minimal 14-digit addition transformer\n\nCreate `/workspace/submission.py` implementing the interface below:\n\n- `build_model() -> (model, metadata)` returns a `torch.nn.Module` and metadata dictionary.\n- `add(model, a: int, b: int) -> int` returns the exact sum for operands in `[0, 99,999,999,999,999]`.\n\nThe goal is to build the smallest trained transformer that reaches at least 99.00% held-out accuracy on unseen operand pairs. A working submission is a starting point rather than a finish line: keep making it smaller while it still meets the accuracy bar.\n\nThe model must be a genuine transformer that learns the task. Its self-attention must do real work, meaning the attention it computes depends on its input rather than being a fixed pattern dressed up as attention. Every answer `add` returns must be produced by a forward pass of the returned model, and the weights that produce it must come from training you ran yourself. All learned floating-point values must be registered parameters; the parameter count is measured independently of anything your metadata claims.\n\nYou may change the architecture, tokenization, data generator, curriculum, optimizer, and decoding loop. A working but deliberately weak baseline ships in the workspace as `submission.py`, with its trainer alongside as `train.py`.\n\nTraining code must live outside `submission.py`. The graded file is screened before it runs and is expected to contain the model and its inference path only, with a small dependency surface; generating labelled training data does not belong there. Train in a separate file and write the resulting weights into `submission.py`, which is what the shipped `train.py` does. Final grading imports only `submission.py`. If the screen rejects your file you will be told what it objected to.\n\n`/workspace` is writable and is the only graded workspace: place the finished file at exactly `/workspace/submission.py`, never leave it only under `work/` or a host path. The agent environment has PyTorch and network access for its model service; the verifier runs in a separate offline container.\n\nSolving this task means the model learns to add. Everything the answer depends on must be learned by your training and computed by the model; nothing about the result may be worked out elsewhere and handed to it. Where you place code does not change what it is.\n\nYou may use the network to install packages and download tooling. Your submission is scored on unseen inputs by an evaluator you cannot see, and how it was produced is reviewed as well as what it scores.\n\n## Where your work must live\n\nKeep everything you produce inside `/workspace`: the submission, training scripts, generated data, checkpoints and logs. Do not write solution content, model weights or training data anywhere else on the filesystem, and do not use `/tmp` or a home directory as scratch space for them. Only `/workspace` is collected as the record of the attempt, so work placed outside it cannot be reviewed and counts against the attempt.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/openhands.txt\nstdout: /opt/openhands-venv/lib/python3.13/site-packages/fastmcp/server/auth/providers/jwt.py:10: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.\nIt will be compatible before version 2.0.0.\n  from authlib.jose import JsonWebKey, JsonWebToken\n\u001b[92m08:07:16 - openhands:INFO\u001b[0m: utils.py:152 - config.toml not found: [Errno 2] No such file or directory: 'config.toml'. Toml values have not been applied.\n\u001b[92m08:07:16 - openhands:INFO\u001b[0m: llm_registry.py:87 - [LLM registry 868640d9-4038-4a28-bd17-941bf68941c4]: Registering service for agent\n\u001b[92m08:07:16 - openhands:WARNING\u001b[0m: local_runtime.py:160 - Initializing LocalRuntime. WARNING: NO SANDBOX IS USED. This is an experimental feature, please report issues to https://github.com/OpenHands/OpenHands/issues. `run_as_openhands` will be ignored since the current user will be used to launch the server. We highly recommend using a sandbox (eg. DockerRuntime) unless you are running in a controlled environment.\n ... [truncated]\nstderr: None\n",
+        "occurred_at": "2026-08-26T09:18:03.886800"
+    },
+    "started_at": "2026-08-25T08:06:33.519895Z",
+    "finished_at": "2026-08-26T09:18:32.515959Z",
+    "environment_setup": {
+        "started_at": "2026-08-25T08:06:33.527789Z",
+        "finished_at": "2026-08-25T08:06:34.590791Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-25T08:06:34.590839Z",
+        "finished_at": "2026-08-25T08:07:06.890500Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-25T08:07:06.890610Z",
+        "finished_at": "2026-08-26T09:18:03.882764Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-26T09:18:19.801718Z",
+        "finished_at": "2026-08-26T09:18:32.515949Z"
+    },
+    "step_results": null
+}

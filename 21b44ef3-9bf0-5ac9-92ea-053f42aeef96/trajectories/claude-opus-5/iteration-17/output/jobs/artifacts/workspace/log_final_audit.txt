@@ -1,0 +1,32 @@
+  bank_min_slack             1.6481399536132812
+  class_map_matches_a+b      True
+  patterns_checked           6561
+  attention_deviation        6.144212353342837e-06
+  residual_drift_bound       6.352808625247899e-05
+  readout_cases              200
+  readout_wrong              0
+  readout_safety_radius      0.3116984963417053
+  margin_ratio               4906.467591403987
+  CERTIFIED                  True
+CERTIFIED
+
+uniform 8-digit: shipped 1.0000 | key content removed 0.7157 | distinct attention routings 134/16384 | differs from attend-to-previous on 0.567 of inputs
+carry-heavy    : shipped 1.0000 | key content removed 0.7257 | distinct attention routings 136/16384 | differs from attend-to-previous on 1.000 of inputs
+mixed          : shipped 1.0000 | key content removed 0.5807 | distinct attention routings 256/16384 | differs from attend-to-previous on 0.725 of inputs
+
+registered parameters : 12
+named parameters      : [('code_free', (9,)), ('knee', (2,)), ('fold', (1,))]
+metadata              : {'name': 'DigitPairAdder', 'n_parameters': 12, 'architecture': '1-block transformer, 1-D residual stream, 2 masked heads over a content-dependent key/value stream', 'tokenization': 'LSB-first digit pairs, one token per decimal place', 'decoding': 'single forward pass; every position emits its own digit'}
+imports in graded file: ['import torch', 'import torch.nn as nn']
+file size             : 4953 bytes
+
+uniform 8-digit   : 1000000/1000000 exact (10s)
+carry-heavy       : 200000/200000 exact
+edge cases        : 12/12 exact 
+carry patterns    : 5219/5219 exact (all 3^8 structures, full-width samples)
+width  2          : 20000/20000 exact
+width  3          : 20000/20000 exact
+width  5          : 20000/20000 exact
+width 12          : 20000/20000 exact
+width 16          : 20000/20000 exact
+cpu vs cuda       : 5000/5000 agree

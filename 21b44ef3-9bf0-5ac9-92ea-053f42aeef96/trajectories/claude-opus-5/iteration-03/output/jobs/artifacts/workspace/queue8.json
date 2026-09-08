@@ -1,0 +1,66 @@
+[
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "share_qk": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_bin2": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_bout2": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "share_qk": true,
+  "init_from": "ckpt/d3_1_1_steps30000_E256_rounds2.pt",
+  "init_member": 0,
+  "init_sigma": 0.6,
+  "tag": "w_d3_1_1_sq"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_qb": true
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_sb": true
+ }
+]

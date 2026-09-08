@@ -1,0 +1,85 @@
+{
+  "tag": "smoke46",
+  "params": 47,
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "act": "relu",
+  "d_v": 0,
+  "res_bias": true,
+  "share_qk": true,
+  "norm": true,
+  "q_bias": false,
+  "self_bias": true,
+  "out_scale": true,
+  "res_bias_in": false,
+  "res_bias_out": true,
+  "emb_rank": 2,
+  "alibi": true,
+  "emb0_zero": true,
+  "E": 8,
+  "steps": 400,
+  "rounds": 1,
+  "seed": 0,
+  "lr": 0.012,
+  "final_eval": 20000,
+  "top": [
+    {
+      "member": 1,
+      "acc": 0.002899999963119626
+    },
+    {
+      "member": 0,
+      "acc": 0.002899999963119626
+    },
+    {
+      "member": 2,
+      "acc": 0.0003499999875202775
+    },
+    {
+      "member": 3,
+      "acc": 0.0003499999875202775
+    },
+    {
+      "member": 11,
+      "acc": 0.0
+    },
+    {
+      "member": 10,
+      "acc": 0.0
+    },
+    {
+      "member": 8,
+      "acc": 0.0
+    },
+    {
+      "member": 9,
+      "acc": 0.0
+    },
+    {
+      "member": 7,
+      "acc": 0.0
+    },
+    {
+      "member": 6,
+      "acc": 0.0
+    },
+    {
+      "member": 4,
+      "acc": 0.0
+    },
+    {
+      "member": 5,
+      "acc": 0.0
+    }
+  ],
+  "n_ge_9990": 0,
+  "n_ge_9999": 0,
+  "log": [
+    {
+      "step": 400,
+      "best": 0.00244140625,
+      "n99": 0
+    }
+  ]
+}

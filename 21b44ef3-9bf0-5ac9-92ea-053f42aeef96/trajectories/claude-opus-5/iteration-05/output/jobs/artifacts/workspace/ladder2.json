@@ -1,0 +1,17 @@
+[
+  {"name": "n2",     "delta": {}, "steps": 16000,
+                     "extra": "--anneal_sub 2 --anneal_frac 0.4"},
+  {"name": "n1",     "delta": {}, "steps": 16000,
+                     "extra": "--anneal_sub 1 --anneal_frac 0.4"},
+  {"name": "f1id",   "delta": {"f1_id_in": true}, "steps": 14000},
+  {"name": "f2id",   "delta": {"f2_id_in": true}, "steps": 14000},
+  {"name": "maps",   "delta": {"f1_out_map": [0, 1, 0, 1],
+                               "f2_out_map": [0, 0, 0, 0]}, "steps": 14000},
+  {"name": "code1",  "delta": {"code_dim": 1}, "steps": 16000},
+  {"name": "u2_3",   "delta": {"u2": 3, "f2_out_map": [0, 0, 0]}},
+  {"name": "u1_3",   "delta": {"u1": 3, "f1_out_map": [0, 0, 1]}},
+  {"name": "u2_2",   "delta": {"u2": 2, "f2_out_map": [0, 0]}, "steps": 14000},
+  {"name": "u1_2",   "delta": {"u1": 2, "f1_out_map": [0, 1]}, "steps": 14000},
+  {"name": "u1_1",   "delta": {"u1": 1, "f1_out_map": [1]}, "steps": 16000},
+  {"name": "wo",     "delta": {"w_o": false}, "steps": 14000}
+]

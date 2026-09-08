@@ -1,0 +1,12 @@
+# GENERATED. Gives the agent container the GPU.
+# task.toml keeps gpus = 0 because Harbor's Docker backend refuses a non-zero
+# count outright; the reservation below is the path it does honour.
+services:
+  main:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

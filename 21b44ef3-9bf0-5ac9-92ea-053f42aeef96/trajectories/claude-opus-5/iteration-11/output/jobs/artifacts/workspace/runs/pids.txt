@@ -1,0 +1,6 @@
+1664 out=runs/alpha_ramp6.pt
+1783 out={"code_fix":1,"free_rb":false,"free_alpha":false,"free_e1":false,"free_ls":true,"free_kw":false,"free_lam":false,"alpha":4.0,"kw":6000,"lam":-6.0}
+1837 out={"code_fix":1,"free_rb":false,"free_alpha":false,"free_e1":false,"free_ls":true,"free_kw":false,"free_lam":false,"alpha":1.4,"kw":800,"lam":-4.0}
+2036 out=runs/aband_6.pt
+2195 out=runs/ramp16.pt
+2196 out=runs/ramp6.pt

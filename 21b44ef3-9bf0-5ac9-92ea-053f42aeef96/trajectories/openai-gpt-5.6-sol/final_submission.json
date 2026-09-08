@@ -1,0 +1,7 @@
+{
+  "attempt": 49,
+  "counts_as_correct": true,
+  "score": 0.5647210926120458,
+  "rule": "best",
+  "source": "trajectories/openai-gpt-5.6-sol/iteration-49/output/jobs/artifacts/submission.py"
+}

@@ -1,0 +1,2 @@
+- [Adder submission screen forbids base64](submission-screen-forbids-base64.md) — inline weights as plain float lists or the graded file never runs
+- [Tiny adder architecture that works](tiny-adder-architecture-that-works.md) — digit-pair tokens, one carry-scan attention head, batched-ensemble seed lottery

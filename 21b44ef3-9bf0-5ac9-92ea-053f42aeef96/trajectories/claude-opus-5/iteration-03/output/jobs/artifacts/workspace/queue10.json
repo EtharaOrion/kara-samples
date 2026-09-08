@@ -1,0 +1,58 @@
+[
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 60000,
+  "rounds": 4,
+  "final_eval": 1000000,
+  "no_bin2": true,
+  "tag": "nbi_r4"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 60000,
+  "rounds": 4,
+  "final_eval": 1000000,
+  "no_bout2": true,
+  "tag": "nbo_r4"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 60000,
+  "rounds": 4,
+  "final_eval": 1000000,
+  "share_qk": true,
+  "tag": "sq_r4"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 60000,
+  "rounds": 4,
+  "final_eval": 1000000,
+  "no_bin2": true,
+  "share_qk": true,
+  "tag": "nbi_sq_r4"
+ },
+ {
+  "d": 3,
+  "f1": 1,
+  "f2": 1,
+  "E": 256,
+  "steps": 60000,
+  "rounds": 4,
+  "final_eval": 1000000,
+  "no_res_bias": true,
+  "tag": "nb_r4"
+ }
+]

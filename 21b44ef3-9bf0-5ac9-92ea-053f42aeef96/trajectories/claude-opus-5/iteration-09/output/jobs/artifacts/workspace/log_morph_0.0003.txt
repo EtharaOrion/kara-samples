@@ -1,0 +1,6 @@
+config {'E': 256, 'C': 1, 'U': 3, 'U2': 6, 'tie': False, 'act': 'morph', 'act_t': 0.0, 'f_in': 'sign', 'f2_in': 'free', 'signs': [1.0, 1.0, 1.0], 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': True, 'heads': 2, 'fold': False, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': [[0, 0.0], [1, 1.0]], 'b1': True, 'b2': True, 'seed': 0}
+parameters per member: 18
+step   3000 act_t 0.000 loss 0.0001 best 1.00000 n8 1.00000 top5 [1.0, 0.0292, 0.0166, 0.0156, 0.0146] (66s)
+step   6000 act_t 0.043 loss 0.0014 best 1.00000 n8 1.00000 top5 [1.0, 0.266, 0.024, 0.022, 0.021] (132s)
+step   9000 act_t 0.316 loss 75.2449 best 0.03371 n8 0.06118 top5 [0.0337, 0.0276, 0.0266, 0.0245, 0.0245] (197s)
+step  12000 act_t 0.683 loss 62.9199 best 0.02291 n8 0.04916 top5 [0.0229, 0.0229, 0.0169, 0.0159, 0.0149] (263s)

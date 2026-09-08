@@ -1,0 +1,23 @@
+config {'E': 256, 'C': 1, 'U': 10, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': False, 'heads': 2, 'fold': False, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': [], 'b1': True, 'b2': True, 'seed': 42}
+parameters per member: 54
+  [tie]    val_w>key_w  start gap max 71.0762 median 15.3816
+  [shrink] key_w.4=0  start residual max 27.5178 median 5.5575
+  [shrink] key_w.5=0  start residual max 30.1529 median 6.5287
+  [shrink] key_w.8=0  start residual max 37.3050 median 8.0459
+step   2500 loss 1.2437 best 0.70956 n8 0.80313 top5 [0.7096, 0.4078, 0.0066, 0.0009, 0.0009] (107s)
+step   5000 loss 0.0707 best 0.99898 n8 1.00000 top5 [0.999, 0.9396, 0.8739, 0.6785, 0.6704] (253s)
+step   7500 loss 0.0027 best 0.99708 n8 1.00000 top5 [0.9971, 0.9971, 0.9942, 0.9903, 0.961] (399s)
+step  10000 loss 0.0035 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 0.9912] (546s)
+step  12500 loss 0.0190 best 0.95874 n8 0.96617 top5 [0.9587, 0.9234, 0.9047, 0.8802, 0.833] (692s)
+step  15000 loss 0.8734 best 0.04810 n8 0.12537 top5 [0.0481, 0.0421, 0.019, 0.019, 0.018] (838s)
+step  17500 loss 0.0373 best 0.57283 n8 0.66440 top5 [0.5728, 0.5376, 0.4643, 0.4409, 0.3636] (985s)
+step  20000 loss 0.2348 best 1.00000 n8 1.00000 top5 [1.0, 0.8838, 0.4637, 0.3185, 0.2924] (1132s)
+step  22500 loss 0.0228 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 0.999, 0.999, 0.999] (1278s)
+step  25000 loss 0.0340 best 0.99901 n8 1.00000 top5 [0.999, 0.999, 0.999, 0.998, 0.998] (1425s)
+step  27500 loss 0.0009 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1572s)
+step  30000 loss 0.0002 best 1.00000 n8 1.00000 top5 [1.0, 1.0, 1.0, 1.0, 1.0] (1717s)
+saved h2_kvB.pt  n_par 54  best 0.999504  members>=0.999: 3/256
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final residual 0.000e+00
+  final tie gap  0.000e+00

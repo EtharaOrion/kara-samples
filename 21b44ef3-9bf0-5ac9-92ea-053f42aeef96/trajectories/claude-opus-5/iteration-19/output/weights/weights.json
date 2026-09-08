@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "architecture": "1-block transformer, 2 heads over 1 content key/value stream",
+    "buffers_are_constants": "['code01', 'bank_w', 'key_w', 'lam']",
+    "name": "DigitPairAdder",
+    "notes": "position p predicts answer digit p-1; whole sum from one forward pass",
+    "parameter_groups": "{'code_free': 8, 'carry_w': 1, 'knee': 2, 'fold': 1}",
+    "parameters": "12",
+    "residual_channels": "1",
+    "trained_on": "synthetic digit-pair addition, widths 1-8",
+    "vocab": "digit pairs (a, b), least-significant first"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 17,
+  "tensors": {
+    "bank_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        8.0
+      ]
+    },
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        1.0085138082504272
+      ]
+    },
+    "code01": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 8,
+      "shape": [
+        8
+      ],
+      "values": [
+        2.022059202194214,
+        3.022088050842285,
+        4.026969909667969,
+        5.0343451499938965,
+        6.036166667938232,
+        7.050386905670166,
+        8.04661750793457,
+        9.080729484558105
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -10.07960319519043
+      ]
+    },
+    "key_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        400.0
+      ]
+    },
+    "knee": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        8.09604263305664,
+        9.345940589904785
+      ]
+    },
+    "lam": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -12.0
+      ]
+    }
+  }
+}

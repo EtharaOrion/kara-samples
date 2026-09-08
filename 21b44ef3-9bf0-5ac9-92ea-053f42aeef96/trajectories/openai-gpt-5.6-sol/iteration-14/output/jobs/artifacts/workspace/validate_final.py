@@ -1,0 +1,27 @@
+import importlib.util, random, torch
+spec=importlib.util.spec_from_file_location('submission','/workspace/submission.py');s=importlib.util.module_from_spec(spec);spec.loader.exec_module(s)
+m,meta=s.build_model();print('metadata',meta);print('parameters',sum(p.numel() for p in m.parameters()),'training',m.training)
+random.seed(99);pairs=[(random.randint(10_000_000,99_999_999),random.randint(10_000_000,99_999_999)) for _ in range(1000)]
+edge=[(10_000_000,10_000_000),(99_999_999,99_999_999),(40_000_001,59_999_999),(40_000_009,89_999_999),(80_000_009,99_999_998),(99_999_900,99_999_900),(50_000_000,50_000_000)]
+print('add random',sum(s.add(m,a,b)==a+b for a,b in pairs),'/',len(pairs));print('edge',[(a,b,s.add(m,a,b),a+b) for a,b in edge])
+base=[s.add(m,a,b) for a,b in pairs[:100]]
+state=[p.detach().clone() for p in m.parameters()]
+with torch.no_grad():
+ for block in m.blocks:
+  block.attn.in_proj_weight.zero_();block.attn.in_proj_bias.zero_();block.attn.out_proj.weight.zero_();block.attn.out_proj.bias.zero_()
+abl=[s.add(m,a,b) for a,b in pairs[:100]];print('attention ablation changed',sum(x!=y for x,y in zip(base,abl)))
+with torch.no_grad():
+ for p,v in zip(m.parameters(),state):p.copy_(v)
+ m.head.weight.zero_()
+cor=[s.add(m,a,b) for a,b in pairs[:100]];print('head corruption changed',sum(x!=y for x,y in zip(base,cor)))
+with torch.no_grad():
+ for p,v in zip(m.parameters(),state):p.copy_(v)
+# Explicitly obtain first-layer attention maps for two distinct tokenized inputs.
+def toks(a,b):
+ vals=[]
+ for x,y in zip(f'{a:08d}'[::-1],f'{b:08d}'[::-1]):vals.extend((ord(x)-48,ord(y)-48))
+ return torch.tensor([vals+[10]*9])
+t1,t2=toks(*pairs[0]),toks(*pairs[1]);x1=m.token(t1)+m.position;x2=m.token(t2)+m.position;n=m.blocks[0].n1
+_,w1=m.blocks[0].attn(n(x1),n(x1),n(x1),need_weights=True,average_attn_weights=False)
+_,w2=m.blocks[0].attn(n(x2),n(x2),n(x2),need_weights=True,average_attn_weights=False)
+print('attention input delta',(w1-w2).abs().max().item())

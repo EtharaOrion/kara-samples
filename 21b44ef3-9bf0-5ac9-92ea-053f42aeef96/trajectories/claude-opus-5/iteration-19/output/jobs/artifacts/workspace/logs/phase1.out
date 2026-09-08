@@ -1,0 +1,21 @@
+  step    500 loss    2.7968 best 0.780 ever 0.820 n100     0  10s
+  step   1000 loss    2.0855 best 1.000 ever 1.016 n100   162  20s
+  step   1500 loss    2.0209 best 1.000 ever 1.019 n100  2130  30s
+  step   2000 loss    2.0183 best 1.000 ever 1.019 n100  2887  39s
+  step   2500 loss    2.0130 best 1.000 ever 1.019 n100  3196  49s
+  step   3000 loss    2.0057 best 1.000 ever 1.019 n100  3374  59s
+  step   3500 loss    2.0003 best 1.000 ever 1.019 n100  3473  69s
+  step   4000 loss    1.9970 best 1.000 ever 1.019 n100  3530  79s
+  step   4500 loss    1.9951 best 1.000 ever 1.019 n100  3547  89s
+  step   5000 loss    1.9937 best 1.000 ever 1.019 n100  3554  98s
+  step   5500 loss    1.9922 best 1.000 ever 1.019 n100  3554  108s
+  step   6000 loss    1.9912 best 1.000 ever 1.019 n100  3554  118s
+  step   6500 loss    1.9904 best 1.000 ever 1.019 n100  3555  128s
+  step   7000 loss    1.9898 best 1.000 ever 1.019 n100  3555  138s
+  step   7500 loss    1.9895 best 1.000 ever 1.019 n100  3555  147s
+  step   8000 loss    1.9893 best 1.000 ever 1.019 n100  3555  157s
+members solving all 100 one-place cases: 3520/32768
+  best-margin member:
+    code    [0.0, 1.0, 2.0445, 3.0534, 4.0812, 5.095, 6.1213, 7.1342, 8.1667, 9.1956]
+    carry_w 11.2269 knee [19.7124, 9.8071] fold -10.2092 margin 0.9555
+saved ckpt/phase1.pt with 512 parents

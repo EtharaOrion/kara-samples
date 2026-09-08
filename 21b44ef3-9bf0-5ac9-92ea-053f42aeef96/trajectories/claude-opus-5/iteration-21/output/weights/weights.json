@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "architecture": "1-block transformer, 2 attention heads over a shared content stream",
+    "name": "DigitPairAdder",
+    "parameters": "12",
+    "readout": "tied digit code, one forward pass for all answer digits",
+    "tokenization": "digit pairs, least significant place first, padded at both ends"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 17,
+  "tensors": {
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        0.9767253398895264
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 8,
+      "shape": [
+        8
+      ],
+      "values": [
+        1.9644945859909058,
+        2.9311656951904297,
+        3.907682180404663,
+        4.885141849517822,
+        5.861636638641357,
+        6.838522911071777,
+        7.792840957641602,
+        8.792759895324707
+      ]
+    },
+    "code_pin": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -9.769408226013184
+      ]
+    },
+    "gate_slope": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        8.0
+      ]
+    },
+    "key_scale": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        400.0
+      ]
+    },
+    "knee": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        8.11388111114502,
+        9.399141311645508
+      ]
+    },
+    "recency": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -12.0
+      ]
+    }
+  }
+}

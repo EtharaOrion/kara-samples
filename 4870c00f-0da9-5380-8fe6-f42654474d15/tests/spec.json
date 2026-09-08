@@ -1,0 +1,20 @@
+{
+  "accuracy_threshold": 0.99,
+  "arity": 2,
+  "baseline_parameters": 1644,
+  "category": "trained",
+  "count_buffers": false,
+  "digits": 9,
+  "entrypoint": "add",
+  "floor_parameters": 11,
+  "grader_version": "1.2.0",
+  "operation": "add2",
+  "random_tests": 10000,
+  "seed": 111414605994552,
+  "spec_digest": "sha256:7e07863f855812e1a4f134c7fedb34f1312d03db85faaba511522a4889e9117d",
+  "target_parameters": 24,
+  "task": "arith/add2-9d-trained",
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef",
+  "worker_timeout_sec": 1800.0,
+  "worst_parameters": 16440
+}

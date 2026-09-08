@@ -1,0 +1,7 @@
+{
+  "attempt": 10,
+  "counts_as_correct": true,
+  "score": 0.9926143614800882,
+  "rule": "best",
+  "source": "trajectories/claude-opus-5/iteration-10/output/jobs/artifacts/submission.py"
+}

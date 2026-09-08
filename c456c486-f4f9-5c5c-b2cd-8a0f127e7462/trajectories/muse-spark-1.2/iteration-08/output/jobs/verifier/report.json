@@ -1,0 +1,37 @@
+{
+  "attention_probe": {
+    "dependence_rate": 1.0,
+    "detected": true,
+    "mechanisms": [
+      "nn.MultiheadAttention"
+    ],
+    "output_dependent": true
+  },
+  "beat_target": false,
+  "claimed_params": null,
+  "error": null,
+  "findings": [],
+  "has_attention": true,
+  "measured_params": 1140,
+  "metrics": {
+    "accuracy": 0.9998001998001999,
+    "edge_accuracy": 1.0,
+    "elapsed_seconds": 152.85684822197072,
+    "model_use_rate": 1.0,
+    "output_dependence": 1.0,
+    "parameter_efficiency": 0.20843424703027782,
+    "parameters": 1140.0,
+    "qualified": 1.0,
+    "score": 0.6042171235151389
+  },
+  "model_type": "TinyTransformer",
+  "output_dependence": 1.0,
+  "output_dependent": true,
+  "passed": 10008,
+  "structural_failures": [],
+  "structurally_valid": true,
+  "target_parameters": 115,
+  "task": "arith/add-14d-trained",
+  "total": 10010,
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef"
+}

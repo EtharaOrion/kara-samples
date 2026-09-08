@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "architecture": "one block: clamp bank -> two masked self-attention heads sharing one content-dependent key/value stream, digit code tied as read-out prototypes",
+    "learned": "{'code[1..9]': 9, 'bank knees': 2, 'mod-10 fold': 1}",
+    "max_digits": "30",
+    "n_parameters": "12",
+    "name": "digit-pair adder"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 19,
+  "tensors": {
+    "bank_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        8.0
+      ]
+    },
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0
+      ]
+    },
+    "code": {
+      "dtype": "torch.float32",
+      "numel": 9,
+      "shape": [
+        9
+      ],
+      "values": [
+        0.9999319314956665,
+        1.9940857887268066,
+        2.990553140640259,
+        3.988168954849243,
+        4.9857892990112305,
+        5.983412265777588,
+        6.979879856109619,
+        7.974030017852783,
+        8.973965644836426
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -9.973384857177734
+      ]
+    },
+    "key_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -400.0,
+        400.0
+      ]
+    },
+    "knee": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -65.5589370727539,
+        -73.29173278808594
+      ]
+    },
+    "lam": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -12.0
+      ]
+    },
+    "val_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

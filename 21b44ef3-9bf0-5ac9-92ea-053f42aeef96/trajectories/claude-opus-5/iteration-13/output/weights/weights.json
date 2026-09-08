@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "architecture": "1 transformer block, 2 masked heads, scalar residual stream",
+    "digits": "8",
+    "n_parameters": "12",
+    "name": "DigitPairAdder",
+    "vocab": "10"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 12,
+  "state_dict_elements": 22,
+  "tensors": {
+    "bb": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        66.75588989257812,
+        -68.27236938476562
+      ]
+    },
+    "bw": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -8.0,
+        8.0
+      ]
+    },
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 9,
+      "shape": [
+        9
+      ],
+      "values": [
+        0.9674437046051025,
+        1.875920295715332,
+        2.8068549633026123,
+        3.7405378818511963,
+        4.67019510269165,
+        5.603131294250488,
+        6.535141468048096,
+        7.455654621124268,
+        8.401677131652832
+      ]
+    },
+    "code_zero": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        0.0
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -9.488850593566895
+      ]
+    },
+    "kw": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        400.0,
+        400.0
+      ]
+    },
+    "lam": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -8.0,
+        -8.0
+      ]
+    },
+    "vw": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "6c53af04-4972-4220-b511-5b6b539fe311",
+  "task_name": "arith/add2-8d-trained",
+  "trial_name": "attempt-32__VsoooRx",
+  "trial_uri": "file://trajectories/openai-gpt-5.6-sol/iteration-32/output/jobs",
+  "task_id": {
+    "path": "trajectories/openai-gpt-5.6-sol/iteration-32/input"
+  },
+  "source": null,
+  "task_checksum": "c0430cf99bd428b96eb91e2f2dcee0176db7a2e8ca57b5463fac2525dcd89d85",
+  "config": {
+    "task": {
+      "path": "trajectories/openai-gpt-5.6-sol/iteration-32/input",
+      "git_url": null,
+      "git_commit_id": null,
+      "name": null,
+      "ref": null,
+      "overwrite": false,
+      "download_dir": null,
+      "source": null
+    },
+    "trial_name": "attempt-32__VsoooRx",
+    "trials_dir": "trajectories/openai-gpt-5.6-sol/iteration-32/output/jobs",
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": 6.7699,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": 5.0,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+      "name": "openhands",
+      "import_path": null,
+      "model_name": "openai/gpt-5.6-sol",
+      "skills": [],
+      "override_timeout_sec": null,
+      "override_setup_timeout_sec": null,
+      "max_timeout_sec": null,
+      "extra_allowed_hosts": [],
+      "kwargs": {
+        "version": "0.62.0"
+      },
+      "env": {
+        "LLM_API_KEY": "${LLM_API_KEY}",
+        "LLM_BASE_URL": "http://172.17.0.1:8880/v1",
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+        "OPENAI_BASE_URL": "http://172.17.0.1:8880/v1"
+      },
+      "mcp_servers": []
+    },
+    "environment": {
+      "type": "docker",
+      "import_path": null,
+      "force_build": false,
+      "delete": false,
+      "cpu_enforcement_policy": "auto",
+      "memory_enforcement_policy": "auto",
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_gpus": null,
+      "override_tpu": null,
+      "mounts": null,
+      "extra_docker_compose": [],
+      "env": {},
+      "kwargs": {},
+      "extra_allowed_hosts": []
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "env": {},
+      "disable": false
+    },
+    "artifacts": [],
+    "extra_instruction_paths": [],
+    "job_id": "163db43a-18c2-4e1c-b22a-8bb337934876"
+  },
+  "agent_info": {
+    "name": "openhands",
+    "version": "0.62.0",
+    "model_info": {
+      "name": "gpt-5.6-sol",
+      "provider": "openai"
+    }
+  },
+  "agent_result": {
+    "n_input_tokens": 585556,
+    "n_cache_tokens": 0,
+    "n_output_tokens": 12822,
+    "cost_usd": 2.5986640000000003,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": null,
+  "started_at": "2026-09-06T07:20:27.657814Z",
+  "finished_at": "2026-09-06T07:47:15.934274Z",
+  "environment_setup": {
+    "started_at": "2026-09-06T07:20:27.664880Z",
+    "finished_at": "2026-09-06T07:20:28.755070Z"
+  },
+  "agent_setup": {
+    "started_at": "2026-09-06T07:20:28.755119Z",
+    "finished_at": "2026-09-06T07:20:54.728269Z"
+  },
+  "agent_execution": {
+    "started_at": "2026-09-06T07:20:54.728378Z",
+    "finished_at": "2026-09-06T07:44:21.060604Z"
+  },
+  "verifier": {
+    "started_at": "2026-09-06T07:44:33.686386Z",
+    "finished_at": "2026-09-06T07:47:15.932903Z"
+  },
+  "step_results": null
+}

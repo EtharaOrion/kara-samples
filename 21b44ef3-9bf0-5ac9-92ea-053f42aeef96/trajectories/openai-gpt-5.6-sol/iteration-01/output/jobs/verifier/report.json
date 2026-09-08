@@ -1,0 +1,41 @@
+{
+  "attention_probe": null,
+  "beat_target": false,
+  "claimed_params": null,
+  "error": null,
+  "findings": [
+    "no attention operation was observed doing work: either none ran, or perturbing it left the answers unchanged, which makes it a fixed reduction rather than attention",
+    "operands reduced to one value through a builtin call",
+    "the returned answers did not change when the model output was corrupted, so the answer is not being read off the model",
+    "the submission did not return an answer for every case"
+  ],
+  "has_attention": false,
+  "measured_params": 0,
+  "metrics": {
+    "accuracy": 0.0,
+    "edge_accuracy": 0.0,
+    "elapsed_seconds": 0.008152197115123272,
+    "model_use_rate": 0.0,
+    "output_dependence": 0.0,
+    "parameter_efficiency": 0.0,
+    "parameters": 0.0,
+    "qualified": 0.0,
+    "score": 0.0
+  },
+  "model_type": null,
+  "operation": "add2",
+  "output_dependence": 0.0,
+  "output_dependent": false,
+  "passed": 0,
+  "structural_failures": [
+    "static_policy",
+    "attention_not_detected_or_not_output_dependent",
+    "incomplete_outputs",
+    "model_output_not_used"
+  ],
+  "structurally_valid": false,
+  "target_parameters": 21,
+  "task": "arith/add2-8d-trained",
+  "total": 10010,
+  "upstream_commit": "07061de8d833d04e9800a009721731586e102aef"
+}

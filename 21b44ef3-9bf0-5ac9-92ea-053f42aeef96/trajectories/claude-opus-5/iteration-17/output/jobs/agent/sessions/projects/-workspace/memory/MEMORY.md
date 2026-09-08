@@ -1,0 +1,3 @@
+- [Adder two-phase curriculum](adder-two-phase-curriculum.md) — cold multi-place training of the digit-pair adder fails outright; train places=[1] first.
+- [Adder certificate needs exhaustive saturation](adder-certificate-needs-exhaustive-saturation.md) — sampled clamp penalties leave rare digit pairs unsaturated and break the whole-domain proof.
+- [Adder stops at twelve parameters](adder-stop-at-twelve-parameters.md) — every route to 11 hard-codes base-ten linearity for only +0.0074.

@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "architecture": "one transformer block, 1-D residual stream, 2 heads (strictly-causal carry-in, inclusively-causal carry-out) sharing one content-dependent key/value stream",
+    "attention_notch_depth": "254.863",
+    "certified_exact_on_whole_domain": "True",
+    "n_parameters": "11",
+    "parameters": "{'code_free': (9,), 'knee': (1,), 'fold': (1,)}",
+    "range": "exact for both operands in [10000000, 99999999]",
+    "tokenisation": "one token per decimal place, LSB first, (0,0) pad at each end; token p emits answer digit p-1",
+    "worst_case_readout_margin": "0.882447"
+  },
+  "modules": [
+    "DigitPairAdder"
+  ],
+  "parameter_elements": 11,
+  "state_dict_elements": 20,
+  "tensors": {
+    "bank_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        8.0,
+        1.0
+      ]
+    },
+    "carry_w": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        1.0
+      ]
+    },
+    "code_free": {
+      "dtype": "torch.float32",
+      "numel": 9,
+      "shape": [
+        9
+      ],
+      "values": [
+        0.9763500094413757,
+        1.9492703676223755,
+        2.9280524253845215,
+        3.9176411628723145,
+        4.8743696212768555,
+        5.848062992095947,
+        6.833813667297363,
+        7.80953311920166,
+        8.764301300048828
+      ]
+    },
+    "code_zero": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        0.0
+      ]
+    },
+    "fold": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        -9.765458106994629
+      ]
+    },
+    "key_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        -400.0,
+        400.0
+      ]
+    },
+    "knee": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [
+        1
+      ],
+      "values": [
+        8.429167747497559
+      ]
+    },
+    "lam": {
+      "dtype": "torch.float32",
+      "numel": 1,
+      "shape": [],
+      "values": [
+        -12.0
+      ]
+    },
+    "val_w": {
+      "dtype": "torch.float32",
+      "numel": 2,
+      "shape": [
+        2
+      ],
+      "values": [
+        1.0,
+        0.0
+      ]
+    }
+  }
+}

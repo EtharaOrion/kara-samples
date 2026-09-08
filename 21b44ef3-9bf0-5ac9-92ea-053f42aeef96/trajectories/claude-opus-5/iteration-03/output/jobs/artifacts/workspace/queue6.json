@@ -1,0 +1,32 @@
+[
+ {
+  "d": 2,
+  "f1": 5,
+  "f2": 5,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_norm": true
+ },
+ {
+  "d": 2,
+  "f1": 3,
+  "f2": 3,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_norm": true
+ },
+ {
+  "d": 2,
+  "f1": 2,
+  "f2": 2,
+  "E": 256,
+  "steps": 40000,
+  "rounds": 2,
+  "final_eval": 1000000,
+  "no_norm": true
+ }
+]

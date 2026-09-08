@@ -1,0 +1,8 @@
+config {'E': 128, 'C': 1, 'U': 5, 'U2': 6, 'tie': False, 'f_in': 'free', 'f2_in': 'free', 'signs': None, 'signs2': None, 'key_lin': False, 'val': 'bank', 'kv_share': True, 'heads': 2, 'fold': False, 'q': 'fix', 'q_val': 1.0, 'lam': 'free', 'lam_val': -1.0, 'wo': 'free', 'wo_val': 1.0, 'ls': 'free', 'ls_val': 1.0, 'fold_out': 'free', 'pin_code': [], 'b1': True, 'b2': True, 'seed': 63}
+parameters per member: 29
+  [shrink] code_free.0=0  start residual max 3.2618 median 2.9121
+  [shrink] key_w.0=0  start residual max 33.0550 median 25.9790
+  [shrink] key_w.3=0  start residual max 53.7074 median 47.1883
+step   4000 loss 8.5509 best 0.98937 n8 0.99711 top5 [0.9894, 0.83, 0.6415, 0.4396, 0.343] (296s)
+step   8000 loss 2.8880 best 0.84562 n8 0.91724 top5 [0.8456, 0.4405, 0.3943, 0.3766, 0.2389] (678s)
+step  12000 loss 2.0129 best 0.03051 n8 0.06126 top5 [0.0305, 0.0236, 0.0236, 0.0236, 0.0217] (1091s)
